@@ -125,7 +125,7 @@ h6 {
 }
 @media screen and (max-width: 1920px) {
   h2 {
-    font-size: 23px;
+    font-size: 24px;
   }
 }
 @media screen and (max-width: 1440px) {
@@ -142,7 +142,7 @@ h6 {
   grid-template-columns: repeat(12, 1fr);
   grid-column-gap: 30px;
   padding: 0 15px;
-  max-width: 1680px;
+  max-width: 1320px;
   margin: 0 auto;
 }
 
@@ -160,7 +160,7 @@ h6 {
 
 .main-full {
   padding: 0 15px;
-  max-width: 1680px;
+  max-width: 1320px;
   margin: 0 auto;
 }
 
@@ -1120,6 +1120,7 @@ header {
   left: 0;
   top: auto;
   color: #3F0B71;
+  background-color: #ffffff;
   padding: 15px 0;
 }
 header a {
@@ -1440,7 +1441,7 @@ footer .create {
 
 /*-----menu----*/
 .popup-nav {
-  font-size: 23px;
+  font-size: 24px;
   margin: 0 0 30px;
 }
 .popup-nav li {
@@ -1452,7 +1453,7 @@ footer .create {
 }
 
 .feedback-phone {
-  font-size: 23px;
+  font-size: 24px;
   margin: 0 0 30px;
 }
 
@@ -1751,7 +1752,7 @@ a.pagination-next:hover {
   text-decoration: none;
 }
 .default-item h3 {
-  font-size: 23px;
+  font-size: 24px;
   margin: 0 0 15px;
 }
 .default-item h3:hover {
@@ -1833,6 +1834,55 @@ a.pagination-next:hover {
   margin: 0 auto;
 }
 
+.banners-item {
+  background-color: #3F0B71;
+  color: #ffffff;
+  position: relative;
+  border-radius: 20px;
+  padding: 30px 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 400;
+  margin: 0 0 30px;
+}
+.banners-item h2, .banners-item h3 {
+  color: inherit;
+  margin-bottom: 15px;
+}
+.banners-item h2 {
+  font-size: 13px;
+  font-weight: 500;
+}
+.banners-item h3 {
+  font-size: 24px;
+}
+
+.banners-item-img {
+  width: 180px;
+  height: 180px;
+}
+
+.banners-img-container {
+  margin-left: auto;
+}
+
+.banners-item--last {
+  background-color: #ffffff;
+  border: 1px solid #3F0B71;
+  color: #4E4E4E;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.banners-item--last .btn-container {
+  margin-top: auto;
+}
+.banners-item--last h3 {
+  color: #FF9138;
+}
+
 .contacts_home {
   margin-bottom: 30px;
 }
@@ -1850,7 +1900,7 @@ a.pagination-next:hover {
   text-decoration: none;
 }
 .advantages-item h3 {
-  font-size: 23px;
+  font-size: 24px;
   margin: 0 0 15px;
 }
 .advantages-item h3:hover {
@@ -1998,7 +2048,7 @@ a.pagination-next:hover {
 }
 
 .reviews-name {
-  font-size: 23px;
+  font-size: 24px;
   font-family: "bold";
   color: #202020;
   margin-right: 30px;
@@ -2055,7 +2105,7 @@ a.pagination-next:hover {
   padding: 15px 15px 30px;
 }
 .card h3 {
-  font-size: 23px;
+  font-size: 24px;
   margin: 0 0 15px;
 }
 .card h3 a {
@@ -2122,7 +2172,7 @@ a.pagination-next:hover {
 }
 
 .card-price--current {
-  font-size: 23px;
+  font-size: 24px;
   color: #202020;
   font-family: "bold";
 }
