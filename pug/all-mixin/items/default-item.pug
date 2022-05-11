@@ -1,0 +1,14 @@
+mixin itemDefault(itemName, col, name, img, data, text, btnClass, btnText, link)
+  .default-item(class="col-"+(12/col) class=itemName+"-item")
+    a.default-item-img.img-cover(href=link)
+      img(src= img, alt="")
+    if data
+      .default-item-date= data
+    if name
+      h3
+        a(href="#")= name
+    if text
+      .default-item-description= text
+    if btnClass
+      .btn-container
+        a(href="#" class= btnClass)= btnText 

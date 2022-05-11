@@ -1,0 +1,57 @@
+/*-file-upload-*/
+$heightContainerFile: 20px
+
+.file-input-container
+	position: relative
+
+.input-file
+	// height: $heightContainerFile
+	visibility: hidden
+	position: absolute
+	margin-top: -$heightContainerFile
+
+.file-decorate
+	// height: $heightContainerFile
+	border: 1px solid
+	border-top: 0
+	position: relative
+	padding: 5px
+
+	cursor: pointer
+
+	span
+		padding-left: 25px
+		position: relative
+		display: inline-block
+
+		&::before
+			content: ""
+			@include positionElement(15px, 15px, 0, 0)
+			@include bgImageEl("../images/controls/arrow-next-gray.svg")
+
+	i
+		@include positionElement(12px, 12px, 0, 2px, right, top, 2, none)
+		@include bgImageEl("../images/controls/close-black.svg")
+		cursor: pointer
+
+.file-decorate-full i
+	display: block
+
+.notice-file
+	position: absolute
+	right: 0
+	top: 0
+	display: none
+
+	i
+		@include icoEl(30px, 30px, "../images/icons/danger-sign-black.svg")
+		margin-left: 15px
+.notice-file--show
+	display: block
+.hint-input-file
+	color: $grayColor
+	padding: 5px
+	border: 1px solid
+	border-bottom: 0
+
+/*-file-upload-*/

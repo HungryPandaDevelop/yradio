@@ -1,0 +1,25 @@
+include ../components/default/build-header
+// main start
+include ../components/home/main.pug
+// main end
+
+// main page content start
+
+- var textStumb = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi cum tenetur odio repudiandae ipsam libero dolor exercitationem laudantium quam saepe, dicta consequuntur vitae ex architecto illum officia dignissimos molestias ea!"
+
+include ../components/home/product.pug
+include ../components/home/news.pug
+include ../components/home/advantages.pug
+include ../components/home/feedback.pug
+include ../components/home/contacts.pug
+
+// main page content end
+
+
+
+// footer start 
+
+.stub-footer
+include ../components/default/footer.pug
+
+// footer end 

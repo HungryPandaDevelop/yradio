@@ -1,0 +1,67 @@
+/*.wpcf7-form*/
+.wpcf7-form-control-wrap
+	position: relative
+	text-align: left
+
+.wpcf7-list-item
+	margin: 0
+
+.wpcf7-checkbox
+	padding-left: 30px
+	position: relative
+	display: block
+
+	label
+		position: relative
+		display: block
+
+	input
+		position: absolute
+		visibility: hidden
+
+	.wpcf7-list-item-label
+		&:before
+			@include positionElement(15px, 15px, -30px, 1px)
+			border: 1px solid $blackColor
+			border-radius: 100%
+			cursor: pointer
+
+	input
+		&:checked~.wpcf7-list-item-label
+			&:after
+				@include positionElement(7px, 7px, -25px, 6px)
+				background-color: $blackColor
+				border-radius: 100%
+				cursor: pointer
+
+.wpcf7 form .wpcf7-response-output
+	margin: 0
+	grid-column: span 4
+.wpcf7-spinner
+	background-color: $greenColor
+	position: absolute
+	top: 50%
+	margin-top: -12px
+
+.wpcf7 form .wpcf7-response-output
+	display: flex
+	flex-direction: column
+	justify-content: space-around
+	height: 50px
+	margin: 12px 0 0
+.wpcf7-not-valid-tip
+	margin-top: -15px
+	margin-bottom: 15px
+.popup form	.wpcf7-response-output
+	position: relative
+	grid-column: span 12
+/*.wpcf7-form*/
+
+/*wp comments*/
+
+.logged-in-as
+	a
+		margin-right: 15px
+.com_block_star
+	display: none
+/*wp comments*/

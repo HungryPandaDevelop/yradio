@@ -1,0 +1,19 @@
+mixin itemAdvantages( col, name, img, text, btnClass, btnText, link)
+  .item(class="col-"+(12/col) class="advantages-item")
+    if link
+      a.advantages-item-img(href=link)
+        img(src= img, alt="")
+      if name
+        h3
+          a(href=link)= name
+      if text
+        .advantages-item-description= text
+      if btnClass
+        .btn-container
+          a(href=link class= btnClass)= btnText
+    else
+      img(src= img, alt="").advantages-item-img
+      if name
+        h3= name
+      if text
+        .advantages-item-description= text

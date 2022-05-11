@@ -1,0 +1,7 @@
+-var itemCol = 4
+section
+	.main-full
+		h2 Преимущества
+	.main-grid 
+		-for (var i=0; i < itemCol; i++)
+			+itemAdvantages(itemCol, "Монтаж и подключение оборудования — бесплатно" ,"/images/temp/advantages-ico-1.svg")

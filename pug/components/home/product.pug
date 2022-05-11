@@ -1,0 +1,7 @@
+-var itemCol = 4
+section
+  .main-full
+    h2 Все товары
+  .main-grid
+    -for (var i=0; i < itemCol; i++)
+      +cardItemDefault(itemCol,"Brit Care - Hight Chicken","../images/temp/product-1.jpg","1000","2000",textStumb,"btn btn--black","Купить")

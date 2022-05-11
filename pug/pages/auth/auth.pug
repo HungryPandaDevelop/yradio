@@ -1,0 +1,14 @@
+include ../../components/default/build-header
+
+// header start
+
+// header end
++roofContent("Авторизация")
+	- var authField = [["text","Имя","col-12 require"],["email","Email","col-12 require"],["password","Пароль","col-12 require"],["submit","btn btn-send","Отправить"],["checkbox","Я даю свое согласие на обработку персональных данных","col-12"]];
+	+form(authField) 
+
+// footer start 
+.stub-footer
+include ../../components/default/footer.pug
+
+// footer end  

@@ -1,0 +1,13 @@
++popup-template(0,false,false,0)
+  nav.popup-nav
+    ul 
+      each val,index in ["Каталог", "Акции","О нас", "Где купить","Контакты"]
+        li 
+          a(href="#")
+            = val 
+  .popup-feedback
+    .container
+      .feedback-phone
+        a(href="tel:+88005559810" ) +7 (921) 789 - 65 - 31
+      .feedback-social
+        +social("v","i","tw") 

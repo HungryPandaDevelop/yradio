@@ -1,0 +1,67 @@
+$headerHeight: 72px
+.stub
+	height: $headerHeight
+//(PE-- W, H, L, T, LR, TB, Z, D, P)
+header
+	@include positionElement(100%, auto, 0, auto, left, top, 2, fixed )
+	color: $violetColor
+	padding: 15px 0
+	a
+		text-decoration: none
+		&:hover
+			text-decoration: underline
+.nav-delimetr
+	display: inline-block
+	background-color: $grayColor
+	width: 1px
+	height: 38px
+	margin: auto 30px
+
+.header-nav
+	display: flex
+	width: 100%
+	max-width: 500px
+	ul
+		display: flex
+		width: 100%
+		margin: auto 0
+		justify-content: space-between
+		padding: 0
+	li
+		display: inline-block
+		position: relative
+		&::before
+			left: -10%
+			background-color: $violetColor
+		&:first-child
+			&::before
+				display: none
+	a:hover
+		color: $orangeColor
+		text-decoration: none
+.logo
+	position: relative
+	display: flex
+	a
+		margin: auto 0
+
+	img
+		width: 100%
+		max-width: 210px
+.header-phone
+	margin-left: auto
+	i
+		display: inline-block
+		background-color: $violetColor
+		color: $whiteColor
+		font-style: normal
+		width: 34px
+		height: 34px
+		border-radius: 100%
+		text-align: center
+		line-height: 34px
+		font-size: $microSize
+		margin-left: 15px
+.header-feedback
+	a
+		margin-left: 15px
