@@ -1,5 +1,10 @@
-section  
-  .main-full
-    h2 Обратная связь
-    - var feedback = [["text","Фио","col-4 require"],["phone","col-4 require"],["email","Email","col-4"],["textarea","Ваше сообщение","col-12"],["checkbox","Я даю свое согласие на обработку персональных данных","col-12"],["submit","btn btn-send btn--black","col-12","Отправить"]];
-    +form(feedback)
+section.feedback
+  .main-grid
+    .col-1
+    .col-5
+      h2 Подарите голос вашему бизнесу
+      h3 Получите бесплатный  плейлист легальной музыки
+      div Оставьте ваши контакты, мы свяжемся с Вами и подберем музыку именно для вашего бизнеса.
+    .col-5
+      - var feedback = [["text","Фио","col-12 require"],["phone","col-12 require"],["checkbox","Я согласен(-на) на обработку персональных данных ","col-12"],["submit","btn btn-send btn--orange","col-12","Отправить"]];
+      +form(feedback)

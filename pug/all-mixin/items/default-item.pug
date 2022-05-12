@@ -6,7 +6,10 @@ mixin itemDefault(itemName, col, name, img, data, text, btnClass, btnText, link)
       .default-item-date= data
     if name
       h3
-        a(href="#")= name
+        if link
+          a(href="#")= name
+        else 
+          =name
     if text
       .default-item-description= text
     if btnClass

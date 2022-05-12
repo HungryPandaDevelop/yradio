@@ -5,11 +5,10 @@
 	display: inline-block
 	position: relative
 	padding: 5px
-	padding-left: 25px
+	padding-left: 37px
 	cursor: pointer
 	user-select: none
 	margin: 0 0 15px
-	border: 1px solid
 
 	input
 		@include positionElement(100%, 100%)
@@ -20,15 +19,13 @@
 				display: block
 
 	span
-		@include positionElement(15px, 15px, 5px, 6px)
-		border: 1px solid $blackColor
-		border-radius: 100%
-
+		@include positionElement(24px, 24px, 0px, 3px)
+		background-color: $grayColorThree
+		cursor: pointer
 		&:after
 			content: ""
-
-			@include positionElement(7px, 7px, 3px, 3px)
+			cursor: pointer
+			@include positionElement(100%, 100%, 0px, 0px)
 			display: none
-			background: $blackColor
-			border-radius: 100%
+			@include bgImageEl("../images/controls/checkbox.svg")
 /*-checkbox-wp-*/

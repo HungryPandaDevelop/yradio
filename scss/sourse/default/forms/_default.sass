@@ -1,15 +1,18 @@
 .input-decorate,
 .custom-select
-	padding: 5px
+	padding: 12px 15px
 	border: 0
-	border: 1px solid $blackColor
-	font: inherit
+	font-family: inherit
+	font-size: $standartSize
 	resize: none
 	width: 100%
 	background: none
+	background-color: $grayColorThree
 	margin: 0 0 15px
 	&:focus
 		outline: 0
+	&::placeholder
+		color: $violetColor
 .file-decorate-error span,
 .input-error
 	border-color: $redColor

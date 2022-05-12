@@ -19,7 +19,7 @@
 body,
 html {
   font-family: roboto;
-  color: #202020;
+  color: #4E4E4E;
   font-size: 15px;
   min-width: 320px;
   min-height: 640px;
@@ -176,11 +176,17 @@ section .title-section {
   margin: 0 0 15px;
   color: #3F0B71;
 }
+section .title-section span {
+  color: #FF9138;
+}
 section .subtitle-section {
   font-size: 20px;
   color: #FF9138;
-  margin: 0 0 15px;
+  margin: 0;
   font-weight: 500;
+}
+section .head-section {
+  margin-bottom: 45px;
 }
 
 .btn-container_section {
@@ -777,18 +783,35 @@ section .subtitle-section {
 /*-----forms-start----*/
 .input-decorate,
 .custom-select {
-  padding: 5px;
+  padding: 12px 15px;
   border: 0;
-  border: 1px solid #202020;
-  font: inherit;
+  font-family: inherit;
+  font-size: 16px;
   resize: none;
   width: 100%;
   background: none;
+  background-color: #F8F8F8;
   margin: 0 0 15px;
 }
 .input-decorate:focus,
 .custom-select:focus {
   outline: 0;
+}
+.input-decorate::-webkit-input-placeholder, .custom-select::-webkit-input-placeholder {
+  color: #3F0B71;
+}
+.input-decorate::-moz-placeholder, .custom-select::-moz-placeholder {
+  color: #3F0B71;
+}
+.input-decorate:-ms-input-placeholder, .custom-select:-ms-input-placeholder {
+  color: #3F0B71;
+}
+.input-decorate::-ms-input-placeholder, .custom-select::-ms-input-placeholder {
+  color: #3F0B71;
+}
+.input-decorate::placeholder,
+.custom-select::placeholder {
+  color: #3F0B71;
 }
 
 .file-decorate-error span,
@@ -963,14 +986,13 @@ section .subtitle-section {
   display: inline-block;
   position: relative;
   padding: 5px;
-  padding-left: 25px;
+  padding-left: 37px;
   cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   margin: 0 0 15px;
-  border: 1px solid;
 }
 .checkbox input,
 .radio input {
@@ -987,25 +1009,28 @@ section .subtitle-section {
 }
 .checkbox span,
 .radio span {
-  width: 15px;
+  width: 24px;
   position: absolute;
-  height: 15px;
-  left: 5px;
-  top: 6px;
-  border: 1px solid #202020;
-  border-radius: 100%;
+  height: 24px;
+  left: 0px;
+  top: 3px;
+  background-color: #F8F8F8;
+  cursor: pointer;
 }
 .checkbox span:after,
 .radio span:after {
   content: "";
-  width: 7px;
+  cursor: pointer;
+  width: 100%;
   position: absolute;
-  height: 7px;
-  left: 3px;
-  top: 3px;
+  height: 100%;
+  left: 0px;
+  top: 0px;
   display: none;
-  background: #202020;
-  border-radius: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../images/controls/checkbox.svg");
 }
 
 /*-checkbox-wp-*/
@@ -1149,14 +1174,14 @@ header a:hover {
   margin: auto 30px;
 }
 
-.header-nav {
+.nav-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
   max-width: 500px;
 }
-.header-nav ul {
+.nav-header ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1167,18 +1192,18 @@ header a:hover {
           justify-content: space-between;
   padding: 0;
 }
-.header-nav li {
+.nav-header li {
   display: inline-block;
   position: relative;
 }
-.header-nav li::before {
+.nav-header li::before {
   left: -10%;
   background-color: #3F0B71;
 }
-.header-nav li:first-child::before {
+.nav-header li:first-child::before {
   display: none;
 }
-.header-nav a:hover {
+.nav-header a:hover {
   color: #FF9138;
   text-decoration: none;
 }
@@ -1197,10 +1222,10 @@ header a:hover {
   max-width: 210px;
 }
 
-.header-phone {
+.phone-header {
   margin-left: auto;
 }
-.header-phone i {
+.phone-header i {
   display: inline-block;
   background-color: #3F0B71;
   color: #ffffff;
@@ -1214,7 +1239,7 @@ header a:hover {
   margin-left: 15px;
 }
 
-.header-feedback a {
+.feedback-header a {
   margin-left: 15px;
 }
 
@@ -1766,7 +1791,7 @@ a.pagination-next:hover {
   font-size: 24px;
   margin: 0 0 15px;
 }
-.default-item h3:hover {
+.default-item h3 a:hover {
   color: #76c100;
 }
 
@@ -1774,8 +1799,6 @@ a.pagination-next:hover {
   margin: 0 0 15px;
   padding-bottom: 60%;
   height: auto;
-  -webkit-transition: ease-out 0.5s;
-  transition: ease-out 0.5s;
 }
 .default-item-img img {
   width: 100%;
@@ -1783,10 +1806,6 @@ a.pagination-next:hover {
   height: 100%;
   left: 0;
   top: 0;
-}
-.default-item-img:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
 }
 
 .default-item-date {
@@ -1796,9 +1815,9 @@ a.pagination-next:hover {
 .default-item-description {
   overflow: hidden;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
-  line-clamp: 2;
+  line-clamp: 4;
   margin: 0 0 15px;
 }
 
@@ -1975,6 +1994,60 @@ a.pagination-next:hover {
   -webkit-box-orient: vertical;
   line-clamp: 2;
   margin: 0 0 15px;
+}
+
+.video-container {
+  max-width: 1130px;
+  height: 400px;
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 20px;
+  background-image: url("../images/temp/video-bg.svg");
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.video-btn {
+  position: relative;
+  margin: auto;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  width: 100px;
+  height: 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../images/video-btn.svg");
+}
+
+.feedback h2 {
+  color: #3F0B71;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+.feedback h3 {
+  color: #FF9138;
+  font-size: 18px;
+  font-family: 500;
+  margin-bottom: 15px;
+}
+.feedback .form-btn-container {
+  text-align: center;
+}
+
+.privilege-item {
+  border: 0;
+  padding: 0;
+}
+.privilege-item .default-item-img {
+  border-radius: 20px;
+  padding-bottom: 42%;
+}
+.privilege-item h3 {
+  color: #3F0B71;
 }
 
 /*-----home-end-----*/
