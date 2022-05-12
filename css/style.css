@@ -167,9 +167,20 @@ h6 {
 section {
   padding: 6rem 0 4rem;
 }
-section h2 {
-  font-size: 40px;
-  margin: 0 0 2rem;
+section .title-section,
+section .subtitle-section {
+  text-align: center;
+}
+section .title-section {
+  font-size: 32px;
+  margin: 0 0 15px;
+  color: #3F0B71;
+}
+section .subtitle-section {
+  font-size: 20px;
+  color: #FF9138;
+  margin: 0 0 15px;
+  font-weight: 500;
 }
 
 .btn-container_section {
@@ -1883,6 +1894,43 @@ a.pagination-next:hover {
   color: #FF9138;
 }
 
+.zone-map {
+  height: 560px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../images/zone.jpg");
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  color: #3F0B71;
+  margin: 0 0 15px;
+}
+.zone-map span {
+  display: inline-block;
+  margin: auto;
+  font-size: 40px;
+  font-weight: 400;
+  padding-top: 90px;
+}
+
+.zone-item {
+  font-size: 18px;
+  font-family: 500;
+  max-width: 300px;
+  margin: 0 auto;
+}
+.zone-item h3 {
+  font-size: inherit;
+  font-weight: 500;
+  line-height: 1.8;
+  color: #3F0B71;
+}
+.zone-item h3 span {
+  color: #FF9138;
+}
+
 .contacts_home {
   margin-bottom: 30px;
 }
@@ -1891,26 +1939,33 @@ a.pagination-next:hover {
   margin: 0 0 5px;
 }
 
+.advantages {
+  background-color: #3F0B71;
+  color: #ffffff;
+  padding: 90px;
+}
+
 .advantages-item {
+  max-width: 200px;
+  margin: 0 auto;
   text-decoration: none;
-  padding: 30px;
   text-align: center;
 }
 .advantages-item a {
   text-decoration: none;
 }
 .advantages-item h3 {
-  font-size: 24px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: inherit;
   margin: 0 0 15px;
-}
-.advantages-item h3:hover {
-  color: #76c100;
 }
 
 .advantages-item-img {
   margin: 0 0 15px;
-  width: 60px;
-  height: 60px;
+  width: 100px;
+  height: 100px;
 }
 
 .advantages-item-description {

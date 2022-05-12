@@ -1,7 +1,6 @@
--var itemCol = 4
-section
-	.main-full
-		h2 Преимущества
+section.advantages
 	.main-grid 
-		-for (var i=0; i < itemCol; i++)
-			+itemAdvantages(itemCol, "Монтаж и подключение оборудования — бесплатно" ,"/images/temp/advantages-ico-1.svg")
+		+itemAdvantages(4, "Уникальные плейлисты и эксклюзивная музыка — легально" ,"/images/temp/adv/adv-1.svg")
+		+itemAdvantages(4, "Монтаж и подключение оборудования —бесплатно" ,"/images/temp/adv/adv-2.svg")
+		+itemAdvantages(4, "Создание аудиороликов — профессионально" ,"/images/temp/adv/adv-3.svg")
+		+itemAdvantages(4, "Единая система управления контентом —удобно" ,"/images/temp/adv/adv-4.svg")
