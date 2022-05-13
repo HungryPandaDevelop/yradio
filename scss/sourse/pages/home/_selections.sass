@@ -1,0 +1,33 @@
+.selection-item
+  grid-column: span 3
+  margin: 0 0 ($remSize*2)
+  position: relative
+  overflow: hidden
+  border-radius: 20px
+.selection-item-img
+  // padding-bottom: 65%
+  height: 214px
+.selection-item-line
+  height: 6px
+  background-color: $grayColorThree
+  position: relative
+.selection-item-line--active
+  @include positionElement(50%, 100%,0,0)
+  background-color: $orangeColor
+.selection-item-circle
+  @include positionElement(14px, 14px, 0, 0, right)
+  background-color: $orangeColor
+  border-radius: 100%
+  transform: translateX(25%) translateY(-25%)
+.selection-item-info
+  background-color: $violetColor
+  padding: 20px 30px
+  color: $whiteColor
+  display: flex
+  h3
+    color: inherit
+    font-size: $smallSize
+    margin: auto 0
+.selection-item-control
+  @include icoEl(40px, 40px, "../images/video-btn.svg")
+  margin-right: 30px

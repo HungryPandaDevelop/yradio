@@ -2050,6 +2050,117 @@ a.pagination-next:hover {
   color: #3F0B71;
 }
 
+.selection-item {
+  -ms-grid-column-span: 3;
+  grid-column: span 3;
+  margin: 0 0 30px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.selection-item-img {
+  height: 214px;
+}
+
+.selection-item-line {
+  height: 6px;
+  background-color: #F8F8F8;
+  position: relative;
+}
+
+.selection-item-line--active {
+  width: 50%;
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: #FF9138;
+}
+
+.selection-item-circle {
+  width: 14px;
+  position: absolute;
+  height: 14px;
+  right: 0;
+  top: 0;
+  background-color: #FF9138;
+  border-radius: 100%;
+  -webkit-transform: translateX(25%) translateY(-25%);
+          transform: translateX(25%) translateY(-25%);
+}
+
+.selection-item-info {
+  background-color: #3F0B71;
+  padding: 20px 30px;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.selection-item-info h3 {
+  color: inherit;
+  font-size: 13px;
+  margin: auto 0;
+}
+
+.selection-item-control {
+  display: inline-block;
+  vertical-align: middle;
+  width: 40px;
+  height: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../images/video-btn.svg");
+  margin-right: 30px;
+}
+
+.hideshow-item {
+  border-top: 1px solid #C4C4C4;
+  border-bottom: 1px solid #C4C4C4;
+}
+
+.hideshow-head {
+  padding: 15px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.hideshow-head h3 {
+  font-size: 18px;
+  color: #3F0B71;
+}
+.hideshow-head i {
+  margin-left: auto;
+  display: inline-block;
+  vertical-align: middle;
+  width: 18px;
+  height: 18px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../images/plus-violet.svg");
+}
+
+.hideshow-content {
+  position: relative;
+  overflow: hidden;
+  padding-top: 15px;
+  max-height: 0;
+}
+
+.hideshow-item--active h3 {
+  color: #FF9138;
+}
+.hideshow-item--active h3 i {
+  background-image: url("../images/minus-orange.svg");
+}
+.hideshow-item--active .hideshow-content {
+  max-height: 999px;
+  padding-bottom: 15px;
+}
+
 /*-----home-end-----*/
 /*-----detail-start-----*/
 .detail-header {
