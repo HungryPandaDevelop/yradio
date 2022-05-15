@@ -1,10 +1,13 @@
 .default-item
   text-decoration: none
-  padding: 30px
-  border: 1px solid
+  border: 1px solid $grayColorSecond
+  border-radius: 20px
+  overflow: hidden
   a
     text-decoration: none
-
+    color: $violetColor
+    &:hover
+      color: $orangeColor
   h3
     font-size: $mediumSize
     margin: 0 0 15px
@@ -16,8 +19,8 @@
   height: auto
   img
     @include positionElement(100%,100%,0,0)
-.default-item-date
-  margin: 0 0 15px
+.default-item-info
+  padding: 15px 30px
 .default-item-description
   overflow: hidden
   display: -webkit-box
@@ -25,3 +28,9 @@
   -webkit-box-orient: vertical
   line-clamp: 4
   margin: 0 0 15px
+
+.default-item-bottom
+  display: flex
+  justify-content: space-between
+  a
+    text-decoration: underline

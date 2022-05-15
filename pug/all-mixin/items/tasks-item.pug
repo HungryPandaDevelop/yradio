@@ -1,0 +1,8 @@
+mixin itemTasks(  name,text, img,  )
+  .tasks-item.col-3(class="tasks-item")
+    .tasks-item-img
+      img(src= img, alt="")
+    if name
+      h3= name
+    if text
+      .tasks-item-description= text

@@ -1,40 +1,37 @@
 footer
   .main-grid
-    .footer-info.col-2
+    .footer-info.col-3
       .logo-container
         a.logo(href="./index.html")
-          img(src="/images/logo.svg")
-      .address 
-        |Москва, 105077 ул.
-        br
-        |Кузнецкий Мост, 11, стр. 1
-      .copyright 
-        |© 2021 ООО "JOODLE".
-        br
-        | Все права защищены.
-    nav.nav-1.col-2
-      ul
-        each val in ["Каталог","Акции","О нас","Где купить","Контакты"]
-          li  
-            a(href="#") 
-              = val
-    nav.nav-2.col-2
-      ul
-        each val in ["Как оформить заказ","Доставка и оплата","Гарантии и обмен","Корпоративные подарки","Стать партнером"]
-          li  
-            a(href="#") 
-              = val
+          img(src="/images/logo-footer.svg")
+      div Больше, чем радио
+      +social(["vw","iw","tlw"])
     .feedback-container.col-3
       .feedback
         .phone
-          a(href="#") + 7 (921) 789 - 65 - 31
+          a(href="#") 
+            .phone-ico-yellow
+            span + 7 (921) 789 - 65 - 31
+        .address
+          .marker-ico
+          span 656006, г. Барнаул, ул. Малахова, 177Е, офис 711
         .mail
-          a(href="#") joodle@info.ru
-      .links
-        a(href="#") Пользовательское соглашение
-        a(href="#") Политика конфиденциальности
+          a(href="#")
+            .mail-ico-yellow
+            span lead@yradio.ru
+    nav.nav-1.col-3
+      ul
+        each val in ["О  компании","Акции","Кейсы","Документы и оплата","Контакты","Вопросы и ответы","Новости","Блог"]
+          li  
+            a(href="#") 
+              = val
+    nav.nav-2.col-3
+      h3 Услуги
+      ul
+        each val in ["Фоновая музыка","Корпоративное радио","Аудиобрендирование","Рекламная площадка","Корпоративный информатор","Производство аудиороликов","Лицензия РАО и ВОИС"]
+          li  
+            a(href="#") 
+              = val
     .social-container.col-3
-      +social(["vw","iw","tlw"])
       .create
         a(href="#") 
-          |Создание сайта Style You

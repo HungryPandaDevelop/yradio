@@ -1,17 +1,19 @@
 mixin itemDefault(itemName, col, name, img, data, text, btnClass, btnText, link)
-  .default-item(class="col-"+(12/col) class=itemName+"-item")
-    a.default-item-img.img-cover(href=link)
-      img(src= img, alt="")
-    if data
-      .default-item-date= data
-    if name
-      h3
-        if link
-          a(href="#")= name
-        else 
-          =name
-    if text
-      .default-item-description= text
-    if btnClass
-      .btn-container
-        a(href="#" class= btnClass)= btnText 
+	.default-item(class="col-"+(12/col) class=itemName+"-item")
+		a.default-item-img.img-cover(href=link)
+			img(src= img, alt="")
+		.default-item-info
+			if name
+				h3
+					if link
+						a(href="#")= name
+					else 
+						=name
+			.default-item-description
+				if link
+					a(href="#")= text
+			.default-item-bottom
+				if btnClass
+					a(href="#" class= btnClass)= btnText 
+				if data
+					.default-item-date= data
