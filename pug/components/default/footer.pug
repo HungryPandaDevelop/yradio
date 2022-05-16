@@ -5,19 +5,20 @@ footer
         a.logo(href="./index.html")
           img(src="/images/logo-footer.svg")
       div Больше, чем радио
-      +social(["vw","iw","tlw"])
+      +social(["vw","tlw","okw","wzw"])
     .feedback-container.col-3
       .feedback
-        .phone
+        .phone.feedback-item
           a(href="#") 
-            .phone-ico-yellow
+            i.phone-ico-yellow
             span + 7 (921) 789 - 65 - 31
-        .address
-          .marker-ico
+            .phone-circle 24/7
+        .address.feedback-item
+          i.marker-ico
           span 656006, г. Барнаул, ул. Малахова, 177Е, офис 711
-        .mail
+        .mail.feedback-item
           a(href="#")
-            .mail-ico-yellow
+            i.mail-ico-yellow
             span lead@yradio.ru
     nav.nav-1.col-3
       ul
@@ -27,11 +28,20 @@ footer
               = val
     nav.nav-2.col-3
       h3 Услуги
-      ul
+      ul.custom-disk
         each val in ["Фоновая музыка","Корпоративное радио","Аудиобрендирование","Рекламная площадка","Корпоративный информатор","Производство аудиороликов","Лицензия РАО и ВОИС"]
           li  
             a(href="#") 
               = val
-    .social-container.col-3
-      .create
-        a(href="#") 
+  .main-grid.footer-bottom
+    .col-3.copyright
+      | © ООО «ТВОЕ РАДИО»
+    .col-3 
+      a(href="#").link Карта сайта 
+    .col-3 
+      a(href="#").link Политика конфиденциальности
+    .col-3.ico-container
+      a(href="#")
+        img(src="../images/AppStore.svg", alt="")
+      a(href="#")
+        img(src="../images/GooglePlay.svg", alt="")

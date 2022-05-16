@@ -5,7 +5,12 @@ footer
   background-color: $violetColor
   padding: 60px 0 30px
   color: $whiteColor
-
+  .logo-container
+    margin: 0 0 10px
+  .logo img
+    max-width: 110px
+  .social
+    margin-top: 15px
   ul,
   li
     list-style: none
@@ -13,22 +18,30 @@ footer
     padding: 0
 
   .footer-info
-
     position: relative
     z-index: 2
 
   nav
-
+    font-size: $smallSize
     padding-top: 4px
-
-  nav li
-    margin: 0 0 10px
+    h3
+      font-size: inherit
+      color: inherit
+      font-weight: inherit
+      margin: 0 0 10px
+    a:hover
+      color: $orangeColor
+    .custom-disk li
+      &:before
+        background-color: $whiteColor
+      &:hover:before
+        background-color: $orangeColor
+    li
+      margin: 0 0 10px
 
   .feedback-container
-
     .feedback
       margin: 0 0 30px
-
     .links
       a
         margin: 0 0 15px
@@ -37,37 +50,33 @@ footer
         &:hover
           opacity: 1
 
-  .phone
-    font-size: $standartSizePlusPlus
+  .feedback-item
+    font-size: $smallSize
+    display: flex
     margin: 0 0 15px
-
-  .social-container
-
-    text-align: right
-
-  .logo-container
-    margin: 0 0 30px
-  .logo img
-    max-width: 110px
-
-  .address
+    i
+      margin-right: 15px
+    i,span
+      margin-top: auto
+      margin-bottom: auto
+  .phone
+    font-weight: bold
+  .phone-circle
+    background-color: $whiteColor
+    color: $violetColor
+    font-size: $smallSize
 
   a
     text-decoration: none
-
-  .btn-wc
-
-    text-align: center
-
-  .social-container
-    display: flex
-    flex-direction: column
-    .create
-      margin: auto 0 0
-
+  .footer-bottom
+    margin-top: 45px
   .copyright,
-  .create
+  .link
+    font-size: $smallSize
+    opacity: 0.5
 
-  .create
-    &
-      text-align: right
+  .link
+    text-decoration: underline
+  .ico-container
+    img
+      width: 72px
