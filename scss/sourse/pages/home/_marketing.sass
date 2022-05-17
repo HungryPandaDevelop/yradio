@@ -25,5 +25,18 @@
 .marketing-item-link
   color: $violetColor
   margin: auto 0
+  font-weight: 500
+  font-size: $smallSizeSecond
+  a
+    text-decoration: underline
   &:hover
     color: $orangeColor
+    a
+      text-decoration: none
+@media (max-width: 1024px)
+  .marketing-item h3
+    margin: 0 0 15px
+  .marketing-item-info
+    padding: 15px 15px
+  .marketing-item-hash.mobile
+    display: block

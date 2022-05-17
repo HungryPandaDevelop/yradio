@@ -1,3 +1,7 @@
+.zone
+	padding-bottom: 75px
+	.head-section
+		margin-bottom: 0
 .zone-map
 	height: 560px
 	@include bgImageEl("../images/zone.jpg", contain)
@@ -23,3 +27,6 @@
 		color: $violetColor
 		span
 			color: $orangeColor
+@media (max-width: 768px)
+	.zone-map
+		height: 350px

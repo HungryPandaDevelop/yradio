@@ -1,7 +1,7 @@
 .btn
   text-decoration: none
   border: 1px solid
-  padding: 10px 30px 12px
+  padding: 11px 30px 10px
   font: inherit
   display: inline-block
   border-radius: 30px
@@ -10,7 +10,8 @@
   background: none
   background-color: $whiteColor
   border-color: $whiteColor
-
+  font-size: $standartSizePlus
+  font-weight: 500
   &:hover
     text-decoration: none
 .btn--black
@@ -41,7 +42,6 @@
 .btn--link
   color: $violetColor
   text-decoration: underline
-
 /*pagination page start*/
 
 .pagination
@@ -123,9 +123,9 @@ a.pagination-next
     background-image: url("../images/controls/close-white.svg")
 
 .hamburger-btn
-  @include icoEl(30px, 30px, "../images/controls/hamburger-white.svg")
+  @include icoEl(30px, 30px, "../images/controls/hamburger-violet.svg")
   &:hover
-    background-image: url("../images/controls/hamburger-black.svg")
+    background-image: url("../images/controls/hamburger-orange.svg")
 
 .back-link
   text-decoration: none

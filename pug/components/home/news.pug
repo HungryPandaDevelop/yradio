@@ -1,8 +1,10 @@
--var itemCol = 4
+
 section
 	.main-full.head-section
 		h2.title-section 
 			| Новые публикации
 	.main-grid 
-		-for (var i=0; i < itemCol; i++)
-			+itemDefault("news", itemCol,false,"/images/temp/1.jpg","11.11.11","Lodio quae atqu send to me Lodio quae atqu send to me Lodio quae atqu send to me Lodio quae atqu send to me Lodio quae atqu send to me...","link","Блог","link")
+			+itemNews("/images/temp/news/1.jpg","17.03.2022","Жанры электронной музыки, которые лучше всего подходят как фоновая музыка","Блог")
+			+itemNews("/images/temp/news/2.jpg","17.03.2022","YRadio предлагает новые подборки для ресторанов по доступным ценам","Блог")
+			+itemNews("/images/temp/news/3.jpg","17.03.2022","Влияние музыки на настроение покупателей","Блог")
+			+itemNews("/images/temp/news/4.jpg","17.03.2022","Фоновая акустическая музыка","Блог")

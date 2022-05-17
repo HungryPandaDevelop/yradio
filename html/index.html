@@ -122,9 +122,9 @@
     <!-- header start-->
     <header>
       <div class="main-grid headline">
-        <div class="vertical-align col-6"><a class="logo" href="#"> <img src="/images/logo.svg" alt=""></a>
-          <div class="nav-delimetr"></div>
-          <nav class="nav-header">
+        <div class="vertical-align col-7 col-sm-5"><a class="logo" href="#"> <img src="/images/logo.svg" alt=""></a>
+          <div class="nav-delimetr hidden-lg"></div>
+          <nav class="nav-header hidden-sm">
             <ul class="custom-disk">
               <li><a href="#">Услуги</a></li>
               <li><a href="#">Кейсы</a></li>
@@ -134,12 +134,12 @@
             </ul>
           </nav>
         </div>
-        <div class="vertical-align col-6 feedback-header">
+        <div class="vertical-align col-5 col-sm-5 feedback-header">
           <div class="phone-header"><a href="#"> 8 800 775-99-55</a>
             <div class="phone-circle">24/7</div>
-          </div><a class="btn btn--orange element-btn" href="#" data-element="1">Заказать звонок</a>
+          </div><a class="btn btn--orange element-btn hidden-sm" href="#" data-element="1">Обратная связь</a>
         </div>
-        <div class="hamburger-container vertical-align col-1"><a class="hamburger-btn element-btn" href="#" data-element="0"></a></div>
+        <div class="hamburger-container vertical-align col-2"><a class="hamburger-btn element-btn" href="#" data-element="0"></a></div>
       </div>
     </header>
     <div class="stub"></div>
@@ -223,7 +223,7 @@
         <div class="banners-info">
           <h2>Официальный язык ваших продаж
           </h2>
-          <h3>Производство аудиороликов
+          <h3>Производство  аудиороликов
           </h3>
           <div class="banner-item-text">Расскажите клиентам о важных событиях, акциях или скидках
           </div>
@@ -300,17 +300,17 @@
 </section>
 <section class="feedback section-padding-null">
   <div class="main-grid">
-    <div class="col-1"></div>
-    <div class="col-5">
+    <div class="col-1 hidden-lg"></div>
+    <div class="col-5 feedback-info col-lg-6">
       <h2>Подарите голос вашему бизнесу</h2>
       <h3>Получите бесплатный  плейлист легальной музыки</h3>
       <div>Оставьте ваши контакты, мы свяжемся с Вами и подберем музыку именно для вашего бизнеса.</div>
     </div>
-    <div class="col-5">
+    <div class="col-5 col-lg-6">
         <form class="form main-grid">
           <input class="input-decorate col-12 require" type="text" placeholder="Ваше имя*">
           <input class="phone-mask input-decorate col-12 require" type="text" placeholder="+7 (___) ___ - __ - __">
-          <div class="checkbox col-12">
+          <div class="checkbox col-12 agreement">
             <label>Я согласен(-на) на обработку персональных данных 
               <input type="checkbox" checked><span></span>
             </label>
@@ -324,34 +324,25 @@
 </section>
 <section>
   <div class="main-grid"> 
-      <div class="default-item col-4 privilege-item"><a class="default-item-img img-cover"><img src="/images/temp/privilege/privilege-1.svg" alt=""></a>
-        <div class="default-item-info">
-          <h3>Сделаем привлекательнее
-          </h3>
-          <div class="default-item-description">
-          </div>
-          <div class="default-item-bottom">
-          </div>
+      <div class="privilege-item col-4">
+        <div class="privilege-item-img img-cover"><img src="/images/temp/privilege/privilege-1.svg" alt=""></div>
+        <h3>Сделаем привлекательнее
+        </h3>
+        <div class="privilege-item-description">Приятная музыка в магазине создает уникальную атмосферу – Вашим клиентам нравится покупать именно у Вас.
         </div>
       </div>
-      <div class="default-item col-4 privilege-item"><a class="default-item-img img-cover"><img src="/images/temp/privilege/privilege-2.svg" alt=""></a>
-        <div class="default-item-info">
-          <h3>Защитим от рисков
-          </h3>
-          <div class="default-item-description">
-          </div>
-          <div class="default-item-bottom">
-          </div>
+      <div class="privilege-item col-4">
+        <div class="privilege-item-img img-cover"><img src="/images/temp/privilege/privilege-2.svg" alt=""></div>
+        <h3>Защитим от рисков
+        </h3>
+        <div class="privilege-item-description">100% легальный контент. Риски получения штрафов за нарушение авторских прав стремятся к нулю. Почему я могу получить штраф?
         </div>
       </div>
-      <div class="default-item col-4 privilege-item"><a class="default-item-img img-cover"><img src="/images/temp/privilege/privilege-3.svg" alt=""></a>
-        <div class="default-item-info">
-          <h3>Увеличим продажи
-          </h3>
-          <div class="default-item-description">
-          </div>
-          <div class="default-item-bottom">
-          </div>
+      <div class="privilege-item col-4">
+        <div class="privilege-item-img img-cover"><img src="/images/temp/privilege/privilege-3.svg" alt=""></div>
+        <h3>Увеличим продажи
+        </h3>
+        <div class="privilege-item-description">Своевременная трансляция аудиорекламы  проинформирует покупателей о выгодных предложениях.
         </div>
       </div>
   </div>
@@ -370,8 +361,10 @@
             <div class="selection-item-circle"> </div>
           </div>
         </div>
-        <div class="selection-item-info"> 
-          <div class="selection-item-control"> </div>
+        <div class="selection-item-info">
+          <div>
+            <div class="selection-item-control"> </div>
+          </div>
           <h3>Магазины и супермаркеты</h3>
         </div>
       </div>
@@ -382,8 +375,10 @@
             <div class="selection-item-circle"> </div>
           </div>
         </div>
-        <div class="selection-item-info"> 
-          <div class="selection-item-control"> </div>
+        <div class="selection-item-info">
+          <div>
+            <div class="selection-item-control"> </div>
+          </div>
           <h3>Гостиницы и отели</h3>
         </div>
       </div>
@@ -394,8 +389,10 @@
             <div class="selection-item-circle"> </div>
           </div>
         </div>
-        <div class="selection-item-info"> 
-          <div class="selection-item-control"> </div>
+        <div class="selection-item-info">
+          <div>
+            <div class="selection-item-control"> </div>
+          </div>
           <h3>Бары</h3>
         </div>
       </div>
@@ -406,8 +403,10 @@
             <div class="selection-item-circle"> </div>
           </div>
         </div>
-        <div class="selection-item-info"> 
-          <div class="selection-item-control"> </div>
+        <div class="selection-item-info">
+          <div>
+            <div class="selection-item-control"> </div>
+          </div>
           <h3>Рестораны</h3>
         </div>
       </div>
@@ -418,8 +417,10 @@
             <div class="selection-item-circle"> </div>
           </div>
         </div>
-        <div class="selection-item-info"> 
-          <div class="selection-item-control"> </div>
+        <div class="selection-item-info">
+          <div>
+            <div class="selection-item-control"> </div>
+          </div>
           <h3>Кафе, кальянные, пекарни</h3>
         </div>
       </div>
@@ -430,8 +431,10 @@
             <div class="selection-item-circle"> </div>
           </div>
         </div>
-        <div class="selection-item-info"> 
-          <div class="selection-item-control"> </div>
+        <div class="selection-item-info">
+          <div>
+            <div class="selection-item-control"> </div>
+          </div>
           <h3>Магазины одежды</h3>
         </div>
       </div>
@@ -442,8 +445,10 @@
             <div class="selection-item-circle"> </div>
           </div>
         </div>
-        <div class="selection-item-info"> 
-          <div class="selection-item-control"> </div>
+        <div class="selection-item-info">
+          <div>
+            <div class="selection-item-control"> </div>
+          </div>
           <h3>Салоны красоты</h3>
         </div>
       </div>
@@ -454,24 +459,26 @@
             <div class="selection-item-circle"> </div>
           </div>
         </div>
-        <div class="selection-item-info"> 
-          <div class="selection-item-control"> </div>
+        <div class="selection-item-info">
+          <div>
+            <div class="selection-item-control"> </div>
+          </div>
           <h3>Спортзалы и фитнес</h3>
         </div>
       </div>
   </div>
 </section>
-<section class="feedback">
+<section class="feedback section-padding-null">
   <div class="main-grid">
-    <div class="col-1"></div>
-    <div class="col-5">
+    <div class="col-1 hidden-lg"></div>
+    <div class="col-5 feedback-info col-lg-6">
       <h2>Узнайте, как создать идеальный плейлист для Вашего бизнеса</h2>
     </div>
-    <div class="col-5">
+    <div class="col-5 col-lg-6">
         <form class="form main-grid">
           <input class="input-decorate col-12 require" type="text" placeholder="Ваше имя*">
           <input class="phone-mask input-decorate col-12 require" type="text" placeholder="+7 (___) ___ - __ - __">
-          <div class="checkbox col-12">
+          <div class="checkbox col-12 agreement">
             <label>Я согласен(-на) на обработку персональных данных 
               <input type="checkbox" checked><span></span>
             </label>
@@ -542,6 +549,105 @@
 </section>
 <section>
   <div class="main-full head-section">
+    <h2 class="title-section">
+       Аудиомаркетинг от <span>Y</span>Radio</h2>
+    <h3 class="subtitle-section">
+       Наши клиенты</h3>
+  </div>
+  <div class="main-grid">
+      <div class="marketing-item col-3">
+        <div class="marketing-item-img img-cover"><img src="../images/temp/marketing.jpg" alt=""></div>
+        <div class="marketing-item-info">
+          <div class="marketing-item-hash mobile hidden"><a href="#">#торговые центры</a></div>
+          <h3><a href="#">Торговый центр «Метрополис»</a></h3>
+          <div class="marketing-item-bottom"> 
+            <div class="marketing-item-hash hidden-lg"><a href="#">#торговые центры</a></div>
+            <div class="marketing-item-link"> <a href="#">Посмотреть</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="marketing-item col-3">
+        <div class="marketing-item-img img-cover"><img src="../images/temp/marketing.jpg" alt=""></div>
+        <div class="marketing-item-info">
+          <div class="marketing-item-hash mobile hidden"><a href="#">#торговые центры</a></div>
+          <h3><a href="#">Торговый центр «Метрополис»</a></h3>
+          <div class="marketing-item-bottom"> 
+            <div class="marketing-item-hash hidden-lg"><a href="#">#торговые центры</a></div>
+            <div class="marketing-item-link"> <a href="#">Посмотреть</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="marketing-item col-3">
+        <div class="marketing-item-img img-cover"><img src="../images/temp/marketing.jpg" alt=""></div>
+        <div class="marketing-item-info">
+          <div class="marketing-item-hash mobile hidden"><a href="#">#торговые центры</a></div>
+          <h3><a href="#">Торговый центр «Метрополис»</a></h3>
+          <div class="marketing-item-bottom"> 
+            <div class="marketing-item-hash hidden-lg"><a href="#">#торговые центры</a></div>
+            <div class="marketing-item-link"> <a href="#">Посмотреть</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="marketing-item col-3">
+        <div class="marketing-item-img img-cover"><img src="../images/temp/marketing.jpg" alt=""></div>
+        <div class="marketing-item-info">
+          <div class="marketing-item-hash mobile hidden"><a href="#">#торговые центры</a></div>
+          <h3><a href="#">Торговый центр «Метрополис»</a></h3>
+          <div class="marketing-item-bottom"> 
+            <div class="marketing-item-hash hidden-lg"><a href="#">#торговые центры</a></div>
+            <div class="marketing-item-link"> <a href="#">Посмотреть</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="marketing-item col-3">
+        <div class="marketing-item-img img-cover"><img src="../images/temp/marketing.jpg" alt=""></div>
+        <div class="marketing-item-info">
+          <div class="marketing-item-hash mobile hidden"><a href="#">#торговые центры</a></div>
+          <h3><a href="#">Торговый центр «Метрополис»</a></h3>
+          <div class="marketing-item-bottom"> 
+            <div class="marketing-item-hash hidden-lg"><a href="#">#торговые центры</a></div>
+            <div class="marketing-item-link"> <a href="#">Посмотреть</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="marketing-item col-3">
+        <div class="marketing-item-img img-cover"><img src="../images/temp/marketing.jpg" alt=""></div>
+        <div class="marketing-item-info">
+          <div class="marketing-item-hash mobile hidden"><a href="#">#торговые центры</a></div>
+          <h3><a href="#">Торговый центр «Метрополис»</a></h3>
+          <div class="marketing-item-bottom"> 
+            <div class="marketing-item-hash hidden-lg"><a href="#">#торговые центры</a></div>
+            <div class="marketing-item-link"> <a href="#">Посмотреть</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="marketing-item col-3">
+        <div class="marketing-item-img img-cover"><img src="../images/temp/marketing.jpg" alt=""></div>
+        <div class="marketing-item-info">
+          <div class="marketing-item-hash mobile hidden"><a href="#">#торговые центры</a></div>
+          <h3><a href="#">Торговый центр «Метрополис»</a></h3>
+          <div class="marketing-item-bottom"> 
+            <div class="marketing-item-hash hidden-lg"><a href="#">#торговые центры</a></div>
+            <div class="marketing-item-link"> <a href="#">Посмотреть</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="marketing-item col-3">
+        <div class="marketing-item-img img-cover"><img src="../images/temp/marketing.jpg" alt=""></div>
+        <div class="marketing-item-info">
+          <div class="marketing-item-hash mobile hidden"><a href="#">#торговые центры</a></div>
+          <h3><a href="#">Торговый центр «Метрополис»</a></h3>
+          <div class="marketing-item-bottom"> 
+            <div class="marketing-item-hash hidden-lg"><a href="#">#торговые центры</a></div>
+            <div class="marketing-item-link"> <a href="#">Посмотреть</a></div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="btn-container_section"><a class="btn btn--orange" href="#">Оформить заявку на подключение  </a><a class="btn btn--link" href="#">Посмотреть кейсы  </a></div>
+</section>
+<section>
+  <div class="main-full head-section">
     <h2 class="title-section"> <span>Y</span>Radio уже подключили</h2>
   </div>
   <div class="partners-container main-full"> 
@@ -559,39 +665,35 @@
        Новые публикации</h2>
   </div>
   <div class="main-grid"> 
-      <div class="default-item col-3 news-item"><a class="default-item-img img-cover" href="link"><img src="/images/temp/1.jpg" alt=""></a>
-        <div class="default-item-info">
-          <div class="default-item-description"><a href="#">Lodio quae atqu send to me Lodio quae atqu send to me Lodio quae atqu send to me Lodio quae atqu send to me Lodio quae atqu send to me...</a>
-          </div>
-          <div class="default-item-bottom"><a class="link" href="#">Блог</a>
-            <div class="default-item-date">11.11.11</div>
-          </div>
-        </div>
-      </div>
-      <div class="default-item col-3 news-item"><a class="default-item-img img-cover" href="link"><img src="/images/temp/1.jpg" alt=""></a>
-        <div class="default-item-info">
-          <div class="default-item-description"><a href="#">Lodio quae atqu send to me Lodio quae atqu send to me Lodio quae atqu send to me Lodio quae atqu send to me Lodio quae atqu send to me...</a>
-          </div>
-          <div class="default-item-bottom"><a class="link" href="#">Блог</a>
-            <div class="default-item-date">11.11.11</div>
+      <div class="news-item col-3"><a class="news-item-img img-cover"><img src="/images/temp/news/1.jpg" alt=""></a>
+        <div class="news-item-info">
+          <h3><a href="#">Жанры электронной музыки, которые лучше всего подходят как фоновая музыка</a></h3>
+          <div class="news-item-bottom"><a href="#">Блог</a>
+            <div class="news-item-date">17.03.2022</div>
           </div>
         </div>
       </div>
-      <div class="default-item col-3 news-item"><a class="default-item-img img-cover" href="link"><img src="/images/temp/1.jpg" alt=""></a>
-        <div class="default-item-info">
-          <div class="default-item-description"><a href="#">Lodio quae atqu send to me Lodio quae atqu send to me Lodio quae atqu send to me Lodio quae atqu send to me Lodio quae atqu send to me...</a>
-          </div>
-          <div class="default-item-bottom"><a class="link" href="#">Блог</a>
-            <div class="default-item-date">11.11.11</div>
+      <div class="news-item col-3"><a class="news-item-img img-cover"><img src="/images/temp/news/2.jpg" alt=""></a>
+        <div class="news-item-info">
+          <h3><a href="#">YRadio предлагает новые подборки для ресторанов по доступным ценам</a></h3>
+          <div class="news-item-bottom"><a href="#">Блог</a>
+            <div class="news-item-date">17.03.2022</div>
           </div>
         </div>
       </div>
-      <div class="default-item col-3 news-item"><a class="default-item-img img-cover" href="link"><img src="/images/temp/1.jpg" alt=""></a>
-        <div class="default-item-info">
-          <div class="default-item-description"><a href="#">Lodio quae atqu send to me Lodio quae atqu send to me Lodio quae atqu send to me Lodio quae atqu send to me Lodio quae atqu send to me...</a>
+      <div class="news-item col-3"><a class="news-item-img img-cover"><img src="/images/temp/news/3.jpg" alt=""></a>
+        <div class="news-item-info">
+          <h3><a href="#">Влияние музыки на настроение покупателей</a></h3>
+          <div class="news-item-bottom"><a href="#">Блог</a>
+            <div class="news-item-date">17.03.2022</div>
           </div>
-          <div class="default-item-bottom"><a class="link" href="#">Блог</a>
-            <div class="default-item-date">11.11.11</div>
+        </div>
+      </div>
+      <div class="news-item col-3"><a class="news-item-img img-cover"><img src="/images/temp/news/4.jpg" alt=""></a>
+        <div class="news-item-info">
+          <h3><a href="#">Фоновая акустическая музыка</a></h3>
+          <div class="news-item-bottom"><a href="#">Блог</a>
+            <div class="news-item-date">17.03.2022</div>
           </div>
         </div>
       </div>
@@ -604,19 +706,19 @@
   <div class="main-full faq-container">
     <div class="faq-item">
       <div class="faq-head">
-        <h3>Что такое YRadio?</h3><i></i>
+        <h3>Что такое <span>YRadio?</span></h3><i></i>
       </div>
       <div class="faq-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
     </div>
     <div class="faq-item faq-item--active">
       <div class="faq-head">
-        <h3>Что такое YRadio?</h3><i></i>
+        <h3>Что такое <span>YRadio?</span></h3><i></i>
       </div>
-      <div class="faq-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+      <div class="faq-content">YRadio предоставляет доступ к обширной коллекции лицензированной музыки (более 11 000 000 музыкальных фонограмм) и воспроизводит музыкальные композиции, согласно заданному пользователем расписанию. Плейлисты можно составить самостоятельно, а можно выбрать готовые из числа составленных музыкальными редакторами YRadio (более 300 готовых плейлистов). Управление музыкой и рекламно-информационными сообщениями осуществляется из личного кабинета, доступ к которому получает пользователь при подключении к сервису.</div>
     </div>
     <div class="faq-item">
       <div class="faq-head">
-        <h3>Что такое YRadio?</h3><i></i>
+        <h3>Что такое <span>YRadio?</span></h3><i></i>
       </div>
       <div class="faq-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
     </div>
@@ -628,21 +730,28 @@
 <div class="stub-footer"></div>
 <footer>
   <div class="main-grid">
-    <div class="footer-info col-3">
+    <div class="col-sm-1"></div>
+    <div class="footer-info col-3 col-sm-5">
       <div class="logo-container"><a class="logo" href="./index.html"><img src="/images/logo-footer.svg"></a></div>
       <div>Больше, чем радио</div>
         <div class="social"><a class="social-ico--white" href="#"><img src="/images/social/vk-white.svg" alt=""><img class="ico-hover" src="/images/social/vk-orange.svg" alt=""></a><a class="social-ico--white" href="#"><img src="/images/social/telegram-white.svg" alt=""><img class="ico-hover" src="/images/social/telegram-orange.svg" alt=""></a><a class="social-ico--white" href="#"><img src="/images/social/ok-white.svg" alt=""><img class="ico-hover" src="/images/social/ok-orange.svg" alt=""></a><a class="social-ico--white" href="#"><img src="/images/social/whatsapp-white.svg" alt=""><img class="ico-hover" src="/images/social/whatsapp-orange.svg" alt=""></a>
         </div>
     </div>
-    <div class="feedback-container col-3">
+    <div class="feedback-container col-3 col-sm-5">
       <div class="feedback">
-        <div class="phone feedback-item"><a href="#"> <i class="phone-ico-yellow"></i><span>+ 7 (921) 789 - 65 - 31</span>
+        <div class="phone feedback-item"><a href="#"> 
+            <div class="ico-box"><i class="phone-ico-yellow"></i></div><span>+ 7 (921) 789 - 65 - 31</span>
             <div class="phone-circle">24/7</div></a></div>
-        <div class="address feedback-item"><i class="marker-ico"></i><span>656006, г. Барнаул, ул. Малахова, 177Е, офис 711</span></div>
-        <div class="mail feedback-item"><a href="#"><i class="mail-ico-yellow"></i><span>lead@yradio.ru</span></a></div>
+        <div class="address feedback-item">
+          <div class="ico-box"><i class="marker-ico"></i></div><span>656006, г. Барнаул,<br>ул. Малахова, 177Е, офис 711</span>
+        </div>
+        <div class="mail feedback-item"><a href="#">
+            <div class="ico-box"><i class="mail-ico-yellow"></i></div><span>lead@yradio.ru</span></a></div>
       </div>
     </div>
-    <nav class="nav-1 col-3">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-1"></div>
+    <nav class="nav-1 col-3 col-sm-5">
       <ul>
         <li> <a href="#"> О  компании</a></li>
         <li> <a href="#"> Акции</a></li>
@@ -654,7 +763,7 @@
         <li> <a href="#"> Блог</a></li>
       </ul>
     </nav>
-    <nav class="nav-2 col-3">
+    <nav class="nav-2 col-3 col-sm-5">
       <h3>Услуги</h3>
       <ul class="custom-disk">
         <li> <a href="#"> Фоновая музыка</a></li>
@@ -668,10 +777,13 @@
     </nav>
   </div>
   <div class="main-grid footer-bottom">
-    <div class="col-3 copyright">© ООО «ТВОЕ РАДИО»</div>
-    <div class="col-3"> <a class="link" href="#">Карта сайта </a></div>
-    <div class="col-3"> <a class="link" href="#">Политика конфиденциальности</a></div>
-    <div class="col-3 ico-container"><a href="#"><img src="../images/AppStore.svg" alt=""></a><a href="#"><img src="../images/GooglePlay.svg" alt=""></a></div>
+    <div class="col-sm-1"></div>
+    <div class="col-3 col-sm-5 copyright">© ООО «ТВОЕ РАДИО»</div>
+    <div class="col-3 col-sm-5"> <a class="link" href="#">Карта сайта </a></div>
+    <div class="col-sm-1"></div>
+    <div class="col-sm-1"></div>
+    <div class="col-3 col-sm-5"> <a class="link" href="#">Политика конфиденциальности</a></div>
+    <div class="col-3 col-sm-5 ico-container"><a href="#"><img src="../images/AppStore.svg" alt=""></a><a href="#"><img src="../images/GooglePlay.svg" alt=""></a></div>
   </div>
 </footer>
 <!-- footer end -->

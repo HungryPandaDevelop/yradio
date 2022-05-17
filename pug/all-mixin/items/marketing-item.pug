@@ -3,10 +3,12 @@ mixin itemMarketing( name, img, hash, link)
     .marketing-item-img.img-cover
       img(src= img, alt="")
     .marketing-item-info
+      .marketing-item-hash.mobile.hidden
+        a(href="#")= hash
       h3
         a(href="#")= name
       .marketing-item-bottom 
-        .marketing-item-hash
+        .marketing-item-hash.hidden-lg
           a(href="#")= hash
         .marketing-item-link 
           a(href="#")= link

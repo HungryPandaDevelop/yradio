@@ -2,7 +2,8 @@
   border: 1px solid $grayColorSecond
   border-radius: 20px
   margin: 0 0 $remSize
-  padding: 0 $remSize 0
+  padding: 0 30px 0
+  font-size: $smallSizeSecond
 .faq-container
   max-width: 980px
 .faq-head
@@ -11,13 +12,16 @@
   h3
     font-size: $standartSizePlus
     color: $violetColor
+    font-weight: 400
+    span
+      font-weight: 700
   i
     margin-left: auto
     @include icoEl(18px, 18px, "../images/plus-violet.svg",)
 .faq-content
   position: relative
   overflow: hidden
-  padding-top: $remSize
+  padding-top: 15px
   max-height: 0
 .faq-item--active
   h3

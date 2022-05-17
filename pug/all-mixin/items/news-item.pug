@@ -1,0 +1,10 @@
+mixin itemNews( img, data, name, text, link, btnText)
+	.news-item.col-3
+		a.news-item-img.img-cover(href=link)
+			img(src= img, alt="")
+		.news-item-info
+			h3
+				a(href="#")= name
+			.news-item-bottom
+				a(href="#")= text
+				.news-item-date= data

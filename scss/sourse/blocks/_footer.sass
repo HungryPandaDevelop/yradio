@@ -5,12 +5,15 @@ footer
   background-color: $violetColor
   padding: 60px 0 30px
   color: $whiteColor
+  font-size: $smallSizeSecond
   .logo-container
     margin: 0 0 10px
   .logo img
     max-width: 110px
   .social
     margin-top: 15px
+  .ico-box
+    display: inline-block
   ul,
   li
     list-style: none
@@ -22,7 +25,6 @@ footer
     z-index: 2
 
   nav
-    font-size: $smallSize
     padding-top: 4px
     h3
       font-size: inherit
@@ -46,12 +48,10 @@ footer
       a
         margin: 0 0 15px
         opacity: 0.5
-
         &:hover
           opacity: 1
 
   .feedback-item
-    font-size: $smallSize
     display: flex
     margin: 0 0 15px
     i
@@ -65,18 +65,26 @@ footer
     background-color: $whiteColor
     color: $violetColor
     font-size: $smallSize
-
   a
     text-decoration: none
   .footer-bottom
     margin-top: 45px
+    font-size: $microSizeSecond
   .copyright,
   .link
-    font-size: $smallSize
     opacity: 0.5
 
   .link
     text-decoration: underline
+    &:hover
+      opacity: 1
+      text-decoration: none
   .ico-container
     img
-      width: 72px
+      width: 75px
+      margin-right: 30px
+@media (max-width: 1024px)
+  footer
+    padding: 45px 0 30px
+    .feedback-item i
+      margin-right: 8px

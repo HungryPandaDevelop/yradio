@@ -11,6 +11,10 @@ header
 		text-decoration: none
 		&:hover
 			text-decoration: underline
+	.btn
+		font-size: $smallSizeSecond
+		padding: 9px 15px 10px
+		font-weight: 700
 .nav-delimetr
 	display: inline-block
 	background-color: $grayColor
@@ -63,6 +67,15 @@ header
 	line-height: 34px
 	font-size: $microSize
 	margin-left: 15px
+	font-weight: 700
 .feedback-header
 	a
 		margin-left: 15px
+.hamburger-container
+	text-align: right
+@media (max-width: 1024px)
+	header .btn
+		padding: 9px 15px 8px
+	.nav-header li::before
+		left: 0
+		top: 10px

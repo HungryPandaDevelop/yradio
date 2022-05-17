@@ -1,32 +1,40 @@
 footer
   .main-grid
-    .footer-info.col-3
+    .col-sm-1
+    .footer-info.col-3.col-sm-5
       .logo-container
         a.logo(href="./index.html")
           img(src="/images/logo-footer.svg")
       div Больше, чем радио
       +social(["vw","tlw","okw","wzw"])
-    .feedback-container.col-3
+    .feedback-container.col-3.col-sm-5
       .feedback
         .phone.feedback-item
           a(href="#") 
-            i.phone-ico-yellow
+            .ico-box
+              i.phone-ico-yellow
             span + 7 (921) 789 - 65 - 31
             .phone-circle 24/7
         .address.feedback-item
-          i.marker-ico
-          span 656006, г. Барнаул, ул. Малахова, 177Е, офис 711
+          .ico-box
+            i.marker-ico
+          span 656006, г. Барнаул,
+            br
+            |ул. Малахова, 177Е, офис 711
         .mail.feedback-item
           a(href="#")
-            i.mail-ico-yellow
+            .ico-box
+              i.mail-ico-yellow
             span lead@yradio.ru
-    nav.nav-1.col-3
+    .col-sm-1
+    .col-sm-1
+    nav.nav-1.col-3.col-sm-5
       ul
         each val in ["О  компании","Акции","Кейсы","Документы и оплата","Контакты","Вопросы и ответы","Новости","Блог"]
           li  
             a(href="#") 
               = val
-    nav.nav-2.col-3
+    nav.nav-2.col-3.col-sm-5
       h3 Услуги
       ul.custom-disk
         each val in ["Фоновая музыка","Корпоративное радио","Аудиобрендирование","Рекламная площадка","Корпоративный информатор","Производство аудиороликов","Лицензия РАО и ВОИС"]
@@ -34,13 +42,16 @@ footer
             a(href="#") 
               = val
   .main-grid.footer-bottom
-    .col-3.copyright
+    .col-sm-1
+    .col-3.col-sm-5.copyright
       | © ООО «ТВОЕ РАДИО»
-    .col-3 
+    .col-3.col-sm-5 
       a(href="#").link Карта сайта 
-    .col-3 
+    .col-sm-1
+    .col-sm-1
+    .col-3.col-sm-5 
       a(href="#").link Политика конфиденциальности
-    .col-3.ico-container
+    .col-3.col-sm-5.ico-container
       a(href="#")
         img(src="../images/AppStore.svg", alt="")
       a(href="#")

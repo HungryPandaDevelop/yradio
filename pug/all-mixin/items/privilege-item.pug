@@ -1,0 +1,9 @@
+mixin itemPrivilege( name, img, text)
+	.privilege-item.col-4
+		.privilege-item-img.img-cover
+			img(src= img, alt="")
+		h3
+			=name
+		.privilege-item-description
+			= text
+

@@ -1,20 +1,20 @@
 header
 	.main-grid.headline
-		.vertical-align.col-6
+		.vertical-align.col-7.col-sm-5
 			a.logo(href="#") 
 				img(src="/images/logo.svg", alt="")
-			.nav-delimetr
-			nav.nav-header
+			.nav-delimetr.hidden-lg
+			nav.nav-header.hidden-sm
 				ul.custom-disk
 					each val in ["Услуги","Кейсы","Акции","О компании","Контакты"]
 						li
 							a(href="#")
 								= val
-		.vertical-align.col-6.feedback-header
+		.vertical-align.col-5.col-sm-5.feedback-header
 			.phone-header
 				a(href="#")  8 800 775-99-55
 				.phone-circle 24/7
-			a(href="#").btn.btn--orange.element-btn(data-element="1") Заказать звонок
-		.hamburger-container.vertical-align.col-1
+			a(href="#").btn.btn--orange.element-btn.hidden-sm(data-element="1") Обратная связь
+		.hamburger-container.vertical-align.col-2
 			a(href="#").hamburger-btn.element-btn(data-element="0")
 .stub

@@ -1,4 +1,5 @@
 .banners
+  padding-top: 0
   .main-grid
     grid-gap: 30px
 .banners-item
@@ -8,20 +9,21 @@
   border-radius: 20px
   padding: ($remSize*2) ($remSize*3)
   display: flex
-  font-weight: 400
+  font-size: $smallSizeSecond
   h2,h3
     color: inherit
     margin-bottom: $remSize
   h2
-    font-size: $smallSize
-    font-weight: 500
+    font-size: $microSizeSecond
+    font-weight: 400
 
   h3
     font-size: $mediumSize
 .banners-item-img
   width: 180px
   height: 180px
-
+.banners-info
+  max-width: 240px
 .banners-img-container
   margin-left: auto
 
@@ -34,3 +36,29 @@
     margin-top: auto
   h3
     color: $orangeColor
+  .banners-info
+    max-width: none
+
+@media (max-width: 1024px)
+  .banners-item-img
+    width: 160px
+    height: 160px
+  .banners-item
+    padding: 30px
+    padding-right: 0
+@media (max-width: 768px)
+  .banners-item
+    padding: 30px
+    flex-direction: column
+  .banners-img-container
+    order: 1
+    margin: 0 auto
+  .banners-info
+    max-width: none
+    order: 2
+
+  .banners-item--last
+    .banners-info
+      order: 1
+    .btn-container
+      order: 2
