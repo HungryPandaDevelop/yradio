@@ -3,14 +3,14 @@
     .logo 
       img(src="../images/logo-orange.svg", alt="")
   .main-grid.nav-container
-    .col-1
-    nav.popup-nav.first-nav-popup.col-5
+    .col-1.hidden-xs
+    nav.popup-nav.first-nav-popup.col-5.col-xs-12
       ul.ln
         each val,index in ["О компании", "Акции","Кейсы","О нас","Документы и оплата","Вопросы и ответы", "Новости","Блог","Контакты"]
           li 
             a(href="#")
               = val 
-    nav.popup-nav.second-nav-popup.col-5
+    nav.popup-nav.second-nav-popup.col-5.hidden-xs
       h3 Услуги:
       ul.custom-disk
         each val in ["Фоновая музыка","Корпоративное радио","Аудиобрендирование","Рекламная площадка","Корпоративный информатор","Производство аудиороликов","Лицензия РАО и ВОИС"]
@@ -18,15 +18,16 @@
             a(href="#") 
               = val
   .popup-feedback.main-grid
-    .col-4.flex-align
+    .col-4.hidden-xs.flex-align
       +social(["vw","tlw","okw","wzw"])
-    .col-4.flex-align
+    .col-4.flex-align.hidden-xs
       .ico-container
         a(href="#")
           img(src="../images/AppStore.svg", alt="")
         a(href="#")
           img(src="../images/GooglePlay.svg", alt="")
-    .col-4
+    .col-4.col-xs-12.feedback-container
       .feedback-phone-popup
-        a.phone(href="tel:+88005559810" ) +7 (921) 789 - 65 - 31
+        a.phone(href="tel:+88005559810" ) 
+          span +7 (921) 789 - 65 - 31
         a.btn.btn--orange(href="#") Обратная связь

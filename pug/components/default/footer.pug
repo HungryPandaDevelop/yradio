@@ -1,13 +1,13 @@
 footer
   .main-grid
-    .col-sm-1.hidden-lg.hidden-md
-    .footer-info.col-3.col-sm-5
+    .col-sm-1.hidden-lg.hidden-md.hidden-xs
+    .footer-info.col-3.col-sm-5.col-xs-12
       .logo-container
         a.logo(href="./index.html")
           img(src="/images/logo-footer.svg")
-      div Больше, чем радио
+      .logo-text Больше, чем радио
       +social(["vw","tlw","okw","wzw"])
-    .feedback-container.col-3.col-sm-5
+    .feedback-container.col-3.col-sm-5.col-xs-12
       .feedback
         .phone.feedback-item
           a(href="#") 
@@ -26,15 +26,17 @@ footer
             .ico-box
               i.mail-ico-yellow
             span lead@yradio.ru
-    .col-sm-1.hidden-lg.hidden-md
-    .col-sm-1.hidden-lg.hidden-md
-    nav.nav-1.col-3.col-sm-5
+        .btn-container 
+          a.btn.btn--orange(href="#") Обратная связь
+    .col-sm-1.hidden-lg.hidden-md.hidden-xs
+    .col-sm-1.hidden-lg.hidden-md.hidden-xs
+    nav.nav-1.col-3.col-sm-5.col-xs-12.nav-first
       ul
         each val in ["О  компании","Акции","Кейсы","Документы и оплата","Контакты","Вопросы и ответы","Новости","Блог"]
           li  
             a(href="#") 
               = val
-    nav.nav-2.col-3.col-sm-5
+    nav.nav-2.col-3.col-sm-5.col-xs-12.nav-second
       h3 Услуги
       ul.custom-disk
         each val in ["Фоновая музыка","Корпоративное радио","Аудиобрендирование","Рекламная площадка","Корпоративный информатор","Производство аудиороликов","Лицензия РАО и ВОИС"]
@@ -42,16 +44,21 @@ footer
             a(href="#") 
               = val
   .main-grid.footer-bottom
-    .col-sm-1.hidden-lg.hidden-md
-    .col-3.col-sm-5.copyright
+    .col-sm-1.hidden-lg.hidden-md.hidden-xs
+    .col-xs-12.ico-container.hidden-lg.hidden-md.hidden-sm.footer-bottom-item
+      a(href="#")
+        img(src="../images/AppStore.svg", alt="")
+      a(href="#")
+        img(src="../images/GooglePlay.svg", alt="")
+    .col-3.col-sm-5.copyright.col-xs-12.footer-bottom-item
       | © ООО «ТВОЕ РАДИО»
-    .col-3.col-sm-5 
+    .col-3.col-sm-5.col-xs-12.footer-bottom-item 
       a(href="#").link Карта сайта 
-    .col-sm-1.hidden-lg.hidden-md
-    .col-sm-1.hidden-lg.hidden-md
-    .col-3.col-sm-5 
+    .col-sm-1.hidden-lg.hidden-md.hidden-xs
+    .col-sm-1.hidden-lg.hidden-md.hidden-xs
+    .col-3.col-sm-5.col-xs-12.footer-bottom-item 
       a(href="#").link Политика конфиденциальности
-    .col-3.col-sm-5.ico-container
+    .col-3.col-sm-5.ico-container.hidden-xs
       a(href="#")
         img(src="../images/AppStore.svg", alt="")
       a(href="#")

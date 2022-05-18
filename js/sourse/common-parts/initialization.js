@@ -17,14 +17,14 @@ owlDetail.owlCarousel({
 let owlPartners = $('.owl-partners');
 
 owlPartners.owlCarousel({
- 
+  dots:  false,
   autoplay: true,
   autoplayTimeout: 1001,
   smartSpeed: 500,
   loop: true,
   responsive:{
-    576:{
-      items:1
+    0:{
+      items:2
     },
     769:{
       items: 7,
@@ -33,10 +33,11 @@ owlPartners.owlCarousel({
 });
 
 if($(window).width() < 767){
-  let owlMobile = $('.owl-mobile');
+  let owlTablet = $('.owl-tablet');
 
-  owlMobile.owlCarousel({
+  owlTablet.owlCarousel({
     dots: true,
+    margin: 15,
     responsive:{
       0:{
         items:1
@@ -45,5 +46,15 @@ if($(window).width() < 767){
         items: 3,
       }
     }
+  });
+}
+
+if($(window).width() < 567){
+  let owlMobile = $('.owl-mobile');
+
+  owlMobile.owlCarousel({
+    dots: true,
+    items: 1,
+    margin: 15
   });
 }

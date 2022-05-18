@@ -26,8 +26,8 @@
   text-align: center
 
   .owl-dot
-    width: 10px
-    height: 10px
+    width: 20px
+    height: 20px
     display: inline-block
     border-radius: 100%
     margin: 10px
@@ -38,9 +38,21 @@
       content: ""
       @include positionElement(70%, 70%, 15%, 15%)
       border-radius: 100%
-      background-color: $whiteColor
+      background-color: $grayColorSecond
 
-    &:hover,
-    &.active
+    &:hover::after,
+    &.active::after
+      background: $orangeColor
 
-      background: $whiteColor
+@media (max-width: 576px)
+  .owl-mobile,
+  .owl-tablet
+    width: 90%
+    margin: 0
+    padding-bottom: 45px
+    .owl-stage-outer
+      overflow: visible
+    .owl-dots
+      bottom: 0
+      .owl-dot
+        margin: 0 10px

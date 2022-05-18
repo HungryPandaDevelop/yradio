@@ -164,6 +164,8 @@ h6 {
 
 section {
   padding: 90px 0 0px;
+  position: relative;
+  overflow: hidden;
 }
 section .title-section,
 section .subtitle-section {
@@ -232,6 +234,15 @@ section .head-section {
 @media (max-width: 1024px) {
   section {
     padding: 45px 0 0px;
+  }
+}
+@media (max-width: 576px) {
+  section .title-section {
+    font-size: 24px;
+  }
+
+  .btn-container_section .btn {
+    margin: 0 0 15px;
   }
 }
 .all-btns {
@@ -1432,6 +1443,15 @@ footer nav .custom-disk li:hover:before {
 footer nav li {
   margin: 0 0 10px;
 }
+footer .btn {
+  font-size: 14px;
+  color: #3F0B71;
+  font-weight: 700;
+}
+footer .btn:hover {
+  background-color: #ffffff;
+  color: #3F0B71;
+}
 footer .feedback-container .feedback {
   margin: 0 0 30px;
 }
@@ -1492,6 +1512,28 @@ footer .ico-container img {
   }
   footer .feedback-item i {
     margin-right: 8px;
+  }
+}
+@media (max-width: 576px) {
+  footer .social {
+    margin: 15px 0 30px;
+  }
+  footer .nav-first {
+    margin: 0 0 30px;
+  }
+  footer .nav-second {
+    margin: 0 0 45px;
+  }
+  footer .footer-bottom {
+    margin: 0;
+  }
+  footer .footer-bottom .copyright {
+    -ms-grid-row: 4;
+    grid-row: 4;
+  }
+
+  .footer-bottom-item {
+    margin: 0 0 15px;
   }
 }
 /*-----footer-end----*/
@@ -1573,8 +1615,8 @@ footer .ico-container img {
   text-align: center;
 }
 .owl-dots .owl-dot {
-  width: 10px;
-  height: 10px;
+  width: 20px;
+  height: 20px;
   display: inline-block;
   border-radius: 100%;
   margin: 10px;
@@ -1589,12 +1631,32 @@ footer .ico-container img {
   left: 15%;
   top: 15%;
   border-radius: 100%;
-  background-color: #ffffff;
+  background-color: #C4C4C4;
 }
-.owl-dots .owl-dot:hover, .owl-dots .owl-dot.active {
-  background: #ffffff;
+.owl-dots .owl-dot:hover::after, .owl-dots .owl-dot.active::after {
+  background: #FF9138;
 }
 
+@media (max-width: 576px) {
+  .owl-mobile,
+.owl-tablet {
+    width: 90%;
+    margin: 0;
+    padding-bottom: 45px;
+  }
+  .owl-mobile .owl-stage-outer,
+.owl-tablet .owl-stage-outer {
+    overflow: visible;
+  }
+  .owl-mobile .owl-dots,
+.owl-tablet .owl-dots {
+    bottom: 0;
+  }
+  .owl-mobile .owl-dots .owl-dot,
+.owl-tablet .owl-dots .owl-dot {
+    margin: 0 10px;
+  }
+}
 /*-----carousel-owl-end-----*/
 /*-----popup-start----*/ 
 /*-----default----*/
@@ -1654,6 +1716,11 @@ footer .ico-container img {
   visibility: visible;
 }
 
+@media (max-width: 576px) {
+  .popup-container {
+    padding: 15px;
+  }
+}
 /*-----menu----*/
 .menu-hamburger .popup-container {
   background-color: #3F0B71;
@@ -1742,6 +1809,40 @@ footer .ico-container img {
   margin: 0 0 34px;
 }
 
+@media (max-width: 576px) {
+  .feedback-container {
+    width: 100%;
+  }
+
+  .menu-hamburger .nav-container {
+    padding: 0;
+  }
+
+  .popup-feedback {
+    margin-top: auto;
+    padding: 0;
+    width: 100%;
+  }
+
+  .feedback-phone-popup {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .feedback-phone-popup .phone {
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .feedback-phone-popup .phone span {
+    margin: auto 0;
+  }
+}
 /*-----search----*/
 .popup-search .modal-container {
   max-width: 90%;
@@ -2100,6 +2201,8 @@ a.pagination-next:hover {
 }
 .banners {
   padding-top: 0;
+  position: relative;
+  overflow: hidden;
 }
 .banners .main-grid {
   grid-gap: 30px;
@@ -2207,6 +2310,8 @@ a.pagination-next:hover {
 }
 .zone {
   padding-bottom: 75px;
+  position: relative;
+  overflow: hidden;
 }
 .zone .head-section {
   margin-bottom: 0;
@@ -2235,7 +2340,7 @@ a.pagination-next:hover {
 
 .zone-item {
   font-size: 18px;
-  font-family: 500;
+  font-weight: 500;
   max-width: 300px;
   margin: 0 auto;
 }
@@ -2254,6 +2359,23 @@ a.pagination-next:hover {
     height: 350px;
   }
 }
+@media (max-width: 576px) {
+  .zone {
+    padding-bottom: 45px;
+  }
+
+  .zone-item {
+    max-width: none;
+  }
+
+  .zone-map {
+    height: 160px;
+  }
+  .zone-map span {
+    padding-top: 30px;
+    font-size: 13px;
+  }
+}
 .contacts_home {
   margin-bottom: 30px;
 }
@@ -2266,6 +2388,8 @@ a.pagination-next:hover {
   background-color: #3F0B71;
   color: #ffffff;
   padding: 90px;
+  position: relative;
+  overflow: hidden;
 }
 
 .advantages-item {
@@ -2305,6 +2429,14 @@ a.pagination-next:hover {
     padding: 65px 0;
   }
 }
+@media (max-width: 576px) {
+  .advantages .owl-mobile {
+    width: 70%;
+  }
+  .advantages .owl-dots {
+    width: 130%;
+  }
+}
 .video-container {
   max-width: 1130px;
   height: 400px;
@@ -2332,6 +2464,16 @@ a.pagination-next:hover {
   background-image: url("../images/video-btn.svg");
 }
 
+@media (max-width: 576px) {
+  .video-container {
+    height: 180px;
+  }
+
+  .video-btn {
+    width: 50px;
+    height: 50px;
+  }
+}
 .feedback h2 {
   color: #3F0B71;
   font-size: 28px;
@@ -2353,6 +2495,15 @@ a.pagination-next:hover {
   font-size: 14px;
 }
 
+@media (max-width: 576px) {
+  .feedback h2 {
+    font-size: 24px;
+  }
+
+  .feedback-info {
+    text-align: center;
+  }
+}
 .privilege-item h3 {
   color: #3F0B71;
   margin: 0 0 10px;
@@ -2496,6 +2647,11 @@ a.pagination-next:hover {
   border-radius: 20px;
 }
 
+.tasks {
+  position: relative;
+  overflow: hidden;
+}
+
 .tasks-item {
   max-width: 250px;
   margin: 0 auto;
@@ -2521,6 +2677,16 @@ a.pagination-next:hover {
     height: auto;
   }
 }
+@media (max-width: 576px) {
+  .tasks-item {
+    max-width: none;
+  }
+}
+.marketing {
+  position: relative;
+  overflow: hidden;
+}
+
 .marketing-item {
   border: 1px solid #C4C4C4;
   position: relative;
@@ -2600,6 +2766,9 @@ a.pagination-next:hover {
   position: relative;
   overflow: hidden;
 }
+.partners .owl-stage-outer {
+  overflow: visible;
+}
 
 .partners-container {
   text-align: center;
@@ -2612,6 +2781,16 @@ a.pagination-next:hover {
 }
 .partners-item img {
   width: 100%;
+}
+
+@media (max-width: 576px) {
+  .partners-container {
+    width: 80%;
+  }
+}
+.news {
+  position: relative;
+  overflow: hidden;
 }
 
 .news-item {

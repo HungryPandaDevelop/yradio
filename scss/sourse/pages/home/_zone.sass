@@ -1,5 +1,7 @@
 .zone
 	padding-bottom: 75px
+	position: relative
+	overflow: hidden
 	.head-section
 		margin-bottom: 0
 .zone-map
@@ -17,7 +19,7 @@
 		padding-top: 90px
 .zone-item
 	font-size: $standartSizePlus
-	font-family: 500
+	font-weight: 500
 	max-width: 300px
 	margin: 0 auto
 	h3
@@ -30,3 +32,14 @@
 @media (max-width: 768px)
 	.zone-map
 		height: 350px
+@media (max-width: 576px)
+	.zone
+		padding-bottom: 45px
+
+	.zone-item
+		max-width: none
+	.zone-map
+		height: 160px
+		span
+			padding-top: 30px
+			font-size: $smallSize

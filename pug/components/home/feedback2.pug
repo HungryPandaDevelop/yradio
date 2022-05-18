@@ -1,8 +1,8 @@
 section.feedback.section-padding-null
   .main-grid
-    .col-1.hidden-sm
-    .col-5.feedback-info.col-sm-6
+    .col-1.hidden-sm.hidden-xs
+    .col-5.feedback-info.col-sm-6.col-xs-12
       h2 Узнайте, как создать идеальный плейлист для Вашего бизнеса
-    .col-5.col-sm-6
+    .col-5.col-sm-6.col-xs-12
       - var feedback = [["text","Ваше имя*","col-12 require"],["phone","col-12 require"],["checkbox","Я согласен(-на) на обработку персональных данных ","col-12 agreement"],["submit","btn btn-send btn--orange","col-12","Отправить"]];
       +form(feedback)
