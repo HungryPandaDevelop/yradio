@@ -1,5 +1,5 @@
 mixin itemMarketing( name, img, hash, link)
-  .marketing-item.col-3
+  .marketing-item.col-3.col-xs-12
     .marketing-item-img.img-cover
       img(src= img, alt="")
     .marketing-item-info
@@ -8,7 +8,7 @@ mixin itemMarketing( name, img, hash, link)
       h3
         a(href="#")= name
       .marketing-item-bottom 
-        .marketing-item-hash.hidden-lg
+        .marketing-item-hash.hidden-sm
           a(href="#")= hash
         .marketing-item-link 
           a(href="#")= link

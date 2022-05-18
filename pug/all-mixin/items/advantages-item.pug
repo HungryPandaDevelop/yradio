@@ -1,5 +1,5 @@
-mixin itemAdvantages( col, name, img, text, btnClass, btnText, link)
-  .item(class="col-"+(12/col) class="advantages-item")
+mixin itemAdvantages(  name, img, text, btnClass, btnText, link)
+  .advantages-item.col-3.col-xs-12
     if link
       a.advantages-item-img(href=link)
         img(src= img, alt="")

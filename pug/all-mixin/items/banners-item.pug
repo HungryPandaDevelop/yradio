@@ -1,6 +1,6 @@
 mixin itemBanner(img, subtitle, title, text, btn)
   if btn
-    .banners-item.banners-item--last(class="col-6")
+    .banners-item.banners-item--last.col-6.col-xs-12
       .banners-info
         h3
           = title
@@ -9,7 +9,7 @@ mixin itemBanner(img, subtitle, title, text, btn)
       .btn-container
         a(href="#" class="btn btn--orange") Подключить
   else 
-    .banners-item(class="col-6")
+    .banners-item.col-6.col-xs-12
       .banners-info
         h2
           = subtitle

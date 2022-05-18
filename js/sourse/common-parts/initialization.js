@@ -14,3 +14,36 @@ owlDetail.owlCarousel({
   dots: true
 });
 
+let owlPartners = $('.owl-partners');
+
+owlPartners.owlCarousel({
+ 
+  autoplay: true,
+  autoplayTimeout: 1001,
+  smartSpeed: 500,
+  loop: true,
+  responsive:{
+    576:{
+      items:1
+    },
+    769:{
+      items: 7,
+    }
+}
+});
+
+if($(window).width() < 767){
+  let owlMobile = $('.owl-mobile');
+
+  owlMobile.owlCarousel({
+    dots: true,
+    responsive:{
+      0:{
+        items:1
+      },
+      769:{
+        items: 3,
+      }
+    }
+  });
+}

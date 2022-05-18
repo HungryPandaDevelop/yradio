@@ -6,6 +6,7 @@ $gridPoints: (1920: "",1680: "xxl",1440: "xl",1280: "lg",1024:"md",768: "sm",576
 
 .hidden
   display: none
+
 @media (max-width: 1680px)
   .hidden-xxl
     display: none !important
@@ -15,13 +16,13 @@ $gridPoints: (1920: "",1680: "xxl",1440: "xl",1280: "lg",1024:"md",768: "sm",576
 @media (max-width: 1440px)
   .hidden-xxl
     display: none !important
-@media (max-width: 1280px)
+@media (min-width: 1200px)
   .hidden-lg
     display: none !important
-@media (max-width: 1024px)
+@media (min-width: 992px) and (max-width: 1199px)
   .hidden-md
     display: none !important
-@media (max-width: 768px)
+@media (min-width: 577px) and (max-width: 991px)
   .hidden-sm
     display: none !important
 @media (max-width: 576px)
