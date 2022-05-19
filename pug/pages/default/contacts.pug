@@ -1,0 +1,34 @@
+include ../../components/default/build-header
+
+// contacts page content start
++roofContent("Контакты")
+	.page.main-grid.contacts-items-container
+		+itemContacts("Адрес:","Алтайский край, г.Барнаул, ул. Малахова, д. 177е, помещение 41","/images/temp/contacts/1.svg")
+		+itemContacts("Телефон:","8-800-775-99-55","/images/temp/contacts/2.svg", "/")
+		+itemContacts("E-Mail::","lead@yradio.ru","/images/temp/contacts/3.svg", "/")
+		+itemContacts("График работы::","Понедельник - Воскресенье 24/7","/images/temp/contacts/4.svg")
+	.main-grid
+		.col-6
+			.contacts-info 
+				h2 Реквизиты
+				.contacts-info-line ООО «ТВОЁ РАДИО»
+				.contacts-info-line
+					p ОГРН: 1152225013104
+					p ИНН/ КПП: 2222838862 / 222201001
+					p Дата регистрации: 12.08.2015
+				.contacts-info-line
+					p Наименование регистрирующего органа: 
+					p Межрайонная инспекция ФНС России № 14 по Алтайскому краю
+					p Юридический адрес: 656006, Алтайский край, г. Барнаул, ул. Малахова, д. 177е, помещ. н41
+					p Генеральный директор: Школина Оксана Олеговна
+		.col-6
+			include ../../components/default/map.pug
+	include ../../components/home/feedback.pug
+// contacts page content end
+
+// footer start 
+
+.stub-footer
+include ../../components/default/footer.pug
+
+// footer end 

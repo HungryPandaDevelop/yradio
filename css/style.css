@@ -195,8 +195,8 @@ section .head-section {
 }
 
 .breadcrumbs {
-  border-bottom: 1px solid #4E4E4E;
-  padding: 1rem 0;
+  font-size: 13px;
+  padding: 5px 0;
 }
 .breadcrumbs a {
   text-decoration: none;
@@ -214,6 +214,8 @@ section .head-section {
 }
 .content h1 {
   padding: 30px 0;
+  text-align: center;
+  color: #3F0B71;
 }
 
 .hamburger-container {
@@ -3100,6 +3102,67 @@ a.pagination-next:hover {
 }
 
 /*-----detail-end-----*/
+/*-----contacts-start-----*/
+.contacts-items-container {
+  margin-bottom: 90px;
+}
+
+.contacts-item {
+  max-width: 250px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+}
+.contacts-item h3 {
+  color: #3F0B71;
+  font-size: inherit;
+  margin: 0 0 10px;
+}
+.contacts-item a {
+  color: #3F0B71;
+  text-decoration: none;
+}
+.contacts-item a:hover {
+  color: #FF9138;
+}
+
+.contacts-item-img {
+  text-align: center;
+  margin: 0 0 15px;
+  font-size: 0;
+}
+.contacts-item-img img {
+  width: 100px;
+}
+
+.contacts-info {
+  font-size: 14px;
+}
+.contacts-info h2 {
+  color: #3F0B71;
+  font-size: 32px;
+  margin: 0 0 30px;
+}
+.contacts-info p {
+  margin: 0;
+}
+
+.contacts-info-line {
+  margin: 0 0 30px;
+}
+
+@media (max-width: 768px) {
+  .contacts-item h3 {
+    height: auto;
+  }
+}
+@media (max-width: 576px) {
+  .contacts-item {
+    max-width: none;
+  }
+}
+/*-----contacts-end-----*/
 /*-----news-start-----*/
 /*-----news-end-----*/
 /*-----market-item-start-----*/

@@ -5,4 +5,5 @@
  // @prepros-append common-parts/btn-show-hide.js  
  // @prepros-append common-parts/rating-comments.js
  // @prepros-append common-parts/password-edit.js
+ // @prepros-append common-parts/ya-map.js
 
