@@ -1,11 +1,12 @@
-mixin roofContent(topic)
+mixin roofContent(topic, offTopic)
   .main-full
     .breadcrumbs
       a(href="#") Главная
       span /
       span= topic
   .content
-    .main-full
-      h1= topic
+    if offTopic !=false
+      .main-full
+        h1= topic
     if block
       block

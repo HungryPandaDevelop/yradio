@@ -1,0 +1,21 @@
+include ../../default/build-header
+
+// contacts page content start
++roofContent("404", false)
+	.page.main-grid.page-404
+		.col-1 
+		.col-4.img-404-container
+			img.img-404(src="/images/page-404.svg", alt="")
+		.col-6
+			.vertical-align
+				div
+					h2 Извините, страница, которую вы ищете, не существует
+					.btn-container 
+						a.btn.btn--orange(href="/") На главную
+
+// footer start 
+
+.stub-footer
+include ../../blocks/footer.pug
+
+// footer end  

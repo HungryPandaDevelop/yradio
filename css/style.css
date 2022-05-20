@@ -73,6 +73,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 100%;
 }
 .vertical-align * {
   margin: auto 0;
@@ -218,20 +219,6 @@ section .head-section {
   color: #3F0B71;
 }
 
-.hamburger-container {
-  display: none;
-}
-
-@media screen and (max-width: 992px) {
-  .hamburger-container {
-    display: block;
-  }
-}
-@media screen and (max-width: 414px) {
-  .hamburger-container {
-    display: block;
-  }
-}
 /*detail end*/
 @media (max-width: 1024px) {
   section {
@@ -1295,6 +1282,9 @@ header .btn {
   padding: 9px 15px 10px;
   font-weight: 700;
 }
+header .hamburger-btn {
+  margin-left: auto;
+}
 
 .nav-delimetr {
   display: inline-block;
@@ -1373,10 +1363,6 @@ header .btn {
 
 .feedback-header a {
   margin-left: 15px;
-}
-
-.hamburger-container {
-  text-align: right;
 }
 
 @media (max-width: 1024px) {
@@ -3163,6 +3149,21 @@ a.pagination-next:hover {
   }
 }
 /*-----contacts-end-----*/
+/*-----404-start-----*/
+.page-404 h2 {
+  color: #3F0B71;
+  font-size: 32px;
+  margin: 0 0 30px;
+}
+
+.img-404-container {
+  text-align: center;
+}
+.img-404-container img {
+  width: 300px;
+}
+
+/*-----404-end-----*/
 /*-----news-start-----*/
 /*-----news-end-----*/
 /*-----market-item-start-----*/

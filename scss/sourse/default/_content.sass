@@ -3,7 +3,6 @@ $gridCount: 12
 $indent: 15px
 $maxWidth: 1320px
 $gap: 30px
-$burgerDesctop: 1
 
 .main-grid
   display: grid
@@ -64,16 +63,6 @@ section
     padding: 30px 0
     text-align: center
     color: $violetColor
-@if $burgerDesctop == 1
-  .hamburger-container
-    display: none
-
-  @media screen and (max-width: 992px)
-    .hamburger-container
-      display: block
-  @media screen and (max-width: 414px)
-    .hamburger-container
-      display: block
 
 /*detail end*/
 @media (max-width: 1024px)
