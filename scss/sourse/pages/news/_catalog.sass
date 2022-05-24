@@ -1,0 +1,35 @@
+.news
+  position: relative
+  overflow: hidden
+
+  &-item
+    margin-bottom: 30px
+
+    .link
+      color: $orangeColor
+    h3
+      font-size: $mediumSize
+      margin: 0 0 5px
+      color: $violetColor
+      a
+        text-decoration: none
+        color: inherit
+        &:hover
+          color: $orangeColor
+  &-item-img
+    height: 100%
+    display: block
+    border-radius: 20px
+    img
+      @include positionElement(100%,100%,0,0)
+  &-item-date
+    font-size: $smallSize
+    color: $grayColor
+    margin: 0 0 15px
+  &-item-text
+    margin: 0 0 15px
+    font-size: $smallSizeSecond
+
+  @media (max-width: 1280px)
+    &-item-info
+      padding: 15px 15px

@@ -38,15 +38,28 @@
   &:hover
     background-color: $blackColor
     border-color: $blackColor
-
+.btn--carret
+  border-color: #fff0
+  color: #ffffff
+  background: none
+  span
+    text-decoration: underline
+  i
+    width: 18px
+    height: 18px
 .btn--link
   color: $violetColor
   text-decoration: underline
   background: none
+.link
+  font-weight: 700
+  font-size: $standartSizePlus
+  color: $violetColor
+  &:hover
+    color: $orangeColor
 /*pagination page start*/
 
 .pagination
-  grid-column: span 16
   text-align: center
   margin: 60px 0 45px
   position: relative
@@ -99,6 +112,10 @@ a.pagination-next
   i
     font-size: 0
     position: relative
+    img
+      width: 100%
+      height: 100%
+      object-fit: contain
   .back-ico
     visibility: hidden
 
@@ -114,7 +131,12 @@ a.pagination-next
       visibility: visible
     .front-ico
       visibility: hidden
-
+.ico-in--right
+  i
+    margin-left: 15px
+.ico-in--left
+  i
+    margin-right: 15px
 /*pagination page end*/
 
 .close-btn

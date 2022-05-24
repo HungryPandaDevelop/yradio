@@ -1,15 +1,16 @@
-include ../../components/default/build-header
+include ../../default/build-header
 		
 // header end
-+roofContent("Cписковая страница")
-	-var itemCol = 4
-	.main-grid.catalog-grid
-		-for (var i=0; i < 12; i++)
-			+itemDefault("news", itemCol,"New Item","/images/temp/1.jpg","11.11.11","Lodio quae atqu send to me Lodio quae atqu send to me Lodio quae atqu send to me Lodio quae atqu send to me Lodio quae atqu send to me...","btn btn--black","Подробнее")
-	.main-full
++roofContent("Новости")
+	.news-catalog
+			+newsItem("Радио OZON FM – инструмент поддержки  сотрудников в сезон распродаж","У сотрудников компании OZON появилась своя настоящая рок-волна, на которой есть всё, что нужно для успешной работы: хитовая музыка, полезные программы, живое общение с коллегами, много конкурсов и классных подарков. ","/images/temp/1.jpg","11.11.11")
+			+newsItem("Радио OZON FM – инструмент поддержки  сотрудников в сезон распродаж","У сотрудников компании OZON появилась своя настоящая рок-волна, на которой есть всё, что нужно для успешной работы: хитовая музыка, полезные программы, живое общение с коллегами, много конкурсов и классных подарков. ","/images/temp/1.jpg","11.11.11")
+	.main-full 
 		+pagination()
-// footer start 
+	include ../home/feedback.pug
+// footer start  
+
 .stub-footer
-include ../../components/default/footer.pug
+include ../../blocks/footer.pug
 
 // footer end 

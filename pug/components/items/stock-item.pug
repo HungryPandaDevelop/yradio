@@ -1,0 +1,27 @@
+// +stockItem("Весенние скидки на фоновую музыку","YRadio – комплекс инструментов аудиомаркетинга в одном решении","/images/temp/1.jpg","25 000","15 000","30.04.2022 г. ")
+mixin stockItem( name, prevtext, img, price, priceSecond, data, type)
+	.stock-item.main-grid
+		.col-7.stock-item-info
+			.stock-item-tag Акции
+			h3
+				a(href="#")= name
+			.stock-item-description
+				= prevtext
+			.stock-item-sale
+				.stock-item-price
+					if priceSecond
+						.stock-item-price--second= priceSecond 
+							span  ₽
+					if price
+						.stock-item-price--current= price 
+							span ₽
+			.stock-item-date Акция действует до 30.04.2022 г. 
+			.btn-container
+				a.btn.btn--orange(href="#") Оформить заявку
+				a.btn.btn--clear.ico-in.btn--carret.ico-in--right(href="#") 
+					span Подробнее
+					i
+						img(src="/images/controls/carret-down-white-big.svg", alt="")
+		.col-5
+			.stock-item-img.img-cover(href="#")
+				img(src= img, alt="")
