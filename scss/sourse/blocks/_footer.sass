@@ -14,6 +14,7 @@ footer
     margin-top: 15px
   .ico-box
     display: inline-block
+
   ul,
   li
     list-style: none
@@ -76,19 +77,23 @@ footer
   .footer-bottom
     margin-top: 45px
     font-size: $microSizeSecond
-  .copyright,
-  .link
-    opacity: 0.5
-
-  .link
-    text-decoration: underline
-    &:hover
-      opacity: 1
-      text-decoration: none
+    a
+      font-size: inherit
+      text-decoration: underline
+      opacity: 0.6
+      &:hover
+        opacity: 1
   .ico-container
+
     img
       width: 75px
+    a
+      opacity: 1
+    .first-logo
       margin-right: 30px
+  .copyright
+    opacity: 0.5
+
 @media (max-width: 1024px)
   footer
     padding: 45px 0 30px

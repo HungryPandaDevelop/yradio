@@ -31,8 +31,21 @@
   @include icoEl(40px, 40px, "../images/video-btn.svg")
   margin-right: 30px
 
+.selection-item--extra
+  border: 1px solid $violetColor
+  padding: 15px
+  color: $orangeColor
+  font-size: $smallSizeSecond
+
+  h3
+    color: $violetColor
+    font-size: $mediumSizePlusPlus
+    margin: 0 0 15px
+  div
+    line-height: 1.6
 @media (max-width: 1024px)
   .selection-item-info
     padding: 15px 12px
   .selection-item-control
     margin-right: 15px
+@media (max-width: 768px)
