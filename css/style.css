@@ -204,6 +204,18 @@ section .head-section {
   font-size: 13px;
   padding: 5px 0;
 }
+.breadcrumbs em {
+  font-size: 0;
+  margin-left: 5px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 130%;
+  background-image: url("../images/controls/carret-right-gray.svg");
+}
 .breadcrumbs a {
   text-decoration: none;
   color: #202020;
@@ -216,10 +228,10 @@ section .head-section {
 }
 
 .content {
-  min-height: calc(100vh - 450px);
+  min-height: calc(100vh - 600px);
 }
 .content h1 {
-  padding: 30px 0;
+  padding: 23px 0 30px;
   text-align: center;
   color: #3F0B71;
 }
@@ -1259,7 +1271,7 @@ header {
   width: 100%;
   position: fixed;
   height: auto;
-  z-index: 2;
+  z-index: 3;
   left: 0;
   top: auto;
   color: #3F0B71;
@@ -1374,7 +1386,7 @@ header .hamburger-btn {
 /*-----header-end----*/
 /*-----footer-start----*/
 .stub-footer {
-  height: 60px;
+  height: 90px;
 }
 
 footer {
@@ -1495,6 +1507,10 @@ footer .copyright {
   opacity: 0.5;
 }
 
+.footer-bottom-item-top {
+  margin-bottom: 30px;
+}
+
 @media (max-width: 1024px) {
   footer {
     padding: 45px 0 30px;
@@ -1513,12 +1529,27 @@ footer .copyright {
   footer .nav-second {
     margin: 0 0 45px;
   }
-  footer .footer-bottom {
-    margin: 0;
+  footer .ico-container {
+    -ms-grid-row: 1;
+    grid-row: 1;
   }
-  footer .footer-bottom .copyright {
+  footer .map-site {
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
+  footer .politics {
+    -ms-grid-row: 3;
+    grid-row: 3;
+  }
+  footer .copyright {
     -ms-grid-row: 4;
     grid-row: 4;
+  }
+  footer .ico-container a {
+    margin-right: 30px;
+  }
+  footer .footer-bottom {
+    margin-top: 0;
   }
 
   .footer-bottom-item {
@@ -3158,7 +3189,8 @@ a.pagination-next:hover {
 /*-----detail-end-----*/
 /*-----contacts-start-----*/
 .contacts-items-container {
-  margin-bottom: 90px;
+  margin-top: 50px;
+  margin-bottom: 100px;
 }
 
 .contacts-item {
@@ -3167,6 +3199,7 @@ a.pagination-next:hover {
   text-align: center;
   font-size: 18px;
   font-weight: 500;
+  color: #202020;
 }
 .contacts-item h3 {
   color: #3F0B71;
@@ -3207,6 +3240,21 @@ a.pagination-next:hover {
 }
 
 @media (max-width: 768px) {
+  .contacts-info {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 30px 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+  }
+  .contacts-info h2 {
+    -ms-grid-column-span: 2;
+    grid-column: span 2;
+  }
+
+  .contacts-item {
+    margin-bottom: 45px;
+  }
   .contacts-item h3 {
     height: auto;
   }
@@ -3226,11 +3274,23 @@ a.pagination-next:hover {
 
 .img-404-container {
   text-align: center;
-}
-.img-404-container img {
-  width: 300px;
+  width: 340px;
+  height: 380px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../images/page-404.jpg");
 }
 
+@media (max-width: 768px) {
+  .img-404-container {
+    margin: 0 auto 30px;
+  }
+
+  .page-404 {
+    text-align: center;
+  }
+}
 /*-----404-end-----*/
 /*-----mapsite-start-----*/
 .mapsite {
@@ -3241,9 +3301,11 @@ a.pagination-next:hover {
 }
 .mapsite a {
   font-weight: 500;
+  text-decoration: none;
 }
 .mapsite a:hover {
   color: #FF9138;
+  text-decoration: underline;
 }
 
 .mapsite-banner {
@@ -3251,7 +3313,7 @@ a.pagination-next:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("../images/temp/video-bg.svg");
+  background-image: url("../images/temp/mapsite.jpg");
   position: relative;
   border-radius: 20px;
   display: -webkit-box;
@@ -3266,6 +3328,12 @@ a.pagination-next:hover {
   width: 100%;
 }
 
+@media (max-width: 576px) {
+  .mapsite {
+    max-width: 280px;
+    margin: 0 auto;
+  }
+}
 /*-----mapsite-end-----*/
 /*-----stock-start-----*/
 .stock-item {

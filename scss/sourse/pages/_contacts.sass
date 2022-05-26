@@ -1,11 +1,13 @@
 .contacts-items-container
-  margin-bottom: 90px
+  margin-top: 50px
+  margin-bottom: 100px
 .contacts-item
   max-width: 250px
   margin: 0 auto
   text-align: center
   font-size: $standartSizePlus
   font-weight: 500
+  color: $blackColor
   h3
     color: $violetColor
     font-size: inherit
@@ -32,8 +34,16 @@
 .contacts-info-line
   margin: 0 0 30px
 @media (max-width: 768px)
-  .contacts-item h3
-    height: auto
+  .contacts-info
+    display: grid
+    grid-template-columns: repeat(2,1fr)
+    grid-gap: 30px
+    h2
+      grid-column: span 2
+  .contacts-item
+    margin-bottom: 45px
+    h3
+      height: auto
 @media (max-width: 576px)
   .contacts-item
     max-width: none

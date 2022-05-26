@@ -50,6 +50,10 @@ section
 .breadcrumbs
 	font-size: $smallSize
 	padding: 5px 0
+	em
+		font-size: 0
+		margin-left: 5px
+		@include icoEl(20px, 20px, "../images/controls/carret-right-gray.svg", middle, 130%)
 	a
 		text-decoration: none
 		color: $blackColor
@@ -59,9 +63,9 @@ section
 		margin: 0 5px
 
 .content
-	min-height: calc(100vh - 450px)
+	min-height: calc(100vh - 600px)
 	h1
-		padding: 30px 0
+		padding: 23px 0 30px
 		text-align: center
 		color: $violetColor
 

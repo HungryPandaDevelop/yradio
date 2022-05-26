@@ -5,5 +5,12 @@
     margin: 0 0 30px
 .img-404-container
   text-align: center
-  img
-    width: 300px
+  width: 340px
+  height: 380px
+  @include bgImageEl("../images/page-404.jpg", contain)
+
+@media (max-width: 768px)
+  .img-404-container
+    margin: 0 auto 30px
+  .page-404
+    text-align: center

@@ -1,5 +1,5 @@
 .stub-footer
-  height: 60px
+  height: 90px
 footer
   position: relative
   background-color: $violetColor
@@ -93,7 +93,8 @@ footer
       margin-right: 30px
   .copyright
     opacity: 0.5
-
+.footer-bottom-item-top
+  margin-bottom: 30px
 @media (max-width: 1024px)
   footer
     padding: 45px 0 30px
@@ -107,9 +108,17 @@ footer
       margin: 0 0 30px
     .nav-second
       margin: 0 0 45px
+    .ico-container
+      grid-row: 1
+    .map-site
+      grid-row: 2
+    .politics
+      grid-row: 3
+    .copyright
+      grid-row: 4
+    .ico-container a
+      margin-right: 30px
     .footer-bottom
-      margin: 0
-      .copyright
-        grid-row: 4
+      margin-top: 0
   .footer-bottom-item
     margin: 0 0 15px
