@@ -48,23 +48,35 @@
   vertical-align: top
 
 .reviews-stars
+  max-width: 190px
   margin: 0 0 15px
+  text-align: center
+  .star-ico
+    @include icoEl(24px, 24px, "../images/icons/star-gray.svg")
+    margin: 0 5px
   i
     cursor: pointer
     &:hover
-      background-image: url("../images/icons/star-green.svg")
-  h3,
+      background-image: url("../images/icons/star-orange.svg")
+
   .reviews-container
     display: inline-block
     vertical-align: middle
   h3
-    margin-right: 15px
-
+    color: $violetColor
+    margin: 0 0 5px
+    font-size: $standartSizePlus
+    font-weight: 500
+  .reviews-score
+    font-size: $smallSizeSecond
+    margin-top: 5px
+    span
+      color: $violetColor
 .reviews-container.selected
   i
     &.active,
     &:not(.active)
-      background-image: url('../images/icons/star-green.svg')
+      background-image: url('../images/icons/star-orange.svg')
 
     &.active~i
       background-image: url('../images/icons/star-gray.svg')

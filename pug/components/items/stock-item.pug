@@ -1,7 +1,7 @@
 // +stockItem("Весенние скидки на фоновую музыку","YRadio – комплекс инструментов аудиомаркетинга в одном решении","/images/temp/1.jpg","25 000","15 000","30.04.2022 г. ")
 mixin stockItem( name, prevtext, img, price, priceSecond, data, type)
 	.stock-item.main-grid
-		.col-7.stock-item-info
+		.col-7.col-sm-12.stock-item-info
 			.stock-item-tag Акции
 			h3
 				a(href="#")= name
@@ -22,6 +22,6 @@ mixin stockItem( name, prevtext, img, price, priceSecond, data, type)
 					span Подробнее
 					i
 						img(src="/images/controls/carret-down-white-big.svg", alt="")
-		.col-5
+		.col-5.col-sm-12.stock-img-container
 			.stock-item-img.img-cover(href="#")
 				img(src= img, alt="")

@@ -1,0 +1,10 @@
+mixin casesItem( img, data, name, text, link, btnText)
+	.cases-item.col-3.col-lg-4.col-sm-6.col-xs-6.col-xs-12
+		a.cases-item-img.img-cover(href=link)
+			img(src= img, alt="")
+		.cases-item-info
+			h3
+				a(href="#")= name
+			.cases-item-bottom
+				a(href="#")= text
+				.cases-item-date= data

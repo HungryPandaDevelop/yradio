@@ -1,10 +1,8 @@
 mixin blogItem( img, data, name, text, link, btnText)
-	.blog-item.col-3.col-xs-12
+	.blog-item.col-3.col-lg-4.col-sm-6.col-xs-6.col-xs-12
 		a.blog-item-img.img-cover(href=link)
 			img(src= img, alt="")
 		.blog-item-info
 			h3
 				a(href="#")= name
-			.blog-item-bottom
-				a(href="#")= text
-				.blog-item-date= data
+			.blog-item-date= data

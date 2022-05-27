@@ -1,0 +1,29 @@
+include ../../default/build-header
+		
+// header end
++roofContent("Кейсы")
+	.catalog
+		.main-full
+			.cases-filters
+				a.btn.btn--violet.active(href="#") Все 
+				a.btn.btn--violet(href="#") Торговые центры
+				a.btn.btn--violet(href="#") Рестораны, кафе/бары
+				a.btn.btn--violet(href="#") Супермаркеты
+				a.btn.btn--violet(href="#") Магазины/бутики
+		.main-grid 
+			+casesItem("/images/temp/news/1.jpg","17.03.2022","Жанры электронной музыки, которые лучше всего подходят как фоновая музыка","Блог")
+			+casesItem("/images/temp/news/1.jpg","17.03.2022","Жанры электронной музыки, которые лучше всего подходят как фоновая музыка","Блог")
+			+casesItem("/images/temp/news/1.jpg","17.03.2022","Жанры электронной музыки, которые лучше всего подходят как фоновая музыка","Блог")
+			+casesItem("/images/temp/news/1.jpg","17.03.2022","Жанры электронной музыки, которые лучше всего подходят как фоновая музыка","Блог")
+			+casesItem("/images/temp/news/1.jpg","17.03.2022","Жанры электронной музыки, которые лучше всего подходят как фоновая музыка","Блог")
+			+casesItem("/images/temp/news/1.jpg","17.03.2022","Жанры электронной музыки, которые лучше всего подходят как фоновая музыка","Блог")
+			+casesItem("/images/temp/news/1.jpg","17.03.2022","Жанры электронной музыки, которые лучше всего подходят как фоновая музыка","Блог")
+	.main-full  
+		+pagination()
+	include ../home/feedback.pug
+// footer start  
+
+.stub-footer
+include ../../blocks/footer.pug
+
+// footer end 
