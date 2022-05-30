@@ -21,18 +21,15 @@
 
 	.wpcf7-list-item-label
 		&:before
-			@include positionElement(15px, 15px, -30px, 1px)
-			border: 1px solid $blackColor
-			border-radius: 100%
+			@include positionElement(24px, 24px, -35px, 1px)
+			background-color: $grayColorThree
 			cursor: pointer
 
 	input
 		&:checked~.wpcf7-list-item-label
 			&:after
-				@include positionElement(7px, 7px, -25px, 6px)
-				background-color: $blackColor
-				border-radius: 100%
-				cursor: pointer
+				@include positionElement(24px, 24px, -35px, 1px)
+				@include bgImageEl("../images/controls/checkbox.svg")
 
 .wpcf7 form .wpcf7-response-output
 	margin: 0

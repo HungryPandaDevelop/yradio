@@ -30,6 +30,14 @@
     background: $violetColor
     color: $whiteColor
     border-color: $violetColor
+.btn--orange-v
+  background-color: $orangeColor
+  border-color: $orangeColor
+  color: $violetColor
+  &:hover
+    background: $whiteColor
+    color: $violetColor
+    border-color: $whiteColor
 .btn--violet
   background-color: $violetColor
   border-color: $violetColor
@@ -148,10 +156,10 @@ a.pagination-next
 /*pagination page end*/
 
 .close-btn
-  @include icoEl(30px, 30px, "../images/controls/close-orange.svg")
+  @include icoEl(18px, 18px, "../images/controls/close-violet.svg")
   cursor: pointer
   &:hover
-    background-image: url("../images/controls/close-white.svg")
+    background-image: url("../images/controls/close-orange.svg")
 
 .hamburger-btn
   @include icoEl(30px, 30px, "../images/controls/hamburger-violet.svg")

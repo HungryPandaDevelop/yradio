@@ -1,0 +1,109 @@
+.stock-catalog
+.paydoc-topic
+  text-align: center
+  color: $violetColor
+  margin: 0 0 45px
+  font-size: $mediumSizePlusPlus
+
+.paydoc-tag
+  display: inline-block
+  background-color: $orangeColor
+  padding: 5px 15px
+  font-size: $smallSize
+  font-weight: 400
+  color: $violetColor
+  position: relative
+  vertical-align: middle
+  margin-left: 30px
+  &::before
+    content: ""
+    @include positionElement(18px,100%,100%,0,right)
+    @include bgImageEl('../images/tags-bg.svg', cover, left)
+
+.paydoc-item
+  background-color: $violetColor
+  padding: 0
+  border-radius: 30px
+  position: relative
+  overflow: hidden
+  color: $whiteColor
+  margin-bottom: 30px
+  padding: 30px 45px
+  h3
+    font-size: $mediumSizePlus
+    margin: 0 0 5px
+    color: inherit
+    a
+      text-decoration: none
+  .btn
+    color: $violetColor
+
+.paydoc-item-list
+  font-size: $smallSizeSecond
+  line-height: 1.6
+  li:before
+    background-color: $whiteColor
+
+.paydoc-item-tag
+  display: inline-block
+  background-color: $orangeColor
+  font-size: $smallSize
+  padding: 4px 14px
+  margin: 0 0 15px
+  border-radius: 4px
+
+.paydoc-item-description
+  margin: 0 0 30px
+
+.paydoc-item-offer
+  height: 100%
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+
+.paydoc-item-price
+  font-size: $mediumSizePlusPlus
+  color: $orangeColor
+  font-weight: 700
+
+.paydoc-item-offer
+  text-align: right
+.paydoc-allinfo
+  font-size: $smallSizeSecond
+  margin-bottom: 60px
+.download-link
+  font-weight: 700
+  color: $orangeColor
+  text-decoration: underline
+  font-size: $standartSizePlus
+  display: inline-block
+  margin: 0 0 30px
+
+  span
+  i
+    @include icoEl(18px, 18px, "../images/icons/download-orange.svg")
+    margin-left: 5px
+.paydoc-links
+  max-width: 840px
+@media (max-width: 768px)
+  .paydoc-item-offer
+    display: grid
+    grid-template-columns: repeat(8,1fr)
+    .paydoc-item-price
+      grid-column: span 4
+      text-align: left
+      div
+        display: inline-block
+      span
+        font-size: $standartSize
+        font-weight: 400
+    .btn-container
+      grid-column: span 4
+@media (max-width: 576px)
+  .paydoc-item-offer
+    display: block
+    text-align: center
+    div
+      display: block
+    .paydoc-item-price
+      text-align: center

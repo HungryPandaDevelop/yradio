@@ -1115,11 +1115,11 @@ section .head-section {
   height: 100%;
   left: 0px;
   top: 0px;
-  display: none;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
   background-image: url("../images/controls/checkbox.svg");
+  display: none;
 }
 
 /*-checkbox-wp-*/
@@ -1159,24 +1159,24 @@ section .head-section {
   visibility: hidden;
 }
 .wpcf7-checkbox .wpcf7-list-item-label:before {
-  width: 15px;
+  width: 24px;
   position: absolute;
-  height: 15px;
-  left: -30px;
+  height: 24px;
+  left: -35px;
   top: 1px;
-  border: 1px solid #202020;
-  border-radius: 100%;
+  background-color: #F8F8F8;
   cursor: pointer;
 }
 .wpcf7-checkbox input:checked ~ .wpcf7-list-item-label:after {
-  width: 7px;
+  width: 24px;
   position: absolute;
-  height: 7px;
-  left: -25px;
-  top: 6px;
-  background-color: #202020;
-  border-radius: 100%;
-  cursor: pointer;
+  height: 24px;
+  left: -35px;
+  top: 1px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../images/controls/checkbox.svg");
 }
 
 .wpcf7 form .wpcf7-response-output {
@@ -1684,15 +1684,26 @@ footer .copyright {
 
 .popup-container {
   position: relative;
-  background-color: #C4C4C4;
+  background-color: #ffffff;
   max-width: 600px;
   width: 100%;
   margin: auto;
   padding: 30px;
-  border: 1px solid #202020;
+  border-radius: 20px;
 }
 .popup-container h2, .popup-container h3 {
   margin: 0 0 15px;
+  text-align: center;
+}
+.popup-container h2 {
+  color: #3F0B71;
+}
+.popup-container .lead {
+  text-align: center;
+  margin: 0 0 15px;
+}
+.popup-container .form-btn-container {
+  text-align: center;
 }
 
 .element-show {
@@ -1860,6 +1871,13 @@ footer .copyright {
   grid-column: span 3;
 }
 
+.popup-container .form {
+  max-width: 440px;
+}
+.popup-container .checkbox {
+  font-size: 14px;
+}
+
 /*-----popup-end----*/
 /*---------------blocks-end----*/
 /*---------------elements-start----*/
@@ -1903,6 +1921,17 @@ footer .copyright {
   background: #3F0B71;
   color: #ffffff;
   border-color: #3F0B71;
+}
+
+.btn--orange-v {
+  background-color: #FF9138;
+  border-color: #FF9138;
+  color: #3F0B71;
+}
+.btn--orange-v:hover {
+  background: #ffffff;
+  color: #3F0B71;
+  border-color: #ffffff;
 }
 
 .btn--violet {
@@ -2070,16 +2099,16 @@ a.pagination-next:hover {
 .close-btn {
   display: inline-block;
   vertical-align: middle;
-  width: 30px;
-  height: 30px;
+  width: 18px;
+  height: 18px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  background-image: url("../images/controls/close-orange.svg");
+  background-image: url("../images/controls/close-violet.svg");
   cursor: pointer;
 }
 .close-btn:hover {
-  background-image: url("../images/controls/close-white.svg");
+  background-image: url("../images/controls/close-orange.svg");
 }
 
 .hamburger-btn {
@@ -3675,6 +3704,171 @@ a.pagination-next:hover {
 }
 
 /*-----cases-end-----*/
+/*-----paydoc-start-----*/
+.paydoc-topic {
+  text-align: center;
+  color: #3F0B71;
+  margin: 0 0 45px;
+  font-size: 32px;
+}
+
+.paydoc-tag {
+  display: inline-block;
+  background-color: #FF9138;
+  padding: 5px 15px;
+  font-size: 13px;
+  font-weight: 400;
+  color: #3F0B71;
+  position: relative;
+  vertical-align: middle;
+  margin-left: 30px;
+}
+.paydoc-tag::before {
+  content: "";
+  width: 18px;
+  position: absolute;
+  height: 100%;
+  right: 100%;
+  top: 0;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../images/tags-bg.svg");
+}
+
+.paydoc-item {
+  background-color: #3F0B71;
+  padding: 0;
+  border-radius: 30px;
+  position: relative;
+  overflow: hidden;
+  color: #ffffff;
+  margin-bottom: 30px;
+  padding: 30px 45px;
+}
+.paydoc-item h3 {
+  font-size: 28px;
+  margin: 0 0 5px;
+  color: inherit;
+}
+.paydoc-item h3 a {
+  text-decoration: none;
+}
+.paydoc-item .btn {
+  color: #3F0B71;
+}
+
+.paydoc-item-list {
+  font-size: 14px;
+  line-height: 1.6;
+}
+.paydoc-item-list li:before {
+  background-color: #ffffff;
+}
+
+.paydoc-item-tag {
+  display: inline-block;
+  background-color: #FF9138;
+  font-size: 13px;
+  padding: 4px 14px;
+  margin: 0 0 15px;
+  border-radius: 4px;
+}
+
+.paydoc-item-description {
+  margin: 0 0 30px;
+}
+
+.paydoc-item-offer {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.paydoc-item-price {
+  font-size: 32px;
+  color: #FF9138;
+  font-weight: 700;
+}
+
+.paydoc-item-offer {
+  text-align: right;
+}
+
+.paydoc-allinfo {
+  font-size: 14px;
+  margin-bottom: 60px;
+}
+
+.download-link {
+  font-weight: 700;
+  color: #FF9138;
+  text-decoration: underline;
+  font-size: 18px;
+  display: inline-block;
+  margin: 0 0 30px;
+}
+.download-link i {
+  display: inline-block;
+  vertical-align: middle;
+  width: 18px;
+  height: 18px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../images/icons/download-orange.svg");
+  margin-left: 5px;
+}
+
+.paydoc-links {
+  max-width: 840px;
+}
+
+@media (max-width: 768px) {
+  .paydoc-item-offer {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[8];
+    grid-template-columns: repeat(8, 1fr);
+  }
+  .paydoc-item-offer .paydoc-item-price {
+    -ms-grid-column-span: 4;
+    grid-column: span 4;
+    text-align: left;
+  }
+  .paydoc-item-offer .paydoc-item-price div {
+    display: inline-block;
+  }
+  .paydoc-item-offer .paydoc-item-price span {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .paydoc-item-offer .btn-container {
+    -ms-grid-column-span: 4;
+    grid-column: span 4;
+  }
+}
+@media (max-width: 576px) {
+  .paydoc-item-offer {
+    display: block;
+    text-align: center;
+  }
+  .paydoc-item-offer div {
+    display: block;
+  }
+  .paydoc-item-offer .paydoc-item-price {
+    text-align: center;
+  }
+}
+/*-----paydoc-end-----*/
 /*-----market-item-start-----*/
 .card {
   border: 1px solid #202020;
