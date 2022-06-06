@@ -12,8 +12,19 @@
   border-color: $whiteColor
   font-size: $standartSizePlus
   font-weight: 500
+  transition: ease-out 0.25s
+  i
+    @include icoEl(32px,16px,"../images/controls/arrow-btn-white.svg", middle, cover, center right)
+    transition: ease-out 0.25s
+    width: 0
+    margin-left: 0
   &:hover
     text-decoration: none
+    padding-right: 15px
+    padding-left: 15px
+    i
+      width: 32px
+      margin-left: 15px
 .btn--black
   background-color: $blackColor
   border-color: $blackColor
@@ -34,6 +45,8 @@
   background-color: $orangeColor
   border-color: $orangeColor
   color: $violetColor
+  i
+    background-image: url("../images/controls/arrow-btn-violet.svg")
   &:hover
     background: $whiteColor
     color: $violetColor

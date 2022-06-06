@@ -1,3 +1,5 @@
+.privilege
+	overflow: inherit
 .privilege-item
 	h3
 		color: $violetColor
@@ -7,3 +9,20 @@
 	border-radius: 20px
 	padding-bottom: 42%
 	margin: 0 0 15px
+.privilege-link
+	text-decoration: none
+	color: $orangeColor
+	&:hover
+		text-decoration: underline
+.privilege-item-popup
+	position: absolute
+	padding: 30px
+	border: 1px solid $orangeColor
+	z-index: 2
+	background-color: $whiteColor
+	border-radius: 30px
+	max-width: 850px
+	transform: translateX(-20%) translateY(-35%)
+
+@media (max-width: 576px)
+	.privilege-item-popup

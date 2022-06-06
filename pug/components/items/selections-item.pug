@@ -1,8 +1,8 @@
 mixin selectionItem(name,img,text)
   if text 
-    .selection-item.selection-item--extra.hidden-lg.hidden-md.col-sm-4.col-xs-12 
+    .selection-item.selection-item--extra.hidden-xxl.hidden-lg.hidden-md.col-3.col-sm-4.col-xs-12 
       h3= name 
-      div= text
+      .selection-item-text= text
   else
     .selection-item.col-3.col-sm-4.col-xs-12 
       .selection-item-img.img-cover

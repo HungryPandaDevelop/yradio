@@ -261,7 +261,26 @@ function changeStatePass(){
 }
 
 
+var longPhone = 16;
+$(".phone-mask").on("keydown", function (e) {
 
+    // if (!parseInt(e.originalEvent.key)) {
+    //     if (e.originalEvent.key != "Backspace") {
+    //         e.preventDefault();
+    //     }
+    // }
+    if ($(this).val().length < longPhone) {
+        longPhone = 16;
+        $(".phone-mask").mask("+7(999)999-99-999", {
+            placeholder: " + 7(   )   -  -  "
+        });
+    } else {
+        longPhone = 11;
+        $(this).unmask();
+        $(".phone-mask").mask("999999999999999999");
+    }
+});
+if($('#map').length> 0){
 ymaps.ready(function () {
     var massCoord = [];
     $(".contacts-address-line").each(function (index) {
@@ -355,5 +374,10 @@ ymaps.ready(function () {
     //     myPlacemarkWithContent[itemIndex].balloon.open();
     // });
 
+});
+
+}
+$('.hideshow-head').on('click',function(){
+  $(this).parent().toggleClass('hideshow-item--active');
 });
 //# sourceMappingURL=common-dist.js.map

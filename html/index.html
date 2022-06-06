@@ -24,7 +24,7 @@
             <div class="logo"> <img src="../images/logo-orange.svg" alt=""></div>
           </div>
           <div class="main-grid nav-container">
-            <div class="col-1 hidden-xs"></div>
+            <div class="col-1 hidden-xs hidden-sm"></div>
             <nav class="popup-nav first-nav-popup col-5 col-xs-12">
               <ul class="ln">
                 <li> <a href="#">О компании</a></li>
@@ -73,14 +73,39 @@
           <div class="close-btn close-btn_popup close-js"></div>
           <div class="main-full">
             <h2>Обратная связь</h2>
-            <div class="lead">Благодарим за обращение. Наш менеджер перезвонит вам в ближайшее время.
+            <div class="lead">Благодарим за обращение.&lt;br&gt; Наш менеджер перезвонит вам в ближайшее время.
             </div>
           </div> 
             <form class="form main-grid">
-              <input class="input-decorate col-12" type="text" placeholder="Фио">
+              <input class="input-decorate col-12" type="text" placeholder="Ваше имя*">
               <input class="phone-mask input-decorate col-12" type="text" placeholder="+7 (___) ___ - __ - __">
               <div class="checkbox col-12">
-                <label>Я даю свое согласие на обработку персональных данных
+                <label>Я согласен(-на) на обработку персональных данных 
+                  <input type="checkbox" checked><span></span>
+                </label>
+              </div>
+              <div class="form-btn-container col-12">
+                <input class="btn btn--orange btn-send" type="submit">
+              </div>
+            </form>
+        </div>
+      </div>
+    <!-- popup-form end-->
+    <!-- popup-form start-->
+      <div class="popup element-show" data-element="2">
+        <div class="popup-overlay popup-overlay-js"></div>
+        <div class="popup-container">
+          <div class="close-btn close-btn_popup close-js"></div>
+          <div class="main-full">
+            <h2>Консультация</h2>
+            <div class="lead">Благодарим за обращение.&lt;br&gt; Наш менеджер перезвонит вам в ближайшее время.
+            </div>
+          </div> 
+            <form class="form main-grid">
+              <input class="input-decorate col-12" type="text" placeholder="Ваше имя*">
+              <input class="phone-mask input-decorate col-12" type="text" placeholder="+7 (___) ___ - __ - __">
+              <div class="checkbox col-12">
+                <label>Я согласен(-на) на обработку персональных данных 
                   <input type="checkbox" checked><span></span>
                 </label>
               </div>
@@ -92,7 +117,7 @@
       </div>
     <!-- popup-form end-->
     <!-- popup-search start-->
-      <div class="popup element-show popup-search" data-element="2">
+      <div class="popup element-show popup-search" data-element="99">
         <div class="popup-overlay popup-overlay-js"></div>
         <div class="popup-container">
           <div class="close-btn close-btn_popup close-js"></div>
@@ -157,7 +182,7 @@
     <header>
       <div class="main-grid headline">
         <div class="vertical-align col-7 col-md-4 col-xs-6"><a class="logo" href="#"> <img src="/images/logo.svg" alt=""></a>
-          <div class="nav-delimetr hidden-lg hidden-md hidden-sm hidden-xs"></div>
+          <div class="nav-delimetr hidden-md hidden-sm hidden-xs"></div>
           <nav class="nav-header hidden-md hidden-sm hidden-xs">
             <ul class="custom-disk">
               <li><a href="#">Услуги</a></li>
@@ -171,7 +196,7 @@
         <div class="vertical-align feedback-header col-5 col-md-7 hidden-xs">
           <div class="phone-header"><a href="#"> 8 800 775-99-55</a>
             <div class="phone-circle">24/7</div>
-          </div><a class="btn btn--orange element-btn hidden-sm" href="#" data-element="1">Обратная связь</a>
+          </div><a class="btn btn--orange element-btn hidden-sm" href="#" data-element="1"> <span>Обратная связь</span><i></i></a>
         </div>
         <div class="hamburger-container vertical-align hidden-xxl hidden-lg col-xs-6"><a class="hamburger-btn element-btn" href="#" data-element="0"></a></div>
       </div>
@@ -189,7 +214,7 @@
         <h2> <span>Y</span>Radio</h2>
         <h3>Система управления аудиомаркетингом</h3>
         <div class="main_home-text">Корпоративный канал радиовещания: фоновая музыка, рекламные и информационные ролики. Создайте особую атмосферу в ваших торговых точках, привлекайте новых клиентов, увеличивайте продажи.</div>
-        <div class="btn-container"> <a class="btn btn--orange" href="#">Подключить</a><br><a class="btn btn--link" href="#">Подробнее </a></div>
+        <div class="btn-container"> <a class="btn btn--orange element-btn" data-element="2" href="#"> <span>Подключить</span><i class="arrow-ico"></i></a><br class="hidden-xxl hidden-lg hidden-md hidden-sm"><a class="btn btn--link" href="#">Подробнее </a></div>
       </div>
     </div>
   </div>
@@ -282,7 +307,7 @@
           <div class="banner-item-text">Отправим список рекомендуемых эксклюзивных треков для вашего бизнеса.
           </div>
         </div>
-        <div class="btn-container"><a class="btn btn--orange" href="#">Подключить</a></div>
+        <div class="btn-container"><a class="btn btn--orange" href="#"> <span>Подключить</span><i></i></a></div>
       </div>
   </div>
 </section>
@@ -356,7 +381,7 @@
     </div>
   </div>
 </section>
-<section>
+<section class="privilege">
   <div class="main-grid owl-mobile owl-carousel">
       <div class="privilege-item col-4 col-xs-12">
         <div class="privilege-item-img img-cover"><img src="/images/temp/privilege/privilege-1.svg" alt=""></div>
@@ -369,14 +394,21 @@
         <div class="privilege-item-img img-cover"><img src="/images/temp/privilege/privilege-2.svg" alt=""></div>
         <h3>Защитим от рисков
         </h3>
-        <div class="privilege-item-description">100% легальный контент. Риски получения штрафов за нарушение авторских прав стремятся к нулю. Почему я могу получить штраф?
-        </div>
+        <div class="privilege-item-description">100% легальный контент. Риски получения штрафов за нарушение авторских прав стремятся к нулю.
+        </div><a class="privilege-link element-btn" href="#" data-element="10">Почему я могу получить штраф? </a>
       </div>
       <div class="privilege-item col-4 col-xs-12">
         <div class="privilege-item-img img-cover"><img src="/images/temp/privilege/privilege-3.svg" alt=""></div>
         <h3>Увеличим продажи
         </h3>
         <div class="privilege-item-description">Своевременная трансляция аудиорекламы  проинформирует покупателей о выгодных предложениях.
+        </div>
+      </div>
+      <div class="popup element-show hint" data-element="10">
+        <div class="popup-overlay popup-overlay-js"></div>
+        <div class="popup-container">
+          <div class="close-btn close-btn_popup close-js"></div>
+          <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt debitis aperiam alias ipsam nobis officiis,</div>
         </div>
       </div>
   </div>
@@ -388,9 +420,9 @@
     <h3 class="subtitle-section">Составляем тематические плейлисты, походящие для вашей сферы бизнеса</h3>
   </div>
   <div class="main-grid owl-mobile owl-carousel">
-      <div class="selection-item selection-item--extra hidden-lg hidden-md col-sm-4 col-xs-12"> 
+      <div class="selection-item selection-item--extra hidden-xxl hidden-lg hidden-md col-3 col-sm-4 col-xs-12"> 
         <h3>Наши подборки</h3>
-        <div>Составляем тематические плейлисты, походящие для вашей сферы бизнеса</div>
+        <div class="selection-item-text">Составляем тематические плейлисты, походящие для вашей сферы бизнеса</div>
       </div>
       <div class="selection-item col-3 col-sm-4 col-xs-12"> 
         <div class="selection-item-img img-cover"><img src="/images/temp/selections/1.jpg"></div>
@@ -564,28 +596,24 @@
   </div>
   <div class="main-grid owl-tablet owl-carousel">
       <div class="tasks-item col-3 col-xs-12">
-        <div class="tasks-item-img"><img src="../images/temp/tasks/1.svg" alt="">
-          <h3>Экономим Ваш бюджет</h3>
-          <div class="tasks-item-description">Не нужно покупать дорогостоящее аудиотрансляционное оборудование, нанимать монтажников, нести затраты на обслуживание и ремонт.</div>
-        </div>
+        <div class="tasks-item-img"><img src="../images/temp/tasks/1.svg" alt=""></div>
+        <h3>Экономим Ваш бюджет</h3>
+        <div class="tasks-item-description">Не нужно покупать дорогостоящее аудиотрансляционное оборудование, нанимать монтажников, нести затраты на обслуживание и ремонт.</div>
       </div>
       <div class="tasks-item col-3 col-xs-12">
-        <div class="tasks-item-img"><img src="../images/temp/tasks/2.svg" alt="">
-          <h3>Бережем Ваше время</h3>
-          <div class="tasks-item-description">Установим оборудование “под ключ” за 14 рабочих дней в любой точке РФ.</div>
-        </div>
+        <div class="tasks-item-img"><img src="../images/temp/tasks/2.svg" alt=""></div>
+        <h3>Бережем Ваше время</h3>
+        <div class="tasks-item-description">Установим оборудование “под ключ” за 14 рабочих дней в любой точке РФ.</div>
       </div>
       <div class="tasks-item col-3 col-xs-12">
-        <div class="tasks-item-img"><img src="../images/temp/tasks/3.svg" alt="">
-          <h3>Привлекаем новых клиентов</h3>
-          <div class="tasks-item-description">Озвучиваем внутреннюю зону (торговую площадь), внешнюю зону: входную группу, фасад здания, парковку. За счет этого формируем клиентопоток.</div>
-        </div>
+        <div class="tasks-item-img"><img src="../images/temp/tasks/3.svg" alt=""></div>
+        <h3>Привлекаем новых клиентов</h3>
+        <div class="tasks-item-description">Озвучиваем внутреннюю зону (торговую площадь), внешнюю зону: входную группу, фасад здания, парковку. За счет этого формируем клиентопоток.</div>
       </div>
       <div class="tasks-item col-3 col-xs-12">
-        <div class="tasks-item-img"><img src="../images/temp/tasks/4.svg" alt="">
-          <h3>Повышаем средний чек и количество покупок</h3>
-          <div class="tasks-item-description">Располагаем клиентов к покупке приятной музыкой, информируем о выгодных предложениях, скидках и акциях с помощью рекламных аудиороликов.</div>
-        </div>
+        <div class="tasks-item-img"><img src="../images/temp/tasks/4.svg" alt=""></div>
+        <h3>Повышаем средний чек и количество покупок</h3>
+        <div class="tasks-item-description">Располагаем клиентов к покупке приятной музыкой, информируем о выгодных предложениях, скидках и акциях с помощью рекламных аудиороликов.</div>
       </div>
   </div>
 </section>
@@ -686,7 +714,7 @@
         </div>
       </div>
   </div>
-  <div class="btn-container_section"><a class="btn btn--orange" href="#">Оформить заявку на подключение  </a><a class="btn btn--link" href="#">Посмотреть кейсы  </a></div>
+  <div class="btn-container_section"><a class="btn btn--orange" href="#"> <span>Оформить заявку на подключение  </span><i></i></a><a class="btn btn--link" href="#">Посмотреть кейсы  </a></div>
 </section>
 <section class="partners">
   <div class="main-full head-section">
@@ -713,28 +741,15 @@
        Новые публикации</h2>
   </div>
   <div class="main-grid owl-tablet owl-carousel"> 
-      <div class="blog-item col-3 col-lg-4 col-sm-6 col-xs-6 col-xs-12"><a class="blog-item-img img-cover"><img src="/images/temp/news/1.jpg" alt=""></a>
+      <div class="blog-item col-3 col-xs-12">
+        <div class="blog-item-img img-cover"><img src="/images/temp/news/1.jpg" alt=""></div>
         <div class="blog-item-info">
-          <h3><a href="#">Жанры электронной музыки, которые лучше всего подходят как фоновая музыка</a></h3>
-          <div class="blog-item-date">17.03.2022</div>
-        </div>
-      </div>
-      <div class="blog-item col-3 col-lg-4 col-sm-6 col-xs-6 col-xs-12"><a class="blog-item-img img-cover"><img src="/images/temp/news/2.jpg" alt=""></a>
-        <div class="blog-item-info">
+          <div class="blog-item-hash mobile hidden"><a href="#">блог</a></div>
           <h3><a href="#">YRadio предлагает новые подборки для ресторанов по доступным ценам</a></h3>
-          <div class="blog-item-date">17.03.2022</div>
-        </div>
-      </div>
-      <div class="blog-item col-3 col-lg-4 col-sm-6 col-xs-6 col-xs-12"><a class="blog-item-img img-cover"><img src="/images/temp/news/3.jpg" alt=""></a>
-        <div class="blog-item-info">
-          <h3><a href="#">Влияние музыки на настроение покупателей</a></h3>
-          <div class="blog-item-date">17.03.2022</div>
-        </div>
-      </div>
-      <div class="blog-item col-3 col-lg-4 col-sm-6 col-xs-6 col-xs-12"><a class="blog-item-img img-cover"><img src="/images/temp/news/4.jpg" alt=""></a>
-        <div class="blog-item-info">
-          <h3><a href="#">Фоновая акустическая музыка</a></h3>
-          <div class="blog-item-date">17.03.2022</div>
+          <div class="blog-item-bottom"> 
+            <div class="blog-item-hash hidden-sm"><a href="#">блог</a></div>
+            <div class="blog-item-link"> <a href="#">17.03.2022</a></div>
+          </div>
         </div>
       </div>
   </div>
@@ -763,7 +778,7 @@
       <div class="faq-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
     </div>
   </div>
-  <div class="btn-container_section"> <a class="btn btn--orange" href="#">Узнать больше </a></div>
+  <div class="btn-container_section"> <a class="btn btn--orange" href="#"><span>Узнать больше </span><i></i></a></div>
 </section>
 <!-- main page content end-->
 <!-- footer start -->
@@ -787,7 +802,7 @@
         </div>
         <div class="mail feedback-item"><a href="#">
             <div class="ico-box"><i class="mail-ico-yellow"></i></div><span>lead@yradio.ru</span></a></div>
-        <div class="btn-container"> <a class="btn btn--orange" href="#">Обратная связь</a></div>
+        <div class="btn-container"> <a class="btn btn--orange-v" href="#"> <span>Обратная связь</span><i></i></a></div>
       </div>
     </div>
     <div class="col-sm-1 hidden-xxl hidden-lg hidden-md"></div>

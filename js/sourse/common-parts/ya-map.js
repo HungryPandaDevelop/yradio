@@ -1,4 +1,4 @@
-
+if($('#map').length> 0){
 ymaps.ready(function () {
     var massCoord = [];
     $(".contacts-address-line").each(function (index) {
@@ -93,3 +93,5 @@ ymaps.ready(function () {
     // });
 
 });
+
+}

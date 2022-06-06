@@ -24,7 +24,7 @@
             <div class="logo"> <img src="../images/logo-orange.svg" alt=""></div>
           </div>
           <div class="main-grid nav-container">
-            <div class="col-1 hidden-xs"></div>
+            <div class="col-1 hidden-xs hidden-sm"></div>
             <nav class="popup-nav first-nav-popup col-5 col-xs-12">
               <ul class="ln">
                 <li> <a href="#">О компании</a></li>
@@ -73,14 +73,39 @@
           <div class="close-btn close-btn_popup close-js"></div>
           <div class="main-full">
             <h2>Обратная связь</h2>
-            <div class="lead">Благодарим за обращение. Наш менеджер перезвонит вам в ближайшее время.
+            <div class="lead">Благодарим за обращение.&lt;br&gt; Наш менеджер перезвонит вам в ближайшее время.
             </div>
           </div> 
             <form class="form main-grid">
-              <input class="input-decorate col-12" type="text" placeholder="Фио">
+              <input class="input-decorate col-12" type="text" placeholder="Ваше имя*">
               <input class="phone-mask input-decorate col-12" type="text" placeholder="+7 (___) ___ - __ - __">
               <div class="checkbox col-12">
-                <label>Я даю свое согласие на обработку персональных данных
+                <label>Я согласен(-на) на обработку персональных данных 
+                  <input type="checkbox" checked><span></span>
+                </label>
+              </div>
+              <div class="form-btn-container col-12">
+                <input class="btn btn--orange btn-send" type="submit">
+              </div>
+            </form>
+        </div>
+      </div>
+    <!-- popup-form end-->
+    <!-- popup-form start-->
+      <div class="popup element-show" data-element="2">
+        <div class="popup-overlay popup-overlay-js"></div>
+        <div class="popup-container">
+          <div class="close-btn close-btn_popup close-js"></div>
+          <div class="main-full">
+            <h2>Консультация</h2>
+            <div class="lead">Благодарим за обращение.&lt;br&gt; Наш менеджер перезвонит вам в ближайшее время.
+            </div>
+          </div> 
+            <form class="form main-grid">
+              <input class="input-decorate col-12" type="text" placeholder="Ваше имя*">
+              <input class="phone-mask input-decorate col-12" type="text" placeholder="+7 (___) ___ - __ - __">
+              <div class="checkbox col-12">
+                <label>Я согласен(-на) на обработку персональных данных 
                   <input type="checkbox" checked><span></span>
                 </label>
               </div>
@@ -92,7 +117,7 @@
       </div>
     <!-- popup-form end-->
     <!-- popup-search start-->
-      <div class="popup element-show popup-search" data-element="2">
+      <div class="popup element-show popup-search" data-element="99">
         <div class="popup-overlay popup-overlay-js"></div>
         <div class="popup-container">
           <div class="close-btn close-btn_popup close-js"></div>
@@ -157,7 +182,7 @@
     <header>
       <div class="main-grid headline">
         <div class="vertical-align col-7 col-md-4 col-xs-6"><a class="logo" href="#"> <img src="/images/logo.svg" alt=""></a>
-          <div class="nav-delimetr hidden-lg hidden-md hidden-sm hidden-xs"></div>
+          <div class="nav-delimetr hidden-md hidden-sm hidden-xs"></div>
           <nav class="nav-header hidden-md hidden-sm hidden-xs">
             <ul class="custom-disk">
               <li><a href="#">Услуги</a></li>
@@ -171,7 +196,7 @@
         <div class="vertical-align feedback-header col-5 col-md-7 hidden-xs">
           <div class="phone-header"><a href="#"> 8 800 775-99-55</a>
             <div class="phone-circle">24/7</div>
-          </div><a class="btn btn--orange element-btn hidden-sm" href="#" data-element="1">Обратная связь</a>
+          </div><a class="btn btn--orange element-btn hidden-sm" href="#" data-element="1"> <span>Обратная связь</span><i></i></a>
         </div>
         <div class="hamburger-container vertical-align hidden-xxl hidden-lg col-xs-6"><a class="hamburger-btn element-btn" href="#" data-element="0"></a></div>
       </div>
@@ -244,7 +269,7 @@
         </div>
         <div class="mail feedback-item"><a href="#">
             <div class="ico-box"><i class="mail-ico-yellow"></i></div><span>lead@yradio.ru</span></a></div>
-        <div class="btn-container"> <a class="btn btn--orange" href="#">Обратная связь</a></div>
+        <div class="btn-container"> <a class="btn btn--orange-v" href="#"> <span>Обратная связь</span><i></i></a></div>
       </div>
     </div>
     <div class="col-sm-1 hidden-xxl hidden-lg hidden-md"></div>

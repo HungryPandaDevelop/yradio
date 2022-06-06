@@ -33,7 +33,7 @@
 
 .selection-item--extra
   border: 1px solid $violetColor
-  padding: 15px
+  padding: 22px 24px
   color: $orangeColor
   font-size: $smallSizeSecond
 
@@ -41,11 +41,15 @@
     color: $violetColor
     font-size: $mediumSizePlusPlus
     margin: 0 0 15px
-  div
-    line-height: 1.6
+  .selection-item-text
+    line-height: 1.8
+    padding-right: 15px
 @media (max-width: 1024px)
   .selection-item-info
     padding: 15px 12px
   .selection-item-control
     margin-right: 15px
 @media (max-width: 768px)
+@media (max-width: 567px)
+  .selection-item
+    height: 290px

@@ -1,0 +1,43 @@
+.blog
+  position: relative
+  overflow: hidden
+  &-item
+    text-decoration: none
+    overflow: hidden
+    a
+      text-decoration: none
+      color: $violetColor
+      &:hover
+        color: $orangeColor
+    h3
+      font-size: $standartSize
+      margin: 0 0 15px
+      font-weight: 500
+      line-height: 1.5
+      a:hover
+        color: $orangeColor
+  &-item-img
+    height: 140px
+    display: block
+    margin: 0 0 15px
+    position: relative
+    overflow: hidden
+    border-radius: 20px
+    img
+      @include positionElement(100%,100%,0,0)
+
+  &-item-info
+
+  &-item-description
+    overflow: hidden
+    display: -webkit-box
+    -webkit-line-clamp: 4
+    -webkit-box-orient: vertical
+    line-clamp: 4
+    margin: 0 0 15px
+
+  &-item-bottom
+    display: flex
+    justify-content: space-between
+    a
+      text-decoration: underline

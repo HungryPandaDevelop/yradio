@@ -15,6 +15,7 @@
 		font-size: $standartSizePlus
 		color: $violetColor
 	i
+		cursor: pointer
 		margin-left: auto
 		@include icoEl(18px, 18px, "../images/plus-violet.svg",)
 .hideshow-content
@@ -22,14 +23,16 @@
 	overflow: hidden
 	padding-top: $remSize
 	max-height: 0
+	transition: linear 0.5s
 .hideshow-item--active
 	h3
 		color: $orangeColor
 	i
 		background-image: url("../images/minus-orange.svg")
 	.hideshow-content
-		max-height: 999px
+		max-height: 300px
 		padding-bottom: $remSize
+		text-align: justify
 .hideshow-item--faq
 	border: 1px solid $grayColorSecond
 	border-radius: 20px

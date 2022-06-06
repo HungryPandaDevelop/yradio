@@ -1,4 +1,4 @@
-mixin privilegeItem( name, img, text)
+mixin privilegeItem( name, img, text, link)
 	.privilege-item.col-4.col-xs-12
 		.privilege-item-img.img-cover
 			img(src= img, alt="")
@@ -6,4 +6,5 @@ mixin privilegeItem( name, img, text)
 			=name
 		.privilege-item-description
 			= text
-
+		if link
+			a.privilege-link.element-btn(href="#" data-element="10") Почему я могу получить штраф? 
