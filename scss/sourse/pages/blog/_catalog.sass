@@ -17,26 +17,28 @@
       line-height: 1.6
       a:hover
         color: $orangeColor
-  &-item-hash
-    font-size: $smallSize
+
   &-item-info
     padding: 15px 30px
+    height: calc(100% - 210px)
+    display: flex
+    flex-direction: column
+    justify-content: space-between
   &-item-img
     height: 210px
   &-item-bottom
     display: flex
     justify-content: space-between
-  &-item-link
+  &-item-hash a
+    font-size: $smallSize
     color: $violetColor
-    margin: auto 0
-    font-weight: 500
-    font-size: $smallSizeSecond
-    a
-      text-decoration: underline
+    text-decoration: underline
     &:hover
       color: $orangeColor
-      a
-        text-decoration: none
+      text-decoration: none
+  &-item-data
+    color: $grayColor
+    font-size: $smallSizeSecond
 @media (max-width: 1240px)
   .marketing-item-info
     padding: 15px 15px

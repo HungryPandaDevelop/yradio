@@ -1,3 +1,6 @@
+$(window).on('load',function(){
+});
+
 
 
 let owlMain = $('.owl-main');

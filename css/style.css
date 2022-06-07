@@ -2754,6 +2754,7 @@ a.pagination-next:hover {
 .hideshow-item {
   border-top: 1px solid #C4C4C4;
   border-bottom: 1px solid #C4C4C4;
+  margin-top: -1px;
 }
 
 .hideshow-head {
@@ -2872,6 +2873,17 @@ a.pagination-next:hover {
 
 .marketing-item-info {
   padding: 15px 30px;
+  height: calc(100% - 210px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .marketing-item-img {
@@ -3044,6 +3056,7 @@ a.pagination-next:hover {
 .faq-head i {
   cursor: pointer;
   margin: auto 0 auto auto;
+  top: 4px;
   display: inline-block;
   vertical-align: middle;
   width: 18px;
@@ -3638,11 +3651,19 @@ a.pagination-next:hover {
 .blog-item h3 a:hover {
   color: #FF9138;
 }
-.blog-item-hash {
-  font-size: 13px;
-}
 .blog-item-info {
   padding: 15px 30px;
+  height: calc(100% - 210px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .blog-item-img {
   height: 210px;
@@ -3655,20 +3676,18 @@ a.pagination-next:hover {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.blog-item-link {
+.blog-item-hash a {
+  font-size: 13px;
   color: #3F0B71;
-  margin: auto 0;
-  font-weight: 500;
-  font-size: 14px;
-}
-.blog-item-link a {
   text-decoration: underline;
 }
-.blog-item-link:hover {
+.blog-item-hash a:hover {
   color: #FF9138;
-}
-.blog-item-link:hover a {
   text-decoration: none;
+}
+.blog-item-data {
+  color: #4E4E4E;
+  font-size: 14px;
 }
 
 @media (max-width: 1240px) {
