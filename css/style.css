@@ -920,10 +920,10 @@ section .head-section {
   background-image: url("../images/controls/arrow-btn-white.svg");
 }
 .form .btn:hover {
-  padding-right: 45px;
-  background-position: 115px center;
+  padding-right: 55px;
+  background-position: 130px center;
   background-repeat: no-repeat;
-  background-size: 30px;
+  background-size: 31px;
   background-image: url("../images/controls/arrow-btn-white.svg");
 }
 .form.main-grid {
@@ -1649,10 +1649,6 @@ footer .copyright {
     margin: 0;
     padding-bottom: 45px;
   }
-  .owl-mobile .owl-stage-outer,
-.owl-tablet .owl-stage-outer {
-    overflow: visible;
-  }
   .owl-mobile .owl-dots,
 .owl-tablet .owl-dots {
     bottom: 0;
@@ -1747,9 +1743,16 @@ footer .copyright {
       -ms-flex-direction: column;
           flex-direction: column;
   border-radius: 0px;
+  padding: 15px 30px 60px;
 }
 .menu-hamburger .popup-container a {
   text-decoration: none;
+}
+.menu-hamburger .close-btn {
+  background-image: url("../images/controls/close-orange.svg");
+}
+.menu-hamburger .close-btn:hover {
+  background-image: url("../images/controls/close-white.svg");
 }
 .menu-hamburger .logo img {
   max-width: 86px;
@@ -1930,12 +1933,13 @@ footer .copyright {
   width: 0;
   margin-left: 0;
 }
-.btn:hover {
+
+.btn--anim:hover {
   text-decoration: none;
   padding-right: 15px;
   padding-left: 15px;
 }
-.btn:hover i {
+.btn--anim:hover i {
   width: 32px;
   margin-left: 15px;
 }
@@ -2013,7 +2017,6 @@ footer .copyright {
 .btn--link {
   color: #3F0B71;
   text-decoration: underline;
-  background: none;
 }
 
 .link {
@@ -2690,6 +2693,7 @@ a.pagination-next:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: calc(100% - 214px);
 }
 .selection-item-info h3 {
   color: inherit;
@@ -3027,6 +3031,7 @@ a.pagination-next:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: -1px;
 }
 .faq-head h3 {
   font-size: 18px;
@@ -3037,7 +3042,8 @@ a.pagination-next:hover {
   font-weight: 700;
 }
 .faq-head i {
-  margin-left: auto;
+  cursor: pointer;
+  margin: auto 0 auto auto;
   display: inline-block;
   vertical-align: middle;
   width: 18px;
@@ -3053,6 +3059,9 @@ a.pagination-next:hover {
   overflow: hidden;
   padding-top: 15px;
   max-height: 0;
+  text-align: justify;
+  -webkit-transition: ease-out 0.5s;
+  transition: ease-out 0.5s;
 }
 
 .faq-item--active h3 {
@@ -3062,7 +3071,7 @@ a.pagination-next:hover {
   background-image: url("../images/minus-orange.svg");
 }
 .faq-item--active .faq-content {
-  max-height: 999px;
+  max-height: 300px;
   padding-bottom: 15px;
 }
 

@@ -39,7 +39,7 @@ if($(window).width() < 767){
 
   owlTablet.owlCarousel({
     dots: true,
-    margin: 15,
+    margin: 0,
     responsive:{
       0:{
         items:1
@@ -379,5 +379,9 @@ ymaps.ready(function () {
 }
 $('.hideshow-head').on('click',function(){
   $(this).parent().toggleClass('hideshow-item--active');
+});
+
+$('.faq-head').on('click',function(){
+  $(this).parent().toggleClass('faq-item--active');
 });
 //# sourceMappingURL=common-dist.js.map

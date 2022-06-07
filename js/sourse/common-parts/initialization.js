@@ -37,7 +37,7 @@ if($(window).width() < 767){
 
   owlTablet.owlCarousel({
     dots: true,
-    margin: 15,
+    margin: 0,
     responsive:{
       0:{
         items:1
