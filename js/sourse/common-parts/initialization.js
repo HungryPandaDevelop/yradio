@@ -26,6 +26,9 @@ owlPartners.owlCarousel({
     0:{
       items:2
     },
+    567:{
+      items: 4,
+    },
     769:{
       items: 7,
     }
@@ -42,19 +45,47 @@ if($(window).width() < 767){
       0:{
         items:1
       },
-      769:{
+      380:{
+        items: 2,
+        margin: 15
+      },
+      576:{
         items: 3,
+        margin: 15
+      }
+    }
+  });
+}
+
+if($(window).width() < 576){
+  let owlMobile = $('.owl-mobile');
+
+  owlMobile.owlCarousel({
+    dots: true,
+    responsive:{
+      0:{
+        items:1,
+        margin: 15
+      },
+      415:{
+        items: 2,
+        margin: 15
       }
     }
   });
 }
 
 if($(window).width() < 567){
-  let owlMobile = $('.owl-mobile');
+  let owlBanners = $('.owl-banners');
 
-  owlMobile.owlCarousel({
+  owlBanners.owlCarousel({
     dots: true,
-    items: 1,
-    margin: 15
+    responsive:{
+      0:{
+        items:1,
+        margin: 15
+
+      }
+    }
   });
 }

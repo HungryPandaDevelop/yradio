@@ -18,10 +18,23 @@ mixin stockItem( name, prevtext, img, price, priceSecond, data, type)
 			.stock-item-date Акция действует до 30.04.2022 г. 
 			.btn-container
 				a.btn.btn--orange(href="#") Оформить заявку
-				a.btn.btn--clear.ico-in.btn--carret.ico-in--right(href="#") 
+				a.btn.stock-toggle.btn--clear.ico-in.btn--carret.ico-in--right(href="#") 
 					span Подробнее
 					i
 						img(src="/images/controls/carret-down-white-big.svg", alt="")
 		.col-5.col-sm-12.stock-img-container
 			.stock-item-img.img-cover(href="#")
 				img(src= img, alt="")
+		.col-12.stock-item-content
+			h3 Иформация об акции
+			p Акция распространяется только для новых клиентов YRadio
+			p Рыбатекст используется дизайнерами, проектировщиками и фронтендерами
+			p Рыбатекст используется дизайнерами, проектировщиками и фронтендерами
+			p Рыбатекст используется дизайнерами, проектировщиками и фронтендерами
+
+			p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			div 
+				.close-stock.ico-in.btn--carret.ico-in--right 					
+					span Подробнее
+						i 
+							img(src="/images/controls/carret-up-orange-big.svg", alt="")

@@ -59,16 +59,28 @@
 
 .stock-item-price--second
   font-weight: 500
-  font-size: $standartSizePlus
+  font-size: $standartSize
   color: $grayColorSecond
   &::before
     content: ""
     @include positionElement(100%, 1px, 0, 50%)
-    background-color: $grayColor
+    background-color: $grayColorSecond
 
 .stock-item-date
   font-size: $smallSize
   margin: 0 0 30px
+
+.stock-item-content
+  display: none
+  padding: 30px 45px
+  h3
+    font-size: $mediumSizePlus
+.close-stock
+  color: $orangeColor
+  cursor: pointer
+.stock-item--active
+  .stock-item-content
+    display: block
 @media (max-width: 768px)
   .stock-item-img
     padding-bottom: 50%

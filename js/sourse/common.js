@@ -1,4 +1,3 @@
-$(window).on('load',function(){
  // @prepros-append common-parts/initialization.js  
  // @prepros-append common-parts/img-cover.js  
  // @prepros-append common-parts/style-file.js  
@@ -7,8 +6,5 @@ $(window).on('load',function(){
  // @prepros-append common-parts/rating-comments.js
  // @prepros-append common-parts/password-edit.js
  // @prepros-append common-parts/phone-mask.js
- // @prepros-append common-parts/ya-map.js
  // @prepros-append common-parts/simple.js
-});
-
 

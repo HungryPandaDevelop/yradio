@@ -22,6 +22,8 @@
     margin-bottom: ($remSize * 2)
   .btn-container
     margin-top: 30px
+    br
+      display: none
   .img-cover
     position: absolute
     width: 100%
@@ -40,3 +42,8 @@
       margin: 0 0 15px
   .main_home-text
     font-size: $smallSize
+@media (max-width: 414px)
+  .main_home
+    .btn-container
+      br
+        display: block

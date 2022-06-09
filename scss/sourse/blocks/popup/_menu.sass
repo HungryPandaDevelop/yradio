@@ -56,10 +56,10 @@
   a
     text-decoration: none
 .feedback-phone-popup
-  font-size: $standartSizePlus
   text-align: right
   .phone
     font-weight: 700
+    font-size: $standartSize
     color: inherit
     margin: 0 0 15px
     &:hover
@@ -77,15 +77,19 @@
     margin: 0 0 34px
 
 @media (max-width: 576px)
+
   .feedback-container
     width: 100%
+  .first-nav-popup
+    margin: 0
   .menu-hamburger .nav-container
     padding: 0
   .popup-feedback
     margin-top: auto
     padding: 0
     width: 100%
-
+  .menu-hamburger .popup-container
+    padding: 15px
   .feedback-phone-popup
     width: 100%
     display: flex
@@ -95,3 +99,16 @@
       display: flex
       span
         margin: auto 0
+  .close-btn_popup
+    margin: 25px
+
+@media (max-width: 320px)
+  .first-nav-popup li
+    margin: 0 0 8px
+  .popup-head
+    margin: 0 0 20px
+  .feedback-phone-popup .phone
+    font-size: $smallSize
+  .menu-hamburger
+    .btn
+      padding: 8px 20px 8px
