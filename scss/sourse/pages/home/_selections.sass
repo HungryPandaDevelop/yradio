@@ -30,6 +30,9 @@
     margin: auto 0
 .selection-item-control
   @include icoEl(40px, 40px, "../images/video-btn.svg")
+  display: inline-block
+  width: 40px
+  height: 40px
   margin-right: 30px
 
 .selection-item--extra
@@ -45,6 +48,56 @@
   .selection-item-text
     line-height: 1.8
     padding-right: 15px
+.selection-item-line
+  .mejs-container
+    position: relative
+    top: -15px
+    background: none
+    .mejs-controls
+      background: none
+  .mejs-horizontal-volume-slider,
+  .mejs-volume-button,
+  .mejs-duration-container,
+  .mejs-currenttime-container
+    visibility: hidden
+    position: absolute
+  .mejs-time-float
+    display: none!important
+  .mejs-playpause-button
+    position: absolute
+  .mejs-button>button
+
+    position: absolute
+    top: 31px
+    left: 25px
+  .mejs-pause.mejs-button>button
+    @include icoEl(40px, 40px, "../images/ico-pause.svg")
+  .mejs-play.mejs-button>button
+    @include icoEl(40px, 40px, "../images/video-btn.svg")
+  .mejs-time-rail
+    margin: 0
+  .mejs-controls
+    padding: 0
+  .mejs-time-buffering,
+  .mejs-time-current,
+  .mejs-time-float,
+  .mejs-time-float-corner,
+  .mejs-time-float-current,
+  .mejs-time-hovered,
+  .mejs-time-loaded,
+  .mejs-time-marker,
+  .mejs-time-total
+    height: 6px
+  .mejs-time-rail span.mejs-time-handle-content
+    width: 14px
+    height: 14px
+    border: 0
+    border-radius: 100%
+    background-color: $orangeColor
+    margin-top: -4px
+    transform: scale(1)
+  .mejs-controls .mejs-time-rail .mejs-time-current
+    background-color: $orangeColor
 @media (max-width: 1024px)
   .selection-item-info
     padding: 15px 12px
