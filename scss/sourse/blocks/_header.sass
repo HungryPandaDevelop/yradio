@@ -7,6 +7,7 @@ header
 	color: $violetColor
 	background-color: $whiteColor
 	padding: 15px 0
+	transition: ease-out 0.5s
 	a
 		text-decoration: none
 		&:hover
@@ -21,6 +22,8 @@ header
 
 	.hamburger-btn
 		margin-left: auto
+	&.stick
+		box-shadow: $shadowOne
 .nav-delimetr
 	display: inline-block
 	background-color: $grayColor
@@ -64,6 +67,8 @@ header
 	margin-left: auto
 	a
 		vertical-align: middle
+	.phone-link
+		margin-left: 0
 .phone-circle
 	display: inline-block
 	background-color: $violetColor
@@ -83,8 +88,13 @@ header
 		margin-left: 15px
 
 @media (max-width: 1024px)
-	header .btn
-		padding: 9px 15px 8px
+	header
+		.btn--anim:hover
+			padding-right: 10px
+			padding-left: 10px
+
+		.btn
+			padding: 9px 15px 8px
 	.nav-header li::before
 		left: 0
 		top: 10px

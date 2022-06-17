@@ -325,4 +325,29 @@ $('.stock-toggle').on('click',function(){
 $('.close-stock').on('click',function(){
   $(this).parents('.stock-item').removeClass('stock-item--active');
 });
+
+
+var st = 0;
+$(window).on("mousewheel DOMMouseScroll" , function(event){
+  var delta = event.originalEvent.detail < 0 || event.originalEvent.wheelDelta > 0 ? 1 : -1;
+  st = $(this).scrollTop();
+  // console.log(st);
+
+
+  
+  if(st > 0){
+    $('header').addClass('stick');
+  }
+  else{
+    $('header').removeClass('stick');
+  }
+ 
+});   
+
+
+$('.video-btn').on('click',function(){
+  $(this).hide();
+  $('video').trigger('play');
+});
+
 //# sourceMappingURL=common-dist.js.map
