@@ -1,0 +1,85 @@
+include ../../default/build-header
+		
+// header end
++roofContent("Радио OZON FM – инструмент поддержки сотрудников в сезон распродаж", false)
+	.cases-detail
+		.cases-main-detail.main-grid
+			.col-6 
+				.cases-main-img.img-cover
+					img(src="/images/temp/cases/1.jpg", alt="")
+			.col-6
+				.cases-main-info
+					h1 NOVOTEL
+					h2 Отель в 15 минутах от Кремля с музыкальным сервисом
+					.cases-main-text Novotel — бренд французской гостиничной сети, запустившийся в 1967 году. Входит в группу крупнейшего международного гостиничного оператора Accor. Novotel насчитывает более 500 отелей по всему миру. Часть отелей находится в России.
+					.tags-container
+						a.tag.tag--violet(href="#") Гостиницы/Отели
+						a.tag.tag--orange(href="#") Кейсы
+	.cases-tasks.main-grid 
+		.col-6
+			.cases-tasks-item 
+				h3 Задачи:
+				p У Novotel был прямой договор с РАО и ВОИС. По словам сотрудника Novotel, сначала это было удобно — можно было ставить, что угодно. Был единственный минус — ежемесячно в РАО и ВОИС нужно было пересылать список всех композиций. Возиться с бюрократией было проблематично: как следствие контент не обновлялся много лет и всем надоел. Вдобавок общедоступная музыка обходилась дорого.
+				p Нам нужно было предоставить музыку, которая удовлетворила бы клиента по бюджету и атмосфере, а также автоматизировать обновление музыки.
+		.col-6
+			.cases-tasks-item 
+				h3 Решение:
+				p Сейчас в Novotel играет наша авторская музыка из каталогов Basic и Premium. Она обновляется автоматически каждый квартал — клиенту ничего не нужно делать. Музыкальный эфир поделен на три зоны — ресторан и лобби работают в течение всего года. Веранда — только в летнее время.
+				p Каждая зона музыкально поделена по времени суток и настроению. Например, в ресторане утром играет умиротворяющая электроника, днем — поп, вечером — лаундж.
+	section.selection-section
+		.main-full.head-section
+			h2.title-section
+				|Прослушать эфир
+		.main-grid 
+			+selectionItem("Novotel","/images/temp/selections/1.jpg")    
+			+selectionItem("Novotel","/images/temp/selections/1.jpg")    
+			+selectionItem("Novotel","/images/temp/selections/1.jpg")    
+			+selectionItem("Novotel","/images/temp/selections/1.jpg")    
+	section
+		.main-full.head-section
+			h2.title-section
+				|В результате работы над проектом клиент получил
+		.main-grid
+			.col-4
+				.cases-results-item 
+					.cases-results-circle 
+						b x2
+					.cases-results-text 
+						| Увеличение дохода интернет-магазина по платным каналам с учётом увеличения маркетингового бюджета при сохраенении целевого ДРР.
+			.col-4
+				.cases-results-item 
+					.cases-results-circle 
+						b +5%
+					.cases-results-text 
+						| К выручке интернет-магазина от триггерных рассылок
+			.col-4
+				.cases-results-item 
+					.cases-results-circle 
+						b +20%
+					.cases-results-text 
+						| Рост среднего чека клиента интернет-магазина
+	section.banners
+		.main-full.head-section
+			h2.title-section
+				|Сервисы, реализованные в проекте
+		.main-grid
+			.col-6 
+				+bannerItem("/images/temp/home/banners-ico-1.svg","Уникальная приятная атмосфера","Фоновая музыка для Вашего бизнеса", "Звучите легально и профессионально")
+			.col-6 
+				+bannerItem("/images/temp/home/banners-ico-2.svg","Голос вашего бизнеса","Корпоративное радио", "Продавайте больше, будьте на связи 24/7")
+			.col-6 
+				+bannerItem("/images/temp/home/banners-ico-3.svg","Визитная карточка вашего бренда","Аудио - брендирование", "Раскройте индивидуальность вашей компании")
+			.col-6 
+				+bannerItem("/images/temp/home/banners-ico-4.svg","Фундамент партнерских отношений ","Рекламная площадка", "Размещайте рекламу партнеров – зарабатывайте вместе")
+
+ 
+	include ../detail/reviews-list.pug
+	include ../detail/gallery.pug
+	include ../detail/video.pug
+// slider thumbnails end
+include ../home/feedback.pug
+// footer start 
+.stub-footer
+include ../../blocks/footer.pug
+
+// footer end  

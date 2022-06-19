@@ -3,7 +3,18 @@ let owlMain = $('.owl-main');
 owlMain.owlCarousel({
   items: 1,
   nav: true,
-  dots: true
+  dots: true,
+
+});
+
+let owlGallery = $('.owl-gallery');
+
+owlGallery.owlCarousel({
+  items: 3,
+  nav: false,
+  dots: true,
+  padding: 15,
+  margin: 15
 });
 
 let owlDetail = $('.owl-detail-main');

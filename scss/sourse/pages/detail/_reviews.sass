@@ -1,6 +1,4 @@
-.reviews-list,
-.reviews-form
-  grid-column: span 6
+
 .reviews-list
   .navigation
     display: flex
@@ -10,73 +8,51 @@
       &:hover
         color: $greenColor
 .reviews-item
-  border: 1px solid $blackColor
-  padding: 15px
-  margin: 0 0 30px
-.reviews-head
-  border-bottom: 1px solid $blackColor
-  padding-bottom: 15px
-  margin-block-end: 15px
-.reviews-head-item
-  display: inline-block
-.reviews-grade
-  border: 1px solid $blackColor
-  border-radius: 100%
-  width: 30px
-  height: 30px
-  line-height: 28px
+  border: 1px solid $grayColorSecond
+  padding: 60px 30px 30px
+  border-radius: 20px
+  margin-bottom: 30px
+  max-width: 930px
+  h2
+    font-size: $standartSizePlus
+    color: $violetColor
+    margin: 0
+  h3
+    font-size: inherit
+    font-size: $smallSizeSecond
+    font-weight: 400
+  .reviews-name
+    display: inline-block
+    text-align: left
+    vertical-align: middle
+  .reviews-text
+    font-size: $smallSizeSecond
+.reviews-info
   text-align: center
-  margin-left: 60px
-.reviews-name
-  font-size: $mediumSize
-  font-family: "bold"
-  color: $blackColor
-  margin-right: 30px
 
 .reviews-img
-  width: 60px
-  height: 60px
+  width: 102px
+  height: 102px
   border-radius: 100%
+  border: 1px solid $grayColorSecond
   overflow: hidden
   position: relative
   display: inline-block
   margin-right: 30px
   vertical-align: top
-.reviews-text
-  width: calc( 100% - 150px )
-  display: inline-block
-  vertical-align: top
-
-.reviews-stars
-  max-width: 190px
   margin: 0 0 15px
-  text-align: center
-  .star-ico
-    @include icoEl(24px, 24px, "../images/icons/star-gray.svg")
-    margin: 0 5px
-  i
-    cursor: pointer
-    &:hover
-      background-image: url("../images/icons/star-orange.svg")
-
-  .reviews-container
-    display: inline-block
-    vertical-align: middle
-  h3
+  vertical-align: middle
+.reviews-item--extra
+  .reviews-img
+    margin-right: 15px
+  .reviews-text
     color: $violetColor
-    margin: 0 0 5px
-    font-size: $standartSizePlus
-    font-weight: 500
-  .reviews-score
-    font-size: $smallSizeSecond
-    margin-top: 5px
-    span
-      color: $violetColor
-.reviews-container.selected
-  i
-    &.active,
-    &:not(.active)
-      background-image: url('../images/icons/star-orange.svg')
-
-    &.active~i
-      background-image: url('../images/icons/star-gray.svg')
+    font-style: italic
+    margin: auto 0
+    font-size: $standartSize
+  .reviews-body
+    display: flex
+    width: 100%
+.reviews-audio
+  text-align: center
+  margin-top: 15px

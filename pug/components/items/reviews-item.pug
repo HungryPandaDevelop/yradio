@@ -1,11 +1,26 @@
-mixin reviewsItem(name,date)      
-  .reviews-item
-    .reviews-head
-      .reviews-grade.reviews-head-item 5
-      .reviews-name.reviews-head-item= name
-      .reviews-date.reviews-head-item= date
-    .reviews-body
-      .reviews-img.img-cover
-        img(src="../images/temp/avatar-1.jpg", alt="")
-      .reviews-text 
-        | Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime quod laboriosam consequatur voluptatibus ducimus quas, eius minima accusamus modi porro quidem illo architecto dolore nam unde laborum ipsum, placeat quasi!
+mixin reviewsItem(name,subname, extra)
+  if extra
+    .reviews-item.reviews-item--extra.main-grid
+      .reviews-info.col-5
+        .reviews-img.img-cover
+          img(src="/images/temp/rew-1.jpg", alt="")
+        .reviews-name
+          h2= name
+          h3= subname
+      .reviews-body.col-7
+        .reviews-text 
+          | «Мы сервисом очень довольны. Раньше ставили DVD-плееры с флэшками, они музыку играли по кругу».
+      .col-12
+        .reviews-audio
+          img(src="/images/temp/audio-stub.jpg", alt="")
+  else 
+    .reviews-item.main-grid
+      .reviews-info.col-3
+        .reviews-img.img-cover
+          img(src="/images/temp/rew-1.jpg", alt="")
+        h2= name
+        h3= subname
+
+      .reviews-body.col-9
+        .reviews-text 
+          | Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime quod laboriosam consequatur voluptatibus ducimus quas, eius minima accusamus modi porro quidem illo architecto dolore nam unde laborum ipsum, placeat quasi!
