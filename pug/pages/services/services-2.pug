@@ -1,0 +1,109 @@
+include ../../default/build-header
+		
+// header end
++roofContent("Корпоративный информатор", false)
+	.main-full
+		.services-main-detail.main-grid
+				.col-6
+					.services-main-info
+						h3 Автоматизация бизнес-процессов
+						h1 Корпоративный информатор
+						h2 Будьте с коллегами на одной волне
+						.btn-container 
+							a.btn.btn--orange-v(href="#") Узнать подробнее
+				.col-6
+					.services-main-img   
+						img(src="/images/temp/services/2.svg", alt="")
+	section.selection-section
+		.main-full.head-section
+			h2.title-section
+				| Управляйте сотрудниками в прямом эфире
+		.main-grid
+			+selectionItem("Рестораны","/images/temp/selections/4.jpg")     
+			+selectionItem("Рестораны","/images/temp/selections/4.jpg")     
+			+selectionItem("Рестораны","/images/temp/selections/4.jpg")     
+			+selectionItem("Рестораны","/images/temp/selections/4.jpg")     
+			+selectionItem("Рестораны","/images/temp/selections/4.jpg")     
+			+selectionItem("Рестораны","/images/temp/selections/4.jpg")     
+			+selectionItem("Рестораны","/images/temp/selections/4.jpg")     
+			+selectionItem("Рестораны","/images/temp/selections/4.jpg")
+
+	include ../home/feedback.pug
+	section
+		.main-full.head-section
+			h2.title-section
+				| Корпоративный информатор – Ваше слово важно
+			h3.subtitle-section
+				| Мотивируйте сотрудников, отмечая их результаты в прямом эфире. Доносите срочную информацию до любой торговой точки, поддерживайте дисциплину и помогайте коллегам зарабатывать.
+
+		.main-grid.services-advantages
+			.col-4.services-advantages-item 
+				img(src="/images/temp/services/sav-4.svg", alt="")
+				h3.
+					Общение с сотрудниками 24/7. YRadio – HR  без отпуска и выходных.
+			.col-4.services-advantages-item 
+				img(src="/images/temp/services/sav-5.svg", alt="")
+				h3.
+					Узнаваемый саунд оповещений – Ваши коллеги услышат и запомнят каждое объявление.
+			.col-4.services-advantages-item 
+				img(src="/images/temp/services/sav-6.svg", alt="")
+				h3.
+					Запланированный либо срочный выход в эфир – доносите информацию в удобное время.
+	section
+		.main-full.head-section
+			h2.title-section
+				|Корпоративный информатор – автоматизация управления персоналом 
+		.main-grid.violet-container
+			.col-4
+				.violet-item Корпоративный информатор интегрируется с 1С и популярными CRM. Вы можете планировать время выхода объявления в эфир, сделать его регулярным или преподнести неожиданный сюрприз, поздравив коллег с праздником в режиме реального времени.
+			.col-4
+				.violet-item Привлекайте внимание коллег оригинальными объявлениями и музыкальными оповещениями уникального звучания. Сотрудники с первых нот услышат, что пора на собрание или наступило время подведения итогов.
+			.col-4
+				.violet-item Управляйте персоналом дистанционно и сегментируйте  донесение информации – сделайте важное объявление во всех торговых залах одновременно или же сообщите что-либо только топ-менеджерам. 
+	include ../home/feedback.pug
+	section.marketing
+		.main-full.head-section
+			h2.title-section.
+				Как управляют персоналом с <b>YRadio</b>
+
+		.main-grid.owl-tablet.owl-carousel
+			-for (var i=0; i < 4; i++)
+				+marketingItem("Торговый центр «Метрополис»","/images/temp/marketing.jpg","#торговые центры","Посмотреть")
+	section
+		.main-full.head-section
+			h2.title-section
+				|Подключите услугу “Корпоративный информатор” и экономьте до 15% на управлении персоналом
+		.main-grid
+			.col-3
+				.cases-results-item 
+					.cases-results-circle.cases-results-circle--large
+						b 1
+					.cases-results-text 
+						| Оставьте заявку на подключение
+			.col-3
+				.cases-results-item 
+					.cases-results-circle.cases-results-circle--large 
+						b 2
+					.cases-results-text 
+						| Ответьте на несколько вопросов персональному менеджеру о формате Вашего бизнеса
+			.col-3
+				.cases-results-item 
+					.cases-results-circle.cases-results-circle--large
+						b 3
+					.cases-results-text 
+						| Мы создадим объявления и музыкальные оповещения в кратчайшие сроки и интегрируем систему с Вашей CRM
+			.col-3
+				.cases-results-item 
+					.cases-results-circle.cases-results-circle--large
+						b 4
+					.cases-results-text 
+						| Управляйте сотрудниками конкретного подразделения или всей сети одновременно с любой точки мира
+
+	include ../home/feedback.pug
+
+	include ../home/seo.pug
+
+.stub-footer
+include ../../blocks/footer.pug
+
+// footer end  
