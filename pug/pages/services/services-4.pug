@@ -1,0 +1,132 @@
+include ../../default/build-header
+		
+// header end
++roofContent("Аудиобрендирование", false)
+	.main-full
+		.services-main-detail.main-grid
+				.col-7
+					.services-main-info
+						h1 Аудиобрендирование
+						h2 Создание уникального стиля компании в аудиоформате. Увеличивайте количество повторных покупок.
+						.btn-container 
+							a.btn.btn--orange-v(href="#") Узнать подробнее
+				.col-5
+					.services-main-img 
+						img(src="/images/temp/services/4.svg", alt="")
+	section.selection-section
+		.main-full.head-section
+			h2.title-section
+				| Аудиобрендинг от YRadio – звучит по всей стране
+		.main-grid
+			+selectionItem("Рестораны","/images/temp/selections/4.jpg")     
+			+selectionItem("Рестораны","/images/temp/selections/4.jpg")     
+			+selectionItem("Рестораны","/images/temp/selections/4.jpg")      
+			+selectionItem("Рестораны","/images/temp/selections/4.jpg")     
+			+selectionItem("Рестораны","/images/temp/selections/4.jpg")     
+			+selectionItem("Рестораны","/images/temp/selections/4.jpg")     
+			+selectionItem("Рестораны","/images/temp/selections/4.jpg")     
+			+selectionItem("Рестораны","/images/temp/selections/4.jpg")
+	include ../home/feedback.pug
+	section
+		.main-full.head-section
+			h2.title-section
+				|Подключите услугу “Корпоративный информатор” и экономьте до 15% на управлении персоналом
+		.main-grid
+			.col-4
+				.cases-results-item 
+					.cases-results-circle.cases-results-circle--large
+						b x2
+					.cases-results-text 
+						| в 2 раза больше повторных продаж 
+			.col-4
+				.cases-results-item 
+					.cases-results-circle.cases-results-circle--large 
+						b x3
+					.cases-results-text 
+						|  в 3 раза больше допродаж на кассе
+			.col-4
+				.cases-results-item 
+					.cases-results-circle.cases-results-circle--large
+						b x5
+					.cases-results-text 
+						| в 5 раз дольше клиент остается с Вами
+			.col-12 
+				.cases-results-hint * представлены усредненные результаты > 100 клиентов компании за период в 12 месяцев
+	section
+		.main-full.head-section
+			h2.title-section
+				|Раскройте уникальность Вашего бизнеса 
+		.main-grid.border-container
+			.col-4
+				.border-item Корпоративный информатор интегрируется с 1С и популярными CRM. Вы можете планировать время выхода объявления в эфир, сделать его регулярным или преподнести неожиданный сюрприз, поздравив коллег с праздником в режиме реального времени.
+			.col-4
+				.border-item Привлекайте внимание коллег оригинальными объявлениями и музыкальными оповещениями уникального звучания. Сотрудники с первых нот услышат, что пора на собрание или наступило время подведения итогов.
+			.col-4
+				.border-item Управляйте персоналом дистанционно и сегментируйте  донесение информации – сделайте важное объявление во всех торговых залах одновременно или же сообщите что-либо только топ-менеджерам. 
+	section
+		.services-advantages-violet
+			.main-full 
+				h2 YRadio – мы работаем, чтобы у Вас покупали
+			.main-grid
+				.advantages-item.col-4.col-xs-12
+					img.advantages-item-img(src= "/images/temp/services/sav-7.svg", alt="")
+					h3 14 лет разрабатываем аудиобренды –  точно знаем, что хотят слышать клиенты
+				.advantages-item.col-4.col-xs-12
+					img.advantages-item-img(src= "/images/temp/services/sav-8.svg", alt="")
+					h3 Собственная студия звукозаписи – профессиональная команда и оборудование  
+				.advantages-item.col-4.col-xs-12
+					img.advantages-item-img(src= "/images/temp/services/sav-9.svg", alt="")
+					h3  Федеральная база голосов, более 100 дикторов и актеров – подберем голос  Вашему бизнесу 
+	include ../home/feedback.pug
+	section
+		.main-full.head-section
+			h2.title-section
+				|Разработаем полный комплекс инструментов аудиобрендинга 
+		.main-grid.border-violet-container
+			.col-4
+				.border-violet-item
+					h3 Имиджевый ролик 
+					p Корпоративный информатор интегрируется с 1С и популярными CRM. Вы можете планировать время выхода объявления в эфир, сделать его регулярным или преподнести неожиданный сюрприз, поздравив коллег с праздником в режиме реального времени.
+			.col-4
+				.border-violet-item
+					h3 Вокальный джингл
+					p Короткая музыкальная реклама с вокальным оформлением. Незаменимый инструмент в период акций и распродаж.
+			.col-4
+				.border-violet-item
+					h3 Голосовой джингл
+					p Небольшая голосовая дорожка, содержащая рекламный слоган, произносимый диктором с узнаваемой интонацией. 
+			.col-2
+			.col-4
+				.border-violet-item
+					h3 Инструментальный джингл 
+					p Короткая звуковая дорожка, формирующая узнаваемость бренда. Вашу компанию узнают без слов.
+			.col-4
+				.border-violet-item
+					h3 Гимн компании
+					p Элемент фирменного стиля, объединяющий команду и мотивирующий ее на достижение новых побед.
+	section.marketing
+		.main-full.head-section
+			h2.title-section.
+				<b>YRadio</b> уже подключили
+		.main-grid.owl-tablet.owl-carousel
+			-for (var i=0; i < 8; i++)
+				+marketingItem("Торговый центр «Метрополис»","/images/temp/marketing.jpg","#торговые центры","Посмотреть")
+	section.selection-section
+		.main-full.head-section
+			h2.title-section
+				|Общайтесь с клиентами чаще – зарабатывайте больше
+		.main-grid.violet-container
+			.col-4
+				.violet-item Аудиобрендирование помогает оставаться на связи с клиентами 24/7. 
+			.col-4
+				.violet-item Напоминайте о себе в магазинах, торговых центрах, на выставках, в офисе или в других точках продаж.
+			.col-4
+				.violet-item Используйте все инструменты аудибрендинга – будьте на шаг впереди конкурентов.
+	include ../home/feedback.pug
+
+	include ../home/seo.pug
+
+.stub-footer
+include ../../blocks/footer.pug
+
+// footer end  
