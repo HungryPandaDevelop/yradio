@@ -30,7 +30,9 @@
   text-align: center
   height: 100%
   img
+    max-width: 318px
     height: 100%
+    object-fit: contain
 .services-advantages
 
 .services-advantages-item
@@ -163,3 +165,91 @@
     color: $whiteColor
   p
     margin: 0 0 30px
+.services-stage-grid
+  grid-gap: 30px
+.services-stage-item
+  display: flex
+  justify-content: space-between
+.services-stage-circle
+  width: 112px
+  height: 112px
+  display: inline-flex
+  text-align: center
+  font-size: $hugesize
+  color: $orangeColor
+  border-radius: 100%
+  background-color: $violetColor
+  b
+    display: inline-block
+    margin: auto
+.services-stage-text
+  display: inline-block
+  font-size: $smallSizeSecond
+  padding-left: 15px
+  margin: auto 0
+.tariff-radio-grid
+  grid-gap: 30px
+.tariff-radio-item
+  background-color: $violetColor
+  color: $whiteColor
+  border-radius: 20px
+  padding: 30px
+  height: 100%
+  display: flex
+  flex-direction: column
+
+  h3
+    color: inherit
+    font-size: $mediumSizePlus
+    margin: 0 0 5px
+  h4
+    color: inherit
+    font-size: $standartSize
+    font-weight: 40
+  .custom-disk
+    li
+      margin: 0 0 10px
+      font-size: $smallSizeSecond
+      &:before
+        background-color: $whiteColor
+  .btn-container
+    margin-top: auto
+.tariff-radio-head
+  min-height: 93px
+  margin: 0 0 15px
+.tariff-radio-price
+  font-weight: 700
+  font-size: $mediumSizePlus
+  color: $orangeColor
+
+.tariff-radio-hint
+  font-size: $smallSizeSecond
+  h3
+    font-size: $standartSizePlus
+    margin: 0 0 5px
+    color: $violetColor
+  ul
+    margin: 0 0 30px
+  p
+    margin: 0
+
+.price-clips-container
+  display: grid
+  grid-template-columns: repeat(5,1fr)
+  grid-gap: 30px
+.price-clips-item
+  border: 1px solid $violetColor
+  border-radius: 20px
+  height: 148px
+  display: flex
+  text-align: center
+  span,b
+    display: block
+  span
+    color: $violetColor
+  b
+    font-weight: 700
+    font-size: $mediumSizePlus
+    color: $orangeColor
+.price-clips-in
+  margin: auto

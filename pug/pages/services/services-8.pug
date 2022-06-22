@@ -1,0 +1,154 @@
+include ../../default/build-header
+		
+// header end
++roofContent("Аудиобрендирование", false)
+	.main-full
+		.services-main-detail.main-grid
+				.col-7
+					.services-main-info
+						h3 Официальный язык Ваших продаж 
+						h1 Производство аудиороликов
+						h2 Размещение рекламы партнеров в эфире Вашего радио – зарабатывайте вместе. Помогайте друг другу. 
+						.btn-container 
+							a.btn.btn--orange-v(href="#") Узнать подробнее
+				.col-5
+					.services-main-img 
+						img(src="/images/temp/services/8.svg", alt="")
+	section.selection-section
+		.main-full.head-section
+			h2.title-section
+				| Реклама, которую слышали все
+		.main-grid
+			+selectionItem("Рестораны","/images/temp/selections/4.jpg")     
+			+selectionItem("Рестораны","/images/temp/selections/4.jpg")     
+			+selectionItem("Рестораны","/images/temp/selections/4.jpg")      
+			+selectionItem("Рестораны","/images/temp/selections/4.jpg")     
+			+selectionItem("Рестораны","/images/temp/selections/4.jpg")     
+			+selectionItem("Рестораны","/images/temp/selections/4.jpg")     
+			+selectionItem("Рестораны","/images/temp/selections/4.jpg")     
+			+selectionItem("Рестораны","/images/temp/selections/4.jpg")
+	include ../home/feedback.pug
+	section
+		.main-full.head-section
+			h2.title-section
+				| Добавьте в Ваш плейлист рекламные аудиоролики 
+			h3.subtitle-section
+				| Продавайте в прямом эфире
+		.main-grid.services-advantages
+			.col-3.services-advantages-item 
+				img(src="/images/temp/services/st-19.svg", alt="")
+				h3. 
+					Сообщайте о новинках, акциях или скидках
+			.col-3.services-advantages-item 
+				img(src="/images/temp/services/st-20.svg", alt="")
+				h3.
+					Повышайте узнаваемость бренда – Вас запомнят
+			.col-3.services-advantages-item 
+				img(src="/images/temp/services/st-21.svg", alt="")
+				h3.
+					Привлекайте новых клиентов – о Вас узнают 
+			.col-3.services-advantages-item 
+				img(src="/images/temp/services/st-22.svg", alt="")
+				h3.
+					Увеличивайте продажи – купят именно у Вас
+	section
+		.main-full.head-section
+			h2.title-section
+				|Аудиореклама от YRadio – продавец, который на связи 24/7
+		.main-grid.border-container
+			.col-4
+				.border-item Аудиореклама прекрасно воспринимается в фоновом режиме. Даже когда покупатель занят чем-то другим, он продолжает общаться с Вашим брендом.
+			.col-4
+				.border-item Аудиореклама привлекает новых клиентов, формирует имидж бренда, помогая запомнить именно Вас. Прямой контакт с потребителем увеличивает продажи.
+			.col-4
+				.border-item Яркие, запоминающиеся и позитивные ролики расскажут покупателям о Ваших акциях и скидках, напомнят о бонусной системе и позаботятся о комфорте покупателей.
+	section
+		.services-advantages-violet
+			.main-full 
+				h2 YRadio – мы знаем все о том, какой должна быть Ваша реклама
+			.main-grid
+				.advantages-item.col-4.col-xs-12
+					img.advantages-item-img(src= "/images/temp/services/sav-10.svg", alt="")
+					h3 Персональный маркетолог каждому клиенту – реализуем задачи любого уровня сложности
+				.advantages-item.col-4.col-xs-12
+					img.advantages-item-img(src= "/images/temp/services/sav-8.svg", alt="")
+					h3 Собственная студия звукозаписи – профессиональная команда и оборудование  
+				.advantages-item.col-4.col-xs-12
+					img.advantages-item-img(src= "/images/temp/services/sav-9.svg", alt="")
+					h3  Федеральная база голосов, более 100 дикторов и актеров – подберем голос  Вашему бизнесу 
+	include ../home/feedback.pug
+	section
+		.main-full.head-section
+			h2.title-section
+				|Стоимость разработки роликов от YRadio
+		.main-full.price-clips-container
+			.price-clips-item
+				.price-clips-in
+					span Объявление
+					b 1300₽
+			.price-clips-item
+				.price-clips-in
+					span Информационный ролик
+					b 2800₽
+			.price-clips-item
+				.price-clips-in
+					span Игровой ролик
+					b 3900₽
+			.price-clips-item
+				.price-clips-in
+					span Политический ролик
+					b 5000₽
+			.price-clips-item
+				.price-clips-in
+					span Вокальный ролик
+					b 9000₽
+		.main-full 
+		.btn-container_section 
+			a(href="#").btn.btn--orange  Получить консультацию
+	section.marketing
+		.main-full.head-section
+			h2.title-section.
+				Ролики, которые напевают. Реклама, которая продает.
+		.main-grid.owl-tablet.owl-carousel
+			-for (var i=0; i < 4; i++)
+				+marketingItem("Торговый центр «Метрополис»","/images/temp/marketing.jpg","#торговые центры","Посмотреть")
+
+	section
+		.main-full.head-section
+			h2.title-section
+				|Этапы оформления
+		.main-grid
+			.col-3
+				.cases-results-item 
+					.cases-results-circle.cases-results-circle--large
+						b 1
+					.cases-results-text 
+						| Договоритесь с партнером о размещении материалов и получите от него текст будущей рекламы
+			.col-3
+				.cases-results-item 
+					.cases-results-circle.cases-results-circle--large 
+						b 2
+					.cases-results-text 
+						| Отправьте текст персональному маркетологу YRadio
+			.col-3
+				.cases-results-item 
+					.cases-results-circle.cases-results-circle--large
+						b 3
+					.cases-results-text 
+						| В течение 3 дней мы создадим ролик и поставим его в эфир
+			.col-3
+				.cases-results-item 
+					.cases-results-circle.cases-results-circle--large
+						b 4
+					.cases-results-text 
+						| Ваш партнер получает новых клиентов, а Вы – оплату за размещение ролика, бонусы и скидки от партнера
+
+
+	include ../home/feedback.pug
+
+	include ../home/seo.pug
+
+.stub-footer
+include ../../blocks/footer.pug
+
+// footer end  

@@ -1,0 +1,154 @@
+include ../../default/build-header
+		
+// header end
++roofContent("Аудиобрендирование", false)
+	.main-full
+		.services-main-detail.main-grid
+				.col-7
+					.services-main-info
+						h3 Фундамент партнерских отношений 
+						h1 Рекламная площадка
+						h2 Размещение рекламы партнеров в эфире Вашего радио – зарабатывайте вместе. Помогайте друг другу. 
+						.btn-container 
+							a.btn.btn--orange-v(href="#") Узнать подробнее
+				.col-5
+					.services-main-img 
+						img(src="/images/temp/services/6.svg", alt="")
+	section.selection-section
+		.main-full.head-section
+			h2.title-section
+				|  Реклама партнеров в эфире YRadio
+		.main-grid
+			+selectionItem("Рестораны","/images/temp/selections/4.jpg")     
+			+selectionItem("Рестораны","/images/temp/selections/4.jpg")     
+			+selectionItem("Рестораны","/images/temp/selections/4.jpg")      
+			+selectionItem("Рестораны","/images/temp/selections/4.jpg")     
+			+selectionItem("Рестораны","/images/temp/selections/4.jpg")     
+			+selectionItem("Рестораны","/images/temp/selections/4.jpg")     
+			+selectionItem("Рестораны","/images/temp/selections/4.jpg")     
+			+selectionItem("Рестораны","/images/temp/selections/4.jpg")
+	include ../home/feedback.pug
+	section
+		.main-full.head-section
+			h2.title-section
+				| YRadio – эфир, который приносит прибыль не только Вам
+			h3.subtitle-section
+				| Помогайте партнерам продавать больше, размещая их рекламу в эфире.
+		.main-grid.services-advantages
+			.col-3.services-advantages-item 
+				img(src="/images/temp/services/st-15.svg", alt="")
+				h3. 
+					Заключайте контракты на условиях взаимозачета – расплачивайтесь эфиром
+			.col-3.services-advantages-item 
+				img(src="/images/temp/services/st-16.svg", alt="")
+				h3.
+					Получайте лояльные условия – скидки и бонусы от контрагентов 
+			.col-3.services-advantages-item 
+				img(src="/images/temp/services/st-17.svg", alt="")
+				h3.
+					Полностью покрывайте расходы на корпортивное радио – монетизируйте эфирное время
+			.col-3.services-advantages-item 
+				img(src="/images/temp/services/st-18.svg", alt="")
+				h3.
+					Собственная рекламная площадка – выгодные условия и источник дополнительного дохода
+	section
+		.main-full.head-section
+			h2.title-section
+				|Развивайте и укрепляйте партнерские связи с YRadio
+		.main-grid.border-container
+			.col-4
+				.border-item Собственная рекламная площадка дает возможности для развития эксклюзивных партнерских отношений на условиях взаимозачета и индивидуальных скидок.
+			.col-4
+				.border-item Ваши партнеры охотно сделают ответный шаг, разместив рекламу на своих ресурсах. Вы получите дополнительный источник привлечения новых клиентов.
+			.col-4
+				.border-item Оплата эфирного времени за размещение рекламы партнеров снижает финансовую нагрузку – вложите свободные средства в развитие бизнеса. 
+	section
+		.services-advantages-violet
+			.main-full 
+				h2 YRadio – мы работаем, чтобы у Вас покупали
+			.main-grid
+				.advantages-item.col-4.col-xs-12
+					img.advantages-item-img(src= "/images/temp/services/sav-7.svg", alt="")
+					h3 14 лет разрабатываем аудиобренды –  точно знаем, что хотят слышать клиенты
+				.advantages-item.col-4.col-xs-12
+					img.advantages-item-img(src= "/images/temp/services/sav-8.svg", alt="")
+					h3 Собственная студия звукозаписи – профессиональная команда и оборудование  
+				.advantages-item.col-4.col-xs-12
+					img.advantages-item-img(src= "/images/temp/services/sav-9.svg", alt="")
+					h3  Федеральная база голосов, более 100 дикторов и актеров – подберем голос  Вашему бизнесу 
+	include ../home/feedback.pug
+	section
+		.main-full.head-section
+			h2.title-section
+				|Стоимость разработки роликов от YRadio
+		.main-full.price-clips-container
+			.price-clips-item
+				.price-clips-in
+					span Объявление
+					b 1300₽
+			.price-clips-item
+				.price-clips-in
+					span Информационный ролик
+					b 2800₽
+			.price-clips-item
+				.price-clips-in
+					span Игровой ролик
+					b 3900₽
+			.price-clips-item
+				.price-clips-in
+					span Политический ролик
+					b 5000₽
+			.price-clips-item
+				.price-clips-in
+					span Вокальный ролик
+					b 9000₽
+		.main-full 
+		.btn-container_section 
+			a(href="#").btn.btn--orange  Получить консультацию
+	section.marketing
+		.main-full.head-section
+			h2.title-section.
+				Вы знаете рекламу, которую мы создаем 
+		.main-grid.owl-tablet.owl-carousel
+			-for (var i=0; i < 4; i++)
+				+marketingItem("Торговый центр «Метрополис»","/images/temp/marketing.jpg","#торговые центры","Посмотреть")
+
+	section
+		.main-full.head-section
+			h2.title-section
+				|Этапы оформления
+		.main-grid
+			.col-3
+				.cases-results-item 
+					.cases-results-circle.cases-results-circle--large
+						b 1
+					.cases-results-text 
+						| Договоритесь с партнером о размещении материалов и получите от него текст будущей рекламы
+			.col-3
+				.cases-results-item 
+					.cases-results-circle.cases-results-circle--large 
+						b 2
+					.cases-results-text 
+						| Отправьте текст персональному маркетологу YRadio
+			.col-3
+				.cases-results-item 
+					.cases-results-circle.cases-results-circle--large
+						b 3
+					.cases-results-text 
+						| В течение 3 дней мы создадим ролик и поставим его в эфир
+			.col-3
+				.cases-results-item 
+					.cases-results-circle.cases-results-circle--large
+						b 4
+					.cases-results-text 
+						| Ваш партнер получает новых клиентов, а Вы – оплату за размещение ролика, бонусы и скидки от партнера
+
+
+	include ../home/feedback.pug
+
+	include ../home/seo.pug
+
+.stub-footer
+include ../../blocks/footer.pug
+
+// footer end  

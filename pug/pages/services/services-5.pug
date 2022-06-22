@@ -9,16 +9,11 @@ include ../../default/build-header
 						h1 Корпоративное радио
 						h2 Продавайте больше, будьте на связи 24/7.
 						.btn-container 
-							a.btn.btn--orange-v(href="#") Узнать подробнее
+							a.btn.btn--orange-v(href="#") Попробовать 7 дней бесплатно
 				.col-5
 					.services-main-img 
 						img(src="/images/temp/services/5.svg", alt="")
 	section
-		.main-full.head-section
-			h2.title-section
-				| Корпоративный информатор – Ваше слово важно
-			h3.subtitle-section
-				| Мотивируйте сотрудников, отмечая их результаты в прямом эфире. Доносите срочную информацию до любой торговой точки, поддерживайте дисциплину и помогайте коллегам зарабатывать.
 		.main-grid.services-advantages
 			.col-3.services-advantages-item 
 				img(src="/images/temp/services/st-5.svg", alt="")
@@ -75,11 +70,11 @@ include ../../default/build-header
 					p Профессиональная разработка рекламного и информационногоконтента
 			.col-4
 				.border-img-item 
-					img(src="/images/temp/services/st-13.svg", alt="")
+					img(src="/images/temp/services/st-14.svg", alt="")
 					p Автоматизированная система управления эфиром
 			.col-4
 				.border-img-item 
-					img(src="/images/temp/services/st-14.svg", alt="")
+					img(src="/images/temp/services/st-13.svg", alt="")
 					p Горячая линия 24/7 и поддержка персонального менеджера
 	section
 		.main-full.head-section
@@ -100,61 +95,121 @@ include ../../default/build-header
 		.main-full.head-section
 			h2.title-section
 				|Этапы оформления
-		.main-grid
+		.main-grid.services-stage-grid
 			.col-4
-				.cases-results-item 
-					.cases-results-circle.cases-results-circle--large
-						b 1
-					.cases-results-text 
+				.services-stage-item 
+					div
+						.services-stage-circle
+							b 1
+					.services-stage-text 
 						| Оформление заявки на подключение. Проведение технического аудита и подбор оборудования бесплатно.
 			.col-4
-				.cases-results-item 
-					.cases-results-circle.cases-results-circle--large 
-						b x3
-					.cases-results-text 
+				.services-stage-item 
+					div
+						.services-stage-circle
+							b 2
+					.services-stage-text 
 						| Согласование деталей и заключение договора на обслуживание.
+						
 			.col-4
-				.cases-results-item 
-					.cases-results-circle.cases-results-circle--large
-						b x5
-					.cases-results-text 
-						| в 5 раз дольше клиент остается с Вами
-			.col-12 
-				.cases-results-hint * представлены усредненные результаты > 100 клиентов компании за период в 12 месяцев
-	section
-		.services-advantages-violet
-			.main-full 
-				h2 YRadio – мы работаем, чтобы у Вас покупали
-			.main-grid
-				.advantages-item.col-4.col-xs-12
-					img.advantages-item-img(src= "/images/temp/services/sav-7.svg", alt="")
-					h3 14 лет разрабатываем аудиобренды –  точно знаем, что хотят слышать клиенты
-				.advantages-item.col-4.col-xs-12
-					img.advantages-item-img(src= "/images/temp/services/sav-8.svg", alt="")
-					h3 Собственная студия звукозаписи – профессиональная команда и оборудование  
-				.advantages-item.col-4.col-xs-12
-					img.advantages-item-img(src= "/images/temp/services/sav-9.svg", alt="")
-					h3  Федеральная база голосов, более 100 дикторов и актеров – подберем голос  Вашему бизнесу 
+				.services-stage-item 
+					div
+						.services-stage-circle
+							b 3
+					.services-stage-text 
+						|	Доставка, монтаж и подключение оборудования за 14 дней.
+			.col-2
+			.col-4
+				.services-stage-item 
+					div
+						.services-stage-circle
+							b 4
+					.services-stage-text 
+						| Формирование плейлистов легальной музыки с учетом пожеланий и специфики бизнеса клиента. Разработка рекламного и информационного контента.
+			.col-4
+				.services-stage-item 
+					div
+						.services-stage-circle
+							b 5
+					.services-stage-text 
+						| Предоставление персонального менеджера, который обеспечит актуальность и своевременную замену контента.
 	include ../home/feedback.pug
+	section
+		.main-full.head-section
+			h2.title-section
+				|Тарифы
+		.main-grid.tariff-radio-grid
+			.col-4
+				.tariff-radio-item
+					.tariff-radio-head
+						h3 Легкий старт
+						h4 Для тех, кто ищет простое решение
+					.tariff-radio-price 2800₽ в месяц 
+					ul.custom-disk
+						li Плейлист: Базовый
+						li Музыкальный плейлистформата «лаунж»
+						li MOST – ПО для управления звуковой трансляцией. Микросервер.
+						li Персональный менеджер
+						li Горячая линия  8-800-775-99-55
+						li Техническая поддержка – сервисный ремонт и замена неисправного оборудования
+						li 					li Стартовый пакет аудиороликов – имиджевый аудиоролик и голосовой джингл
+						li 1 аудиоролик ежемесячно
+					.btn-container
+						a.btn.btn--orange-v(href="#")  Подключить
+			.col-4
+				.tariff-radio-item
+					.tariff-radio-head
+						h3 Стандарт 
+						h4 Для тех, кто хочет увеличивать свои продажи
+					.tariff-radio-price 3750₽ в месяц
+					ul.custom-disk
+						li Плейлист: 1 на выбор
+						li Один профессиональный музыкальный плейлист из нашей коллекции на Ваш выбор
+						li MOST – ПО для управления звуковой трансляцией. Микросервер.
+						li Персональный менеджер
+						li Горячая линия  8-800-775-99-55
+						li Техническая поддержка – сервисный ремонт и замена неисправного оборудования
+						li Стартовый пакет аудиороликов – имиджевый аудиоролик и голосовой джингл
+						li 2 аудиоролика ежемесячно
+					.btn-container
+						a.btn.btn--orange-v(href="#")  Подключить
+			.col-4
+				.tariff-radio-item
+					.tariff-radio-head
+						h3 Премиум 
+						h4 Для тех, кто использует максимум своих возможностей 
+					.tariff-radio-price 4700₽ в месяц
+					ul.custom-disk
+						li Плейлист: Индивидуальный
+						li Индивидуальная подборка треков из всей коллекции “Твоё Радио” под Ваш запрос
+						li MOST – ПО для управления звуковой трансляцией. Микросервер.
+						li Персональный менеджер
+						li Горячая линия  8-800-775-99-55
+						li Техническая поддержка – сервисный ремонт и замена неисправного оборудования
+						li Стартовый пакет аудиороликов – имиджевый аудиоролик и голосовой джингл
+						li 4 аудиоролика ежемесячно
+					.btn-container
+						a.btn.btn--orange-v(href="#")  Подключить
+			.col-12
+				.tariff-radio-hint 
+					h3 Дополнительные опции:
+					p Эксплуатация аудиотрансляционного комплекта:
+					ul.custom-disk 
+						li 1980₽/мес за каждые 100м2 внутренней озвучки 
+						li 1950₽/мес за каждый источник внешней озвучки
+						li Предоставление интернет-канала – 590₽/мес
+					p - если оборудование использовалось в соответствии с условиями Договора-оферты
 
 	section.marketing
 		.main-full.head-section
 			h2.title-section.
 				<b>YRadio</b> уже подключили
 		.main-grid.owl-tablet.owl-carousel
-			-for (var i=0; i < 8; i++)
+			-for (var i=0; i < 4; i++)
 				+marketingItem("Торговый центр «Метрополис»","/images/temp/marketing.jpg","#торговые центры","Посмотреть")
-	section.selection-section
-		.main-full.head-section
-			h2.title-section
-				|Общайтесь с клиентами чаще – зарабатывайте больше
-		.main-grid.violet-container
-			.col-4
-				.violet-item Аудиобрендирование помогает оставаться на связи с клиентами 24/7. 
-			.col-4
-				.violet-item Напоминайте о себе в магазинах, торговых центрах, на выставках, в офисе или в других точках продаж.
-			.col-4
-				.violet-item Используйте все инструменты аудибрендинга – будьте на шаг впереди конкурентов.
+
+	include ../home/zone.pug
+
 	include ../home/feedback.pug
 
 	include ../home/seo.pug

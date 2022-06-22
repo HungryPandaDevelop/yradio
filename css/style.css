@@ -2476,6 +2476,12 @@ a.pagination-next:hover {
 .banners-item h3 {
   font-size: 24px;
 }
+.banners-item a {
+  text-decoration: none;
+}
+.banners-item a:hover {
+  color: #FF9138;
+}
 
 .banners-item-img {
   width: 180px;
@@ -4487,7 +4493,10 @@ a.pagination-next:hover {
   height: 100%;
 }
 .services-main-img img {
+  max-width: 318px;
   height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .services-advantages-item {
@@ -4679,6 +4688,141 @@ a.pagination-next:hover {
 }
 .fines p {
   margin: 0 0 30px;
+}
+
+.services-stage-grid {
+  grid-gap: 30px;
+}
+
+.services-stage-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.services-stage-circle {
+  width: 112px;
+  height: 112px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  text-align: center;
+  font-size: 56px;
+  color: #FF9138;
+  border-radius: 100%;
+  background-color: #3F0B71;
+}
+.services-stage-circle b {
+  display: inline-block;
+  margin: auto;
+}
+
+.services-stage-text {
+  display: inline-block;
+  font-size: 14px;
+  padding-left: 15px;
+  margin: auto 0;
+}
+
+.tariff-radio-grid {
+  grid-gap: 30px;
+}
+
+.tariff-radio-item {
+  background-color: #3F0B71;
+  color: #ffffff;
+  border-radius: 20px;
+  padding: 30px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.tariff-radio-item h3 {
+  color: inherit;
+  font-size: 28px;
+  margin: 0 0 5px;
+}
+.tariff-radio-item h4 {
+  color: inherit;
+  font-size: 16px;
+  font-weight: 40;
+}
+.tariff-radio-item .custom-disk li {
+  margin: 0 0 10px;
+  font-size: 14px;
+}
+.tariff-radio-item .custom-disk li:before {
+  background-color: #ffffff;
+}
+.tariff-radio-item .btn-container {
+  margin-top: auto;
+}
+
+.tariff-radio-head {
+  min-height: 93px;
+  margin: 0 0 15px;
+}
+
+.tariff-radio-price {
+  font-weight: 700;
+  font-size: 28px;
+  color: #FF9138;
+}
+
+.tariff-radio-hint {
+  font-size: 14px;
+}
+.tariff-radio-hint h3 {
+  font-size: 18px;
+  margin: 0 0 5px;
+  color: #3F0B71;
+}
+.tariff-radio-hint ul {
+  margin: 0 0 30px;
+}
+.tariff-radio-hint p {
+  margin: 0;
+}
+
+.price-clips-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 30px 1fr 30px 1fr 30px 1fr 30px 1fr;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 30px;
+}
+
+.price-clips-item {
+  border: 1px solid #3F0B71;
+  border-radius: 20px;
+  height: 148px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+.price-clips-item span, .price-clips-item b {
+  display: block;
+}
+.price-clips-item span {
+  color: #3F0B71;
+}
+.price-clips-item b {
+  font-weight: 700;
+  font-size: 28px;
+  color: #FF9138;
+}
+
+.price-clips-in {
+  margin: auto;
 }
 
 /*-----services-end-----*/
