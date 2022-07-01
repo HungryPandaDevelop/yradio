@@ -4188,6 +4188,12 @@ a.pagination-next:hover {
   font-size: 14px;
 }
 
+.gallery-item {
+  height: 260px;
+  overflow: hidden;
+  position: relative;
+}
+
 /*-----cases-end-----*/
 /*-----paydoc-start-----*/
 .paydoc-topic {
