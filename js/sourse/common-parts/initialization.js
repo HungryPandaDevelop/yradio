@@ -10,11 +10,33 @@ owlMain.owlCarousel({
 let owlGallery = $('.owl-gallery');
 
 owlGallery.owlCarousel({
-  items: 3,
-  nav: false,
-  dots: true,
-  padding: 15,
-  margin: 15
+
+  responsive:{
+
+    0:{
+      items: 1,
+      nav: false,
+      dots: true,
+      padding: 15,
+      margin: 15,
+      stagePadding: 0
+    },
+    576:{
+      items: 1,
+      nav: false,
+      dots: true,
+      padding: 15,
+      margin: 15,
+      stagePadding: 75
+    },
+    769:{
+      items: 3,
+      nav: false,
+      dots: true,
+      padding: 15,
+      margin: 15,
+    }
+  }
 });
 
 let owlDetail = $('.owl-detail-main');
@@ -46,21 +68,23 @@ owlPartners.owlCarousel({
 }
 });
 
-if($(window).width() < 767){
+if($(window).width() < 769){
   let owlTablet = $('.owl-tablet');
 
   owlTablet.owlCarousel({
-    dots: true,
-    margin: 0,
+    
     responsive:{
       0:{
-        items:1
-      },
-      380:{
-        items: 2,
+        items:1,
+        dots: true,
         margin: 15
       },
       576:{
+        items:2,
+        dots: true,
+        margin: 15
+      },
+      767:{
         items: 3,
         margin: 15
       }

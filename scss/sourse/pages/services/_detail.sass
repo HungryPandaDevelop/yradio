@@ -43,7 +43,8 @@
     color: $grayColor
   img
     margin: 0 0 30px
-
+.services-qwiz-container
+  padding: 0 15px
 .services-qwiz
   max-width: 900px
   border: 1px solid $grayColorSecond
@@ -143,6 +144,7 @@
     font-size: $mediumSizePlus
   .custom-disk li:before
     background-color: $whiteColor
+
 .services-tariff-bottom
   display: flex
   justify-content: space-between
@@ -253,3 +255,35 @@
     color: $orangeColor
 .price-clips-in
   margin: auto
+
+@media (max-width: 768px)
+  .services-main-info
+    .btn-container
+      text-align: center
+    .btn
+      max-width: 500px
+      width: 100%
+
+  .services-tariff-grid
+    grid-gap: 30px
+  .cases-results-container
+    grid-gap: 30px
+@media (max-width: 576px)
+  .services-main-info
+    h2
+      font-size: $smallSizeSecond
+    h1
+      font-size: 24px
+  .services-tasks
+    margin: 0
+  .services-tasks-img
+    text-align: center
+    margin: 0
+  .services-tasks-item
+    margin-bottom: 30px
+  .services-tariff-bottom
+    display: block
+  .services-tariff-price
+    margin: 0 0 15px
+  .btn-container
+    text-align: center
