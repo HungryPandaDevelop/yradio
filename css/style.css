@@ -3331,9 +3331,13 @@ a.pagination-next:hover {
   font-size: 18px;
   color: #3F0B71;
   font-weight: 400;
+  cursor: pointer;
 }
 .faq-head h3 span {
   font-weight: 700;
+}
+.faq-head h3:hover {
+  color: #FF9138;
 }
 .faq-head span {
   display: inline-block;
@@ -3350,6 +3354,9 @@ a.pagination-next:hover {
   background-repeat: no-repeat;
   background-size: contain;
   background-image: url("../images/plus-violet.svg");
+}
+.faq-head i:hover {
+  background-image: url("../images/plus-orange.svg");
 }
 
 .faq-content {

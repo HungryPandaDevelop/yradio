@@ -14,8 +14,11 @@
     font-size: $standartSizePlus
     color: $violetColor
     font-weight: 400
+    cursor: pointer
     span
       font-weight: 700
+    &:hover
+      color: $orangeColor
   span
     display: inline-block
     margin: auto 0 auto auto
@@ -23,6 +26,8 @@
     cursor: pointer
     top: 4px
     @include icoEl(18px, 18px, "../images/plus-violet.svg",)
+    &:hover
+      background-image: url("../images/plus-orange.svg")
 .faq-content
   position: relative
   overflow: hidden
