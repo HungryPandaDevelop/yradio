@@ -385,4 +385,20 @@ $('.video-btn').on('click',function(){
   $('video').trigger('play');
 });
 
+
+let filterWidth = $('.cases-filters').width();
+let filterWidthInner;// = $('.cases-filters span').width();
+
+$('.cases-filters').find('.btn').each(()=>{
+  filterWidthInner = $('.cases-filters span').width() + 100;
+  console.log('in', filterWidthInner, filterWidth)
+  if(filterWidth <= filterWidthInner){
+    console.log('in')
+    $('.cases-filters .btn').not('.btn-more, .btn-hidden').last().addClass('btn-hidden');
+  }
+});
+$('.btn-more').on('click',function(){
+  $('.cases-filters .btn').removeClass('btn-hidden');
+  $(this).remove();
+});
 //# sourceMappingURL=common-dist.js.map

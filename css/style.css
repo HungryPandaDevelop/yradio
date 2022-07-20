@@ -4153,17 +4153,24 @@ a.pagination-next:hover {
 /*-----blog-end-----*/
 /*-----cases-start-----*/
 .cases-filters {
-  margin: 0 0 30px;
+  margin: 0 0 15px;
+}
+.cases-filters span {
+  display: inline-block;
 }
 .cases-filters .btn {
   font-size: 13px;
   font-weight: 50;
   padding: 8px 30px 8px;
   margin-right: 15px;
+  margin-bottom: 15px;
 }
 .cases-filters .btn.active {
   background-color: #FF9138;
   border-color: #FF9138;
+}
+.cases-filters .btn-hidden {
+  display: none;
 }
 
 .cases-detail {
