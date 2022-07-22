@@ -220,6 +220,8 @@ $('.style-select').each(function () {
   let firstElOption = $(this).find('option:selected').text();
   let dataText = $(this).data('text');
   let dataClass = $(this).data('class');
+  let dataRedirect = $(this).data('redirect') && 'select-redirect';
+
   $(this).find('option').each(function(index){
     $(this).attr('data-index',index);
   });
@@ -229,10 +231,11 @@ $('.style-select').each(function () {
 
 
   let styleSelectBoxElement = 
-    $(`<div class='custom-select ${dataClass}'>
+    $(`<div class='custom-select ${dataClass} ${dataRedirect}'>
         <span>${firstElOption}</span>
-        <ul class='ln'></ul>
         <i></i>
+        <ul class='ln'></ul>
+        
       </div>
     `);
 
@@ -240,7 +243,7 @@ $('.style-select').each(function () {
 
   $(this).find('option').each(function (index) {
       var optionText = $(this).text();
-      $(this).parent().prev().find('ul').append('<li data-index="'+index+'">' + optionText + '</li>');
+      $(this).parent().prev().find('ul').append('<li data-value="'+$(this).val()+'" data-index="'+index+'">' + optionText + '</li>');
   });
 });
 
@@ -275,6 +278,8 @@ $('.custom-select').on('click', 'li', function () {
   parentsEl.next().find('option[data-index="'+liIndex+'"]').prop('selected', true);
 
   parentsEl.find('span').text($(this).text());
+
+  parentsEl.is('.select-redirect') && window.location.replace($(this).data('value')) ;
 });
 // custom-select
 

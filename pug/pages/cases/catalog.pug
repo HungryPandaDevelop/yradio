@@ -4,9 +4,11 @@ include ../../default/build-header
 +roofContent("Кейсы")
 	.catalog
 		.main-full
-			.cases-filters
+			.cases-filters.dn
 				span
-					a.btn.btn--violet.active(href="#") Все 
+					a.btn.btn--violet.active(href="#") 
+						em Все 
+						em.close-ico
 					a.btn.btn--violet(href="#") Торговые центры
 					a.btn.btn--violet(href="#") Рестораны, кафе/бары
 					a.btn.btn--violet(href="#") Супермаркеты
@@ -25,14 +27,20 @@ include ../../default/build-header
 					a.btn.btn--violet(href="#") Магазины/бутики
 					a.btn.btn--violet(href="#") Магазины/бутики
 				a.btn.btn--violet.btn-more(href="#") ...
-		.main-grid 
-			+casesItem("/images/temp/news/1.jpg","17.03.2022","Жанры электронной музыки, которые лучше всего подходят как фоновая музыка","Блог")
-			+casesItem("/images/temp/news/1.jpg","17.03.2022","Жанры электронной музыки, которые лучше всего подходят как фоновая музыка","Блог")
-			+casesItem("/images/temp/news/1.jpg","17.03.2022","Жанры электронной музыки, которые лучше всего подходят как фоновая музыка","Блог")
-			+casesItem("/images/temp/news/1.jpg","17.03.2022","Жанры электронной музыки, которые лучше всего подходят как фоновая музыка","Блог")
-			+casesItem("/images/temp/news/1.jpg","17.03.2022","Жанры электронной музыки, которые лучше всего подходят как фоновая музыка","Блог")
-			+casesItem("/images/temp/news/1.jpg","17.03.2022","Жанры электронной музыки, которые лучше всего подходят как фоновая музыка","Блог")
-			+casesItem("/images/temp/news/1.jpg","17.03.2022","Жанры электронной музыки, которые лучше всего подходят как фоновая музыка","Блог")
+			select.style-select(data-class="cases-filters-select" data-text="Фильтр по объектам" data-redirect="on")
+				option(value="/news/") Фильтр по объектам 1
+				option(value="2") Фильтр по объектам 2
+				option(value="3") Фильтр по объектам 3
+				option(value="4") Фильтр по объектам 4
+				option(value="5") Фильтр по объектам 5
+				option(value="6") Фильтр по объектам 6
+				option(value="7") Фильтр по объектам 7
+				option(value="8") 8Фильтр по объектам 8
+				option(value="9") Фильтр по объектам 9
+			
+		.main-grid
+			each val in ["","","","","","","","",]
+				+casesItem("/images/temp/news/1.jpg","Торговый центр «Метрополис»","#Торговый центр")
 	.main-full  
 		+pagination()
 	include ../home/feedback.pug

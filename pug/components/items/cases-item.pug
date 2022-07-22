@@ -1,4 +1,4 @@
-mixin casesItem( img, data, name, text, link, btnText)
+mixin casesItem( img, name, tag)
 	.cases-item.col-3.col-lg-4.col-sm-6.col-xs-6.col-xs-12
 		a.cases-item-img.img-cover(href=link)
 			img(src= img, alt="")
@@ -6,5 +6,5 @@ mixin casesItem( img, data, name, text, link, btnText)
 			h3
 				a(href="#")= name
 			.cases-item-bottom
-				a(href="#")= text
-				.cases-item-date= data
+				a.cases-item-tag(href="#")= tag
+				a.cases-item-link(href="#") Посмотреть
