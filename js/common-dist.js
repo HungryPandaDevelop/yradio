@@ -49,6 +49,21 @@ owlDetail.owlCarousel({
   dots: true
 });
 
+let owlAboutTeam = $('.owl-about-team');
+
+owlAboutTeam.owlCarousel({
+  items: 1,
+  nav: false,
+  dots: true
+});
+let owlreviews = $('.reviews-owl');
+
+owlreviews.owlCarousel({
+  items: 1,
+  nav: false,
+  dots: true
+});
+
 let owlPartners = $('.owl-partners');
 
 owlPartners.owlCarousel({

@@ -5082,4 +5082,235 @@ a.cases-item-link:hover {
   }
 }
 /*-----services-end-----*/
+/*-----about-start-----*/
+.about-main {
+  margin-bottom: 75px;
+}
+.about-main h2 {
+  font-size: 32px;
+  color: #3F0B71;
+  margin: 0 0 15px;
+}
+.about-main h3 {
+  font-size: 24px;
+  color: #FF9138;
+  font-weight: 400;
+}
+
+.about-banner-container {
+  height: 100%;
+  min-height: 315px;
+  background-color: #202020;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.about-banner-container .about-banner {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../images/temp/about.jpg");
+  opacity: 0.63;
+}
+.about-banner-container h3 {
+  margin: auto;
+  position: relative;
+  font-size: 64px;
+  color: #ffffff;
+}
+.about-banner-container h3 em {
+  font-style: normal;
+}
+.about-banner-container h3 b {
+  color: #FF9138;
+}
+
+.about-services {
+  background-color: #F8F8F8;
+  border-radius: 20px;
+  padding: 45px 60px;
+  margin-bottom: 75px;
+}
+.about-services h2 {
+  color: #3F0B71;
+  font-size: 28px;
+  margin: 0 0 15px;
+}
+.about-services .text {
+  margin: 0 0 30px;
+}
+
+.about-services-list {
+  font-size: 18px;
+  font-weight: 500;
+}
+.about-services-list li {
+  margin: 0 0 10px;
+  cursor: pointer;
+  color: #3F0B71;
+}
+.about-services-list li.active, .about-services-list li:hover {
+  color: #FF9138;
+}
+
+.about-head {
+  text-align: center;
+  margin-bottom: 45px;
+  max-width: 1200px;
+}
+.about-head h2 {
+  font-size: 32px;
+  color: #3F0B71;
+}
+.about-head h3, .about-head h4 {
+  color: #FF9138;
+  font-size: 24px;
+  font-weight: 400;
+}
+.about-head h4 {
+  font-weight: 700;
+}
+
+.about-team-slider {
+  max-width: 930px;
+  padding-bottom: 45px;
+  margin-bottom: 75px;
+}
+
+.about-team-item {
+  border: 1px solid #C4C4C4;
+  border-radius: 20px;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  gap: 0;
+}
+.about-team-item h3 {
+  font-size: 18px;
+  color: #3F0B71;
+  font-weight: 500;
+}
+.about-team-item h4 {
+  font-weight: 400;
+  font-size: 14px;
+  margin: 0 0 15px;
+}
+.about-team-item .text {
+  font-size: 14px;
+}
+
+.about-team-face .img-cover {
+  height: 100%;
+}
+
+.about-team-info {
+  padding: 30px 30px 30px 45px;
+}
+
+.about-numbers {
+  margin-bottom: 75px;
+}
+
+.about-numbers-grid {
+  grid-row-gap: 60px;
+}
+
+.about-numbers-item {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.about-numbers-num {
+  font-size: 46px;
+  border: 4px solid #FF9138;
+  font-weight: 500;
+  max-width: 250px;
+  padding: 14px;
+  text-align: center;
+  border-radius: 20px;
+  color: #3F0B71;
+  margin: 0 auto 14px;
+}
+
+.about-possibility {
+  margin-bottom: 75px;
+}
+
+.about-possibility-item {
+  background-color: #3F0B71;
+  color: #ffffff;
+  text-align: center;
+  padding: 45px 30px;
+  border-radius: 20px;
+}
+.about-possibility-item img {
+  margin: 0 0 30px;
+}
+
+.about-possibility-grid {
+  max-width: 1200px;
+}
+
+.about-advantages {
+  margin-bottom: 75px;
+}
+
+.about-advantages-grid {
+  grid-gap: 30px;
+}
+
+.about-reviews {
+  margin-bottom: 75px;
+}
+
+.geography-img {
+  height: 320px;
+  text-align: center;
+  color: #3F0B71;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.geography-img span {
+  position: relative;
+  font-size: 20px;
+  margin: auto;
+  top: 35px;
+}
+.geography-img .img-cover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+}
+.geography-img img {
+  width: 100%;
+}
+
+.geography-text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.geography-text-container .text {
+  margin: auto 0;
+}
+
+.geography-list {
+  margin-top: 45px;
+  font-size: 14px;
+  color: #3F0B71;
+}
+
+/*-----about-end-----*/
 /*---------------pages-end----*/
