@@ -125,6 +125,28 @@ if($(window).width() < 576){
   });
 }
 
+  let owlDetailBottom = $('.catalog-detail-owl');
+
+  owlDetailBottom.owlCarousel({
+    dots: true,
+    responsive:{
+      0:{
+        items:1,
+        margin: 15
+      },
+      576:{
+        items: 3,
+        margin: 15
+      },
+      998:
+      {
+        items: 4,
+        margin: 15
+      }
+    }
+  });
+
+
 if($(window).width() < 567){
   let owlBanners = $('.owl-banners');
 

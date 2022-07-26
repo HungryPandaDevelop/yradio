@@ -1,7 +1,7 @@
 .btn
   text-decoration: none
   border: 1px solid
-  padding: 11px 30px 10px
+  padding: 10px 30px 10px
   font: inherit
   display: inline-block
   border-radius: 30px
@@ -125,13 +125,13 @@
     text-align: center
     text-decoration: none
     line-height: 27px
-    border: 1px solid $blackColor
+    border: 1px solid $violetColor
     vertical-align: middle
     margin: 0 15px
     &.current,
     &:hover
       color: $whiteColor
-      background-color: $blackColor
+      background-color: $violetColor
 
 .next.page-numbers,
 .prev.page-numbers,
@@ -139,7 +139,7 @@
 .pagination-next
   background-size: 100%
   font-size: 0
-  background-color: $blackColor
+  background-color: $violetColor
 
 .pagination-dotted
   background-color: initial
@@ -149,13 +149,13 @@ a.pagination-prev
   @include icoEl(30px, 30px, "../images/controls/arrow-left-white.svg")
   &:hover
     background-color: $whiteColor
-    background-image: url("../images/controls/arrow-left-black.svg")
+    background-image: url("../images/controls/arrow-left-violet.svg")
 .next.page-numbers,
 a.pagination-next
   @include icoEl(30px, 30px, "../images/controls/arrow-right-white.svg")
   &:hover
     background-color: $whiteColor
-    background-image: url("../images/controls/arrow-right-black.svg")
+    background-image: url("../images/controls/arrow-right-violet.svg")
 
 .ico-in
   i,span

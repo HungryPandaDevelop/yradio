@@ -13,6 +13,8 @@
     color: $violetColor
     i
       margin-right: 3px
+  .entry-meta
+    display: inline-block
 .editor-cards
   margin: 0 0 15px
 .avatar-editor
@@ -51,3 +53,24 @@
     margin: 0 0 15px
   img
     width: 100%
+
+.detail-bottom
+  .reviews-stars
+    max-width: 180px
+    text-align: center
+  h3
+    font-size: $standartSizePlus
+    color: $violetColor
+    margin: 0 0 5px
+    font-weight: 500
+.social-container
+  .a2a_svg
+    border-radius: 100% !important
+@media (max-width: 576px)
+  .detail-bottom
+    padding: 25px 0 0
+
+  .detail-bottom .reviews-stars
+    max-width: none
+  .detail-bottom .social-container
+    text-align: center
