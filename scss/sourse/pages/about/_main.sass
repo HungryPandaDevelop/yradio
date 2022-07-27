@@ -1,5 +1,7 @@
 .about-main
   margin-bottom: 75px
+  .about-main-text
+    max-width: 540px
   h2
     font-size: $mediumSizePlusPlus
     color: $violetColor
@@ -29,3 +31,16 @@
       font-style: normal
     b
       color: $orangeColor
+
+@media (max-width: 768px)
+  .about-banner-container
+    margin: 0 0 30px
+  .about-main .about-main-text
+    max-width: none
+@media (max-width: 576px)
+  .about-main h2
+    font-size: 24px
+  .about-main h3
+    font-size: 18px
+  .about-main
+    margin-bottom: 45px

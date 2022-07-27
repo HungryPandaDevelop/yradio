@@ -3496,7 +3496,17 @@ a.pagination-next:hover {
 
 @media (max-width: 576px) {
   .reviews-item {
-    padding-top: 30px;
+    padding-top: 15px;
+    gap: 0;
+    text-align: center;
+  }
+
+  .reviews-img {
+    margin-bottom: 15px;
+  }
+
+  .reviews-body {
+    margin-top: 15px;
   }
 }
 .gallery-section .owl-gallery {
@@ -5122,6 +5132,9 @@ a.cases-item-link:hover {
 .about-main {
   margin-bottom: 75px;
 }
+.about-main .about-main-text {
+  max-width: 540px;
+}
 .about-main h2 {
   font-size: 32px;
   color: #3F0B71;
@@ -5169,6 +5182,28 @@ a.cases-item-link:hover {
   color: #FF9138;
 }
 
+@media (max-width: 768px) {
+  .about-banner-container {
+    margin: 0 0 30px;
+  }
+
+  .about-main .about-main-text {
+    max-width: none;
+  }
+}
+@media (max-width: 576px) {
+  .about-main h2 {
+    font-size: 24px;
+  }
+
+  .about-main h3 {
+    font-size: 18px;
+  }
+
+  .about-main {
+    margin-bottom: 45px;
+  }
+}
 .about-services {
   background-color: #F8F8F8;
   border-radius: 20px;
@@ -5197,6 +5232,28 @@ a.cases-item-link:hover {
   color: #FF9138;
 }
 
+@media (max-width: 768px) {
+  .about-services h2 {
+    text-align: center;
+  }
+
+  .about-services-list {
+    text-align: center;
+    margin: 0 0 30px;
+  }
+
+  .btn-container {
+    text-align: center;
+  }
+}
+@media (max-width: 576px) {
+  .about-services {
+    padding: 30px 15px;
+  }
+  .about-services .main-grid {
+    gap: 0;
+  }
+}
 .about-head {
   text-align: center;
   margin-bottom: 45px;
@@ -5243,14 +5300,38 @@ a.cases-item-link:hover {
   font-size: 14px;
 }
 
+.about-team-face {
+  position: relative;
+}
 .about-team-face .img-cover {
+  width: 100%;
+  position: absolute;
   height: 100%;
+  left: 0;
+  top: 0;
+  background-position: center;
 }
 
 .about-team-info {
   padding: 30px 30px 30px 45px;
 }
 
+@media (max-width: 576px) {
+  .about-head h2 {
+    font-size: 24px;
+  }
+  .about-head h3, .about-head h4 {
+    font-size: 18px;
+  }
+
+  .about-team-info {
+    padding: 30px;
+  }
+
+  .about-team-face {
+    padding-bottom: 80%;
+  }
+}
 .about-numbers {
   margin-bottom: 75px;
 }
@@ -5277,6 +5358,15 @@ a.cases-item-link:hover {
   margin: 0 auto 14px;
 }
 
+@media (max-width: 576px) {
+  .about-numbers-grid {
+    padding-bottom: 15px;
+  }
+
+  .about-head {
+    margin-bottom: 30px;
+  }
+}
 .about-possibility {
   margin-bottom: 75px;
 }
@@ -5296,6 +5386,15 @@ a.cases-item-link:hover {
   max-width: 1200px;
 }
 
+@media (max-width: 768px) {
+  .about-possibility-grid {
+    padding-bottom: 45px;
+  }
+
+  .about-possibility .btn {
+    font-size: 14px;
+  }
+}
 .about-advantages {
   margin-bottom: 75px;
 }
@@ -5304,10 +5403,20 @@ a.cases-item-link:hover {
   grid-gap: 30px;
 }
 
+@media (max-width: 768px) {
+  .about-advantages .main-grid {
+    padding-bottom: 30px;
+  }
+}
 .about-reviews {
   margin-bottom: 75px;
 }
 
+@media (max-width: 768px) {
+  .reviews-owl {
+    padding-bottom: 5px;
+  }
+}
 .geography-img {
   height: 320px;
   text-align: center;
@@ -5348,5 +5457,66 @@ a.cases-item-link:hover {
   color: #3F0B71;
 }
 
+@media (max-width: 1024px) {
+  .geography-img span {
+    top: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .geography-img span {
+    top: 35px;
+  }
+
+  .geography-img {
+    margin-bottom: 30px;
+  }
+
+  .geography-item {
+    display: none;
+  }
+
+  .geography-item-1,
+.geography-item-2 {
+    display: block;
+  }
+
+  .geography-item li {
+    display: none;
+  }
+
+  .geography-item li:nth-child(1),
+.geography-item li:nth-child(2),
+.geography-item li:nth-child(3),
+.geography-item li:nth-child(4),
+.geography-item li:nth-child(5) {
+    display: block;
+  }
+
+  .geography-list-more {
+    text-align: center;
+    font-size: 18px;
+    text-decoration: underline;
+    margin-top: 30px;
+  }
+
+  .geography-list.geography-list-active .geography-item,
+.geography-list.geography-list-active li {
+    display: block;
+  }
+}
+@media (max-width: 568px) {
+  .geography-img {
+    height: 160px;
+  }
+
+  .geography-img span {
+    top: 15px;
+    font-size: 14px;
+  }
+
+  .geography-item-2 {
+    display: none;
+  }
+}
 /*-----about-end-----*/
 /*---------------pages-end----*/

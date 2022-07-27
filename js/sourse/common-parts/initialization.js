@@ -106,6 +106,25 @@ if($(window).width() < 769){
     }
   });
 }
+if($(window).width() < 769){
+  let owlTabletS = $('.owl-tabletS'); 
+
+  owlTabletS.owlCarousel({
+    
+    responsive:{
+      0:{
+        items:1,
+        dots: true,
+        margin: 15
+      },
+
+      767:{
+        items: 2,
+        margin: 15
+      }
+    }
+  });
+}
 
 if($(window).width() < 576){
   let owlMobile = $('.owl-mobile');

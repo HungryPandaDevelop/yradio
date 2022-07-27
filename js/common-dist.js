@@ -108,6 +108,25 @@ if($(window).width() < 769){
     }
   });
 }
+if($(window).width() < 769){
+  let owlTabletS = $('.owl-tabletS'); 
+
+  owlTabletS.owlCarousel({
+    
+    responsive:{
+      0:{
+        items:1,
+        dots: true,
+        margin: 15
+      },
+
+      767:{
+        items: 2,
+        margin: 15
+      }
+    }
+  });
+}
 
 if($(window).width() < 576){
   let owlMobile = $('.owl-mobile');
@@ -442,5 +461,10 @@ $('.cases-filters').find('.btn').each(()=>{
 $('.btn-more').on('click',function(){
   $('.cases-filters .btn').removeClass('btn-hidden');
   $(this).remove();
+});
+
+$('.geography-list-more').on('click',function(){
+  $(this).hide();
+  $('.geography-list').addClass('geography-list-active'); 
 });
 //# sourceMappingURL=common-dist.js.map

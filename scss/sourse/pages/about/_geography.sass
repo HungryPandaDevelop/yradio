@@ -24,3 +24,44 @@
   margin-top: 45px
   font-size: $smallSizeSecond
   color: $violetColor
+@media (max-width: 1024px)
+  .geography-img span
+    top: 10px
+@media (max-width: 768px)
+  .geography-img span
+    top: 35px
+  .geography-img
+    margin-bottom: 30px
+
+  .geography-item
+    display: none
+  .geography-item-1,
+  .geography-item-2
+    display: block
+
+  .geography-item li
+    display: none
+  .geography-item li:nth-child(1),
+  .geography-item li:nth-child(2),
+  .geography-item li:nth-child(3),
+  .geography-item li:nth-child(4),
+  .geography-item li:nth-child(5)
+    display: block
+
+  .geography-list-more
+    text-align: center
+    font-size: 18px
+    text-decoration: underline
+    margin-top: 30px
+  .geography-list.geography-list-active
+    .geography-item,
+    li
+      display: block
+@media (max-width: 568px)
+  .geography-img
+    height: 160px
+  .geography-img span
+    top: 15px
+    font-size: 14px
+  .geography-item-2
+    display: none

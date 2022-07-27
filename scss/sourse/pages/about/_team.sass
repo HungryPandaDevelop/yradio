@@ -34,7 +34,19 @@
   .text
     font-size: $smallSizeSecond
 .about-team-face
+  position: relative
   .img-cover
-    height: 100%
+    @include positionElement(100%,100%,0,0)
+    background-position: center
 .about-team-info
   padding: 30px 30px 30px 45px
+@media (max-width: 576px)
+  .about-head
+    h2
+      font-size: 24px
+    h3,h4
+      font-size: 18px
+  .about-team-info
+    padding: 30px
+  .about-team-face
+    padding-bottom: 80%

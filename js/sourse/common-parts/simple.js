@@ -53,3 +53,8 @@ $('.btn-more').on('click',function(){
   $('.cases-filters .btn').removeClass('btn-hidden');
   $(this).remove();
 });
+
+$('.geography-list-more').on('click',function(){
+  $(this).hide();
+  $('.geography-list').addClass('geography-list-active'); 
+});
