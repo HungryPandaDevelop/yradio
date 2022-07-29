@@ -10,11 +10,25 @@
   video
     @include positionElement(100%,100%,0,0)
     object-fit: cover
+    margin: 0 auto
+    overflow: hidden
+    border-radius: 20px
 .video-btn
   position: relative
   margin: auto
   cursor: pointer
   @include icoEl(100px, 100px, "../images/video-btn.svg")
+  transition: ease-out 0.25s
+  &::before
+    content: ''
+    @include positionElement(100%,100%,0,0)
+    @include icoEl(100px, 100px, "../images/video-btn-v.svg")
+    transition: ease-out 0.25s
+    opacity: 0
+  &:hover
+    transform: scale(1.1)
+    &::before
+      opacity: 1
 @media (max-width: 576px)
   .video-container
     height: 180px

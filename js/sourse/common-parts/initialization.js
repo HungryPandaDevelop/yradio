@@ -127,6 +127,7 @@ if($(window).width() < 769){
 }
 
 if($(window).width() < 576){
+  $('.selection-item--extra').remove();
   let owlMobile = $('.owl-mobile');
 
   owlMobile.owlCarousel({

@@ -129,6 +129,7 @@ if($(window).width() < 769){
 }
 
 if($(window).width() < 576){
+  $('.selection-item--extra').remove();
   let owlMobile = $('.owl-mobile');
 
   owlMobile.owlCarousel({
@@ -407,6 +408,8 @@ $(".phone-mask").on("keydown", function (e) {
         $(".phone-mask").mask("999999999999999999");
     }
 });
+
+
 $('.hideshow-head').on('click',function(){
   $(this).parent().toggleClass('hideshow-item--active');
 });

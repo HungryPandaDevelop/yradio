@@ -36,7 +36,8 @@
   -webkit-box-orient: vertical
   line-clamp: 2
   margin: 0 0 15px
-
+  p
+    margin: 0
 .stock-item-sale
   display: flex
   justify-content: space-between
@@ -73,6 +74,8 @@
 .stock-item-content
   display: none
   padding: 30px 45px
+  h1,h2,h3,b
+    color: inherit
   h3
     font-size: $mediumSizePlus
 .close-stock
@@ -106,3 +109,7 @@
     font-size: 14px
   .stock-item-price--current
     font-size: 24px
+  .stock-item-info
+    padding: 15px 15px 30px
+  .stock-item-content
+    padding: 15px

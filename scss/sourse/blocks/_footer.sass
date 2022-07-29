@@ -15,7 +15,8 @@ footer
     margin-top: 15px
   .ico-box
     display: inline-block
-
+    font-size: 0
+    vertical-align: middle
   ul,
   li
     list-style: none
@@ -67,10 +68,13 @@ footer
   .feedback-item
     display: flex
     margin: 0 0 15px
+    span
+      margin-top: 0
     i
       margin-right: 15px
+      position: relative
+      top: 3px
     i,span
-      margin-top: auto
       margin-bottom: auto
   .phone
     font-weight: bold
@@ -101,6 +105,8 @@ footer
     opacity: 0.5
 .footer-bottom-item-top
   margin-bottom: 30px
+.current-menu-item
+  color: $orangeColor
 @media (max-width: 1024px)
   footer
     padding: 45px 0 30px
