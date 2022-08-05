@@ -1,5 +1,6 @@
 .seo
 	font-size: $smallSizeSecond
+
 	h2
 		color: $violetColor
 		font-size: $mediumSize
@@ -14,16 +15,24 @@
 	h3
 		font-size: $standartSizePlus
 		color: $violetColor
+		cursor: pointer
+		&:hover
+			color: $orangeColor
 	i
 		cursor: pointer
 		margin-left: auto
 		@include icoEl(18px, 18px, "../images/plus-violet.svg",)
+		position: relative
+		top: 5px
+		&:hover
+			background-image: url("../images/plus-orange.svg")
 .hideshow-content
 	position: relative
 	overflow: hidden
 	padding-top: $remSize
 	max-height: 0
 	transition: linear 0.5s
+
 .hideshow-item--active
 	h3
 		color: $orangeColor
@@ -32,7 +41,7 @@
 	.hideshow-content
 		max-height: 300px
 		padding-bottom: $remSize
-		text-align: justify
+
 .hideshow-item--faq
 	border: 1px solid $grayColorSecond
 	border-radius: 20px

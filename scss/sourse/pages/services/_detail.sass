@@ -1,5 +1,7 @@
 .services-main-detail
   margin-top: 36px
+  position: relative
+  overflow: hidden
   @include bgImageEl("/images/temp/services/1.svg")
   color: $whiteColor
   background: $violetBg
@@ -33,7 +35,8 @@
     max-width: 318px
     height: 100%
     object-fit: contain
-.services-advantages
+.services-advantages .main-grid
+  max-width: 1100px
 
 .services-advantages-item
   text-align: center
@@ -85,7 +88,7 @@
     color: $orangeColor
     font-size: 22px
     font-weight: 400
-    margin: 0 0 45px
+    margin: 0 0 0px
 .violet-item
   background-color: $violetColor
   color: $whiteColor
@@ -257,7 +260,10 @@
   margin: auto
 
 @media (max-width: 768px)
+  .services-main-detail
+    max-width: 510px
   .services-main-info
+    padding-top: 15px
     .btn-container
       text-align: center
     .btn
@@ -268,12 +274,24 @@
     grid-gap: 30px
   .cases-results-container
     grid-gap: 30px
+    padding-bottom: 30px
+  .price-clips-container
+    padding-bottom: 30px
+
 @media (max-width: 576px)
+  .services-main-detail
+    gap: 0
   .services-main-info
+    padding: 25px 0px
     h2
       font-size: $smallSizeSecond
     h1
       font-size: 24px
+    .btn-container
+      text-align: center
+  .services-tasks-item h3
+    margin: 0px 0 5px
+
   .services-tasks
     margin: 0
   .services-tasks-img
@@ -285,5 +303,48 @@
     display: block
   .services-tariff-price
     margin: 0 0 15px
-  .btn-container
+    .btn-container
+      text-align: center
+  .services-main-img img
+    max-width: 100%
+  .advantages-item
+    text-align: left
+    max-width: 290px
+    width: 100%
+    img
+      margin-right: 30px
+      width: 50px
+      height: 50px
+    h3
+      display: inline-block
+      vertical-align: top
+      width: calc(100% - 90px)
+  .services-qwiz
+    margin-bottom: 0
+  .services-qwiz .qwiz-form .qwiz-form-line
+    display: block
+  .services-qwiz
+    font-size: 14px
+  .services-qwiz h2
+    font-size: 18px
+    margin: 0 0 10px
+  .services-qwiz .qwiz-form
+    margin-top: 20px
+  .qwiz-form-line
     text-align: center
+  .services-advantages-violet .subtitle
+    font-size: 14px
+  .services-advantages-violet
+    .advantages-item
+      text-align: center
+      h3
+        width: 100%
+    .advantages-item img
+      width: 100px
+      height: 100px
+      margin: 0 auto 30px
+  .fines
+    margin: 0 15px
+    width: calc(100% - 30px)
+    h2, h3
+      font-size: 20px

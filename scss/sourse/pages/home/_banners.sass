@@ -25,10 +25,15 @@
     text-decoration: none
     &:hover
       color: $orangeColor
+  .btn:hover
+    color: $whiteColor
 .banners-item-img
-
   width: 180px
   height: 180px
+  transition: ease-out 0.5s
+.banners-item:hover
+  .banners-item-img
+    transform: scale(1.1)
 .banners-info
   max-width: 240px
 .banners-img-container
@@ -86,4 +91,14 @@
   .banners-item
     max-width: 320px
     margin: 0 auto
-    height: 388px
+    height: auto
+
+    h3
+      font-size: 24px
+      max-width: 240px
+    .btn
+      width: 100%
+  .banner-item-text
+    margin: 0 0 30px
+  .banners-img-container
+    margin: 0 0 15px

@@ -77,13 +77,13 @@ owlPartners.owlCarousel({
     567:{
       items: 4,
     },
-    769:{
+    992:{
       items: 7,
     }
 }
 });
 
-if($(window).width() < 769){
+if($(window).width() < 768){
   let owlTablet = $('.owl-tablet');
 
   owlTablet.owlCarousel({
@@ -99,7 +99,7 @@ if($(window).width() < 769){
         dots: true,
         margin: 15
       },
-      767:{
+      768:{
         items: 3,
         margin: 15
       }
@@ -118,9 +118,10 @@ if($(window).width() < 769){
         margin: 15
       },
 
-      767:{
+      768:{
         items: 2,
-        margin: 15
+        margin: 15,
+        dots: true,
       }
     }
   });
@@ -128,6 +129,7 @@ if($(window).width() < 769){
 
 if($(window).width() < 576){
   $('.selection-item--extra').remove();
+  $('.hidden-owl-item').remove();
   let owlMobile = $('.owl-mobile');
 
   owlMobile.owlCarousel({

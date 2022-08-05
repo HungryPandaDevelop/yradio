@@ -8,7 +8,8 @@ $('.faq-head').on('click',function(){
   $(this).parent().toggleClass('faq-item--active');
 });
 
-$('.stock-toggle').on('click',function(){
+$('.stock-toggle').on('click',function(e){
+  e.preventDefault();
   $(this).parents('.stock-item').addClass('stock-item--active');
 });
 $('.close-stock').on('click',function(){
