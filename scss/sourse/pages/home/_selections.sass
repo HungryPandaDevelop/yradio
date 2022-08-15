@@ -4,6 +4,8 @@
   position: relative
   overflow: hidden
   border-radius: 20px
+
+  border: 1px solid #3f0b71
 .selection-item-img
   // padding-bottom: 65%
   height: 214px
@@ -73,8 +75,16 @@
     left: 25px
   .mejs-pause.mejs-button>button
     @include icoEl(40px, 40px, "../images/ico-pause.svg")
+    transition: ease-out 0.5s
+    transform: scale(1)
+    &:hover
+      transform: scale(1.1)
   .mejs-play.mejs-button>button
     @include icoEl(40px, 40px, "../images/video-btn.svg")
+    transition: ease-out 0.5s
+    transform: scale(1)
+    &:hover
+      transform: scale(1.1)
   .mejs-time-rail
     margin: 0
   .mejs-controls

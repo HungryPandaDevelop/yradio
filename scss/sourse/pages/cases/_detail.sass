@@ -14,12 +14,15 @@
   height: 100%
   min-height: 270px
   border-radius: 20px
+  background-position: center
 .cases-main-text
   margin: 0 0 15px
 .cases-main-detail
   margin-bottom: 30px
 .cases-tasks
-
+.cases-results-container
+  text-align: center
+  display: block
 .cases-tasks-item
   height: 100%
   border: 1px solid $violetColor
@@ -34,9 +37,14 @@
     &:last-child
       margin: 0
 .cases-results-item
-  max-width: 350
+  min-width: 250px
   margin: 0 auto
   text-align: center
+  display: inline-block
+  vertical-align: top
+.cases-results-text
+  max-width: 200px
+  margin: 0 auto
 .cases-results-circle
   display: inline-flex
   width: 130px
@@ -61,7 +69,8 @@
   height: 260px
   overflow: hidden
   position: relative
-
+.cases-results-container
+  text-align: center
 @media (max-width: 768px)
   .cases-detail
     // max-width: 540px
@@ -70,3 +79,21 @@
     display: block
   .cases-tasks-item
     margin: 0 0 30px
+@media (max-width: 576px)
+  .cases-detail
+    padding-top: 14px
+
+  .cases-main-detail
+    display: block
+    h1
+      margin: 0 0 0px
+    h2
+      font-size: 14px
+      margin: 0 0 15px
+      font-weight: 400
+  .cases-main-img
+    margin-bottom: 15px
+  .cases-results-item
+    width: 100%
+  .cases-results-text
+    max-width: 300px

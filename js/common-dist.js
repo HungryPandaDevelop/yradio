@@ -473,4 +473,8 @@ $('.geography-list-more').on('click',function(){
   $(this).hide();
   $('.geography-list').addClass('geography-list-active'); 
 });
+
+$('.show-next').on('click',function(){
+  $(this).parents('.services-qwiz-item').removeClass('active').next().addClass('active');
+});
 //# sourceMappingURL=common-dist.js.map

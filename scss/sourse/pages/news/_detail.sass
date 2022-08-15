@@ -1,18 +1,23 @@
 .news-detail
-  max-width: 930px
+  // max-width: 930px
   font-size: 14px
+  gap: 45px 30px
+  p
+    margin: 0 0 15px
+  p:last-child
+    margin: 0
   h2
     text-align: center
     color: $violetColor
     font-size: $mediumSizePlusPlus
     padding: 30px 0
-  img
-    width: 100%
-    max-height: 420px
-    position: relative
-    overflow: hidden
+  .img-container
+    img
+      position: absolute
+  .img-cover
+    background-position: center
     border-radius: 20px
-    object-fit: cover
+  .news-detail
 .detail-bottom-news
   .main-grid
     max-width: 930px
